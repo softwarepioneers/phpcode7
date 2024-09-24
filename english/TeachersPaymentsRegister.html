@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>REGISTER TEACHERS PAYMENTS</title>
+<title>REGISTER TEACHERS DATA</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -227,7 +227,6 @@
             </div>
         </div>
     </nav>
-
     <br>
     <div id="leftsidebar" class="sidebar">
         <div class="sidebar-scroll">
@@ -888,281 +887,390 @@
         </div>
     </div>
 
-    <br>
-    <div id="leftsidebar" class="sidebar">
-        <div class="sidebar-scroll">
-            <nav id="leftsidebar-nav" class="sidebar-nav">
-                <ul id="main-menu" class="metismenu">
-                    <li class="heading">SYSTEM</li>
-                    <li><a href="#"><i class="icon-home"></i><span> KG SCHOOL</span></a></li>
-                    <!-- <li class="heading">DEPARTMENTS</li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>STUDENTS LIST</span></a></li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>TEACHERS LIST</span></a></li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>EMPLOYEES LIST</span></a></li> -->
-                    <li class="heading">SECTIONS</li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>STUDENTS</span></a>
-                        <ul>
-                            <li><a href="StudentsDataRegister.html">Register  Data</a></li>
-                            <li><a href="StudentsDataRegisterDisplay.html">Search  Data</a></li>
-                            <li><a href="StudentsDataEditDisplay.html">Edit  Data</a></li>
-                            <li><a href="StudentsDataDeleteDisplay.html">Delete  Data</a></li>
-
-                            <li><a href="StudentsParentsRegister.html">Register  Parents</a></li>
-                            <li><a href="StudentsParentsRegisterDisplay.html">Search  Parents</a></li>
-                            <li><a href="StudentsParentsEditDisplay.html">Edit  Parents</a></li>
-                            <li><a href="StudentsParentsDeleteDisplay.html">Delete  Parents</a></li>
-
-                            <li><a href="StudentsMarksRegister.html">Register  Marks</a></li>
-                            <li><a href="StudentsMarksRegisterDisplay.html">Search  Marks</a></li>
-                            <li><a href="StudentsMarksEditDisplay.html">Edit  Marks</a></li>
-                            <li><a href="StudentsMarksDeleteDisplay.html">Delete  Marks</a></li>
-
-                            <li><a href="StudentsFeesRegister.html">Register  Fees</a></li>
-                            <li><a href="StudentsFeesRegisterDisplay.html">Search  Fees</a></li>
-                            <li><a href="StudentsFeesEditDisplay.html">Edit  Fees</a></li>
-                            <li><a href="StudentsFeesDeleteDisplay.html">Delete  Fees</a></li>
-
-                            <li><a href="StudentsAttendanceRegister.html">Register  Attendance</a></li>
-                            <li><a href="StudentsAttendanceRegisterDisplay.html">Search  Attendance</a></li>
-                            <li><a href="StudentsAttendanceEditDisplay.html">Edit  Attendance</a></li>
-                            <li><a href="StudentsAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
-
-                            <li><a href="StudentsVacationsRegister.html">Register  Vacations</a></li>
-                            <li><a href="StudentsVacationsRegisterDisplay.html">Search  Vacations</a></li>
-                            <li><a href="StudentsVacationsEditDisplay.html">Edit  Vacations</a></li>
-                            <li><a href="StudentsVacationsDeleteDisplay.html">Delete  Vacations</a></li>
-
-                            <li><a href="StudentsPaymentsRegister.html">Register  Payments</a></li>
-                            <li><a href="StudentsPaymentsRegisterDisplay.html">Search  Payments</a></li>
-                            <li><a href="StudentsPaymentsEditDisplay.html">Edit  Payments</a></li>
-                            <li><a href="StudentsPaymentsDeleteDisplay.html">Delete  Payments</a></li>
+    <div id="main-content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8 col-sm-12">                        
+                        <h2>TEACHERS DATA:</h2>
+                    </div>           
+                    <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
+                        <ul class="breadcrumb justify-content-end">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>                            
+                            <li class="breadcrumb-item">Forms</li>
+                            <li class="breadcrumb-item active">STUDENT DATA</li>
                         </ul>
-                    </li>
-                    
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>TEACHERS</span></a>
-                        <ul>
-                            <li><a href="TeachersDataRegister.html">Register  Data</a></li>
-                            <li><a href="TeachersDataRegisterDisplay.html">Search  Data</a></li>
-                            <li><a href="TeachersDataEditDisplay.html">Edit  Data</a></li>
-                            <li><a href="TeachersDataDeleteDisplay.html">Delete  Data</a></li>
- 
-                            <li><a href="TeachersTasksRegister.html">Register  Tasks</a></li>
-                            <li><a href="TeachersTasksRegisterDisplay.html">Search  Tasks</a></li>
-                            <li><a href="TeachersTasksEditDisplay.html">Edit  Tasks</a></li>
-                            <li><a href="TeachersTasksDeleteDisplay.html">Delete  Tasks</a></li>
+                    </div> -->
+                </div>
+            </div>
+             <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                      <!-- <div class="header">
+                            <h2>Basic Validation</h2>
+                        </div>  -->
+                        <div class="body ">
+                            <form id="basic-form" method="post" >
+                                
+                                <div class="row">
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER ROLL:</label>
+                                            <input type="text" name="TeacherRoll" placeholder="Teacher Roll" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER NAME:</label>
+                                            <input type="text" name="TeacherName" placeholder="Teacher Name" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER SCHOOL:</label>
+                                            <input type="text" name="TeacherSchool" placeholder="Teacher School" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                  </div>
 
-                            <li><a href="TeachersSalariesRegister.html">Register  Salaries</a></li>
-                            <li><a href="TeachersSalariesRegisterDisplay.html">Search  Salaries</a></li>
-                            <li><a href="TeachersSalariesEditDisplay.html">Edit  Salaries</a></li>
-                            <li><a href="TeachersSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER SEX:</label>
+                                            <input type="text" name="TeacherSex" placeholder="Teacher Sex" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER STAGE:</label>
+                                            <input type="text" name="TeacherStage" placeholder="Teacher Stage" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER SUBJECT:</label>
+                                            <input type="text" name="TeacherSubject" placeholder="Teacher Subject" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER NATIONALITY:</label>
+                                            <input type="text" name="TeacherNationality" placeholder="Teacher Nationality" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER ADDRESS:</label>
+                                            <input type="text" name="TeacherAddress" placeholder="Teacher Address" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER EMAIL:</label>
+                                            <input type="text" name="TeacherEmail" placeholder="Teacher Email" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <!-- <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER PHONE:</label>
+                                            <input type="text" name="TeacherPhone" placeholder="Teacher Phone" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER MOBILE:</label>
+                                            <input type="text" name="TeacherMobile" placeholder="Teacher Mobile" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER WHATSAPP:</label>
+                                            <input type="text" name="TeacherWhatsApp" placeholder="Teacher WhatsApp" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div> -->
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER REGION:</label>
+                                            <input type="text" name="TeacherRegion" placeholder="Teacher Region" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER CITY:</label>
+                                            <input type="text" name="TeacherCity" placeholder="Teacher City" value="" class="form-control" required>
+                                        </div> 
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHER DISTRICT:</label>
+                                            <input type="text" name="TeacherDistrict" placeholder="Teacher District" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
 
-                            <li><a href="TeachersAttendanceRegister.html">Register  Attendance</a></li>
-                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Attendance</a></li>
-                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Attendance</a></li>
-                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
 
-                            <li><a href="TeachersVacationsRegister.html">Register  Vacations</a></li>
-                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Vacations</a></li>
-                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Vacations</a></li>
-                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+                                
+                                  <!-- </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ID</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ROLL</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher NAME</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ID</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ROLL</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher NAME</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ID</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher ROLL</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>Teacher NAME</label>
+                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div> -->
 
-                            <li><a href="TeachersPaymentsRegister.html">Register  Payments</a></li>
-                            <li><a href="TeachersPaymentsRegisterDisplay.html">Search  Payments</a></li>
-                            <li><a href="TeachersPaymentsEditDisplay.html">Edit  Payments</a></li>
-                            <li><a href="TeachersPaymentsDeleteDisplay.html">Delete  Payments</a></li>
-                        </ul>
-                    </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>EMPLOYEES</span></a>
-                        <ul>
-                            <li><a href="EmployeeDataRegister.html">Register  Data</a></li>
-                            <li><a href="EmployeeDataRegisterDisplay.html">Search  Data</a></li>
-                            <li><a href="EmployeeDataEditDisplay.html">Edit  Data</a></li>
-                            <li><a href="EmployeeDataDeleteDisplay.html">Delete  Data</a></li>
- 
-                            <li><a href="EmployeeTasksRegister.html">Register  Tasks</a></li>
-                            <li><a href="EmployeeTasksRegisterDisplay.html">Search  Tasks</a></li>
-                            <li><a href="EmployeeTasksEditDisplay.html">Edit  Tasks</a></li>
-                            <li><a href="EmployeeTasksDeleteDisplay.html">Delete  Tasks</a></li>
+                                 
+                                
+                                <!-- <div class="form-group">
+                                    <label>Text Area</label>
+                                    <textarea class="form-control" rows="5" cols="30" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Checkbox</label>
+                                    <br/>
+                                    <label class="fancy-checkbox">
+                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                        <span>Option 1</span>
+                                    </label>
+                                    <label class="fancy-checkbox">
+                                        <input type="checkbox" name="checkbox">
+                                        <span>Option 2</span>
+                                    </label>
+                                    <label class="fancy-checkbox">
+                                        <input type="checkbox" name="checkbox">
+                                        <span>Option 3</span>
+                                    </label>
+                                    <p id="error-checkbox"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Radio Button</label>
+                                    <br />
+                                    <label class="fancy-radio">
+                                        <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
+                                        <span><i></i>Male</span>
+                                    </label>
+                                    <label class="fancy-radio">
+                                        <input type="radio" name="gender" value="female">
+                                        <span><i></i>Female</span>
+                                    </label>
+                                    <p id="error-radio"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="food">Multiselect</label>
+                                    <br/>
+                                    <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
+                                        <option value="cheese">Cheese</option>
+                                        <option value="tomatoes">Tomatoes</option>
+                                        <option value="mozarella">Mozzarella</option>
+                                        <option value="mushrooms">Mushrooms</option>
+                                        <option value="pepperoni">Pepperoni</option>
+                                        <option value="onions">Onions</option>
+                                    </select>
+                                    <p id="error-multiselect"></p>
+                                </div> -->
+                                <!-- <div class="card">
+                                    <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                                        <thead>
+                                            <tr>
+                                                <th>ISLAMIC:</th>
+                                                <th>ARABIC:</th>
+                                                <th>SOMALI:</th>
+                                                <th>ENGLISH:</th>
+                                                <th>MATHS:</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="IslamicEducation" placeholder="Islamic Education" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="ArabicLanguage" placeholder="Arabic Language" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="SomaliLanguage" placeholder="Somali Language" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="EnglishLanguage" placeholder="English Language" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="MathsScience" placeholder="Maths Science" value="" class="form-control" required>
+                                                </td>
+                                            </tr>
+                                            <thead>
+                                                <tr>
+                                                    <th>CHEMISTRY:</th>
+                                                    <th>PHYSICS:</th>
+                                                    <th>BIOLOGY:</th>
+                                                    <th>COMPUTER:</th>
+                                                    <th>SPORTS:</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="ChemistryScience" placeholder="Chemistry Science" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="PhysicsScience" placeholder="Physics Science" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="BiologyScience" placeholder="Biology Science" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="ComputerScience" placeholder="Computer Science" value="" class="form-control" required>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="SportEducation" placeholder="Sport Education" value="" class="form-control" required>
+                                                </td>
+                                            </tr>
 
-                            <li><a href="EmployeeSalariesRegister.html">Register  Salaries</a></li>
-                            <li><a href="EmployeeSalariesRegisterDisplay.html">Search  Salaries</a></li>
-                            <li><a href="EmployeeSalariesEditDisplay.html">Edit  Salaries</a></li>
-                            <li><a href="EmployeeSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+                                        
+                                        </tbody>
+                                    
+                                    </table>
+                               </div> -->
 
-                            <li><a href="EmployeeAttendanceRegister.html">Register  Attendance</a></li>
-                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Attendance</a></li>
-                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Attendance</a></li>
-                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+                                
+                                <button type="submit" class="btn btn-info">REGISTER TEACHER DATA</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Advanced Validation</h2>
+                        </div>
+                        <div class="body">
+                            <form id="advanced-form" data-parsley-validate novalidate>
+                                <div class="form-group ">
+                                    <label for="text-input1">Min. 8 Characters</label>
+                                    <input type="text" id="text-input1" class="form-control" required data-parsley-minlength="8">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text-input2">Between 5-10 Characters</label>
+                                    <input type="text" id="text-input2" class="form-control" required data-parsley-length="[5,10]">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text-input3">Min. Number ( >= 5 )</label>
+                                    <input type="text" id="text-input3" class="form-control" required data-parsley-min="5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text-input4">Between 20-30</label>
+                                    <input type="text" id="text-input4" class="form-control" required data-parsley-range="[20,30]">
+                                </div>
+                                <div class="form-group">
+                                    <label>Select Min. 2 Options</label>
+                                    <br />
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox2" required data-parsley-mincheck="2" data-parsley-errors-container="#error-checkbox2">
+                                        <span>Option 1</span>
+                                    </label>
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox2">
+                                        <span>Option 2</span>
+                                    </label>
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox2">
+                                        <span>Option 3</span>
+                                    </label>
+                                    <p id="error-checkbox2"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Select Between 1-2 Options</label>
+                                    <br />
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox3" required data-parsley-check="[1,2]" data-parsley-errors-container="#error-checkbox3">
+                                        <span>Option 1</span>
+                                    </label>
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox3">
+                                        <span>Option 2</span>
+                                    </label>
+                                    <label class="control-inline fancy-checkbox">
+                                        <input type="checkbox" name="checkbox3">
+                                        <span>Option 3</span>
+                                    </label>
+                                    <p id="error-checkbox3"></p>
+                                </div>
+                                <br/>
+                                <button type="submit" class="btn btn-primary">Validate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+            </div> 
 
-                            <li><a href="EmployeeVacationsRegister.html">Register  Vacations</a></li>
-                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Vacations</a></li>
-                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Vacations</a></li>
-                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
-
-                            <li><a href="EmployeePaymentsRegister.html">Register  Payments</a></li>
-                            <li><a href="EmployeePaymentsRegisterDisplay.html">Search  Payments</a></li>
-                            <li><a href="EmployeePaymentsEditDisplay.html">Edit  Payments</a></li>
-                            <li><a href="EmployeePaymentsDeleteDisplay.html">Delete  Payments</a></li>
-                        </ul>
-                    </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>LABORERS</span></a>
-                        <ul>
-                            <li><a href="LaborerDataRegister.html">Register  Data</a></li>
-                            <li><a href="LaborerDataRegisterDisplay.html">Search  Data</a></li>
-                            <li><a href="LaborerDataEditDisplay.html">Edit  Data</a></li>
-                            <li><a href="LaborerDataDeleteDisplay.html">Delete  Data</a></li>
- 
-                            <li><a href="LaborerTasksRegister.html">Register  Tasks</a></li>
-                            <li><a href="LaborerTasksRegisterDisplay.html">Search  Tasks</a></li>
-                            <li><a href="LaborerTasksEditDisplay.html">Edit  Tasks</a></li>
-                            <li><a href="LaborerTasksDeleteDisplay.html">Delete  Tasks</a></li>
-
-                            <li><a href="LaborerSalariesRegister.html">Register  Salaries</a></li>
-                            <li><a href="LaborerSalariesRegisterDisplay.html">Search  Salaries</a></li>
-                            <li><a href="LaborerSalariesEditDisplay.html">Edit  Salaries</a></li>
-                            <li><a href="LaborerSalariesDeleteDisplay.html">Delete  Salaries</a></li>
-
-                            <li><a href="LaborerAttendanceRegister.html">Register  Attendance</a></li>
-                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Attendance</a></li>
-                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Attendance</a></li>
-                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
-
-                            <li><a href="LaborerVacationsRegister.html">Register  Vacations</a></li>
-                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Vacations</a></li>
-                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Vacations</a></li>
-                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
-
-                            <li><a href="LaborerPaymentsRegister.html">Register  Payments</a></li>
-                            <li><a href="LaborerPaymentsRegisterDisplay.html">Search  Payments</a></li>
-                            <li><a href="LaborerPaymentsEditDisplay.html">Edit  Payments</a></li>
-                            <li><a href="LaborerPaymentsDeleteDisplay.html">Delete  Payments</a></li>
-                        </ul>
-                    </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>DRIVERS</span></a>
-                        <ul>
-                            <li><a href="DriverDataRegister.html">Register  Data</a></li>
-                            <li><a href="DriverDataRegisterDisplay.html">Search  Data</a></li>
-                            <li><a href="DriverDataEditDisplay.html">Edit  Data</a></li>
-                            <li><a href="DriverDataDeleteDisplay.html">Delete  Data</a></li>
- 
-                            <li><a href="DriverTasksRegister.html">Register  Tasks</a></li>
-                            <li><a href="DriverTasksRegisterDisplay.html">Search  Tasks</a></li>
-                            <li><a href="DriverTasksEditDisplay.html">Edit  Tasks</a></li>
-                            <li><a href="DriverTasksDeleteDisplay.html">Delete  Tasks</a></li>
-
-                            <li><a href="DriverSalariesRegister.html">Register  Salaries</a></li>
-                            <li><a href="DriverSalariesRegisterDisplay.html">Search  Salaries</a></li>
-                            <li><a href="DriverSalariesEditDisplay.html">Edit  Salaries</a></li>
-                            <li><a href="DriverSalariesDeleteDisplay.html">Delete  Salaries</a></li>
-
-                            <li><a href="DriverAttendanceRegister.html">Register  Attendance</a></li>
-                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Attendance</a></li>
-                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Attendance</a></li>
-                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
-
-                            <li><a href="DriverVacationsRegister.html">Register  Vacations</a></li>
-                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Vacations</a></li>
-                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Vacations</a></li>
-                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
-
-                            <li><a href="DriverPaymentsRegister.html">Register  Payments</a></li>
-                            <li><a href="DriverPaymentsRegisterDisplay.html">Search  Payments</a></li>
-                            <li><a href="DriverPaymentsEditDisplay.html">Edit  Payments</a></li>
-                            <li><a href="DriverPaymentsDeleteDisplay.html">Delete  Payments</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>PERIODS</span></a>
-                        <ul>
-                            <li><a href="PeriodsRegister.html">Register  periods</a></li>
-                            <li><a href="PeriodsRegisterDisplay.html">Search  periods</a></li>
-                            <li><a href="PeriodsEditDisplay.html">Edit  periods</a></li>
-                            <li><a href="PeriodsDeleteDisplay.html">Delete  periods</a></li>
- 
-                        </ul>
-                    </li>
-
-                  
-                   
-                    <!-- <li>
-                        <a href="#FileManager" class="has-arrow"><i class="icon-user"></i><span>ATTENDANCE </span></a>
-                        <ul>                                    
-                            <li><a href="#">Register Attendance</a></li>
-                            <li><a href="#">Search Attendance</a></li>
-                            <li><a href="#">Edit Attendance</a></li>
-                            <li><a href="#">Delete Attendance</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#Blog" class="has-arrow"><i class="icon-user"></i><span>VACATIONS </span></a>
-                        <ul>
-                            <li><a href="#">Register Vacations</a></li>
-                            <li><a href="#">Search Vacations</a></li>
-                            <li><a href="#">Edit Vacations</a></li>
-                            <li><a href="#">Delete Vacations</a></li>
-                        </ul>
-                    </li>
-                    <li class="top">
-                        <a href="#Authentication" class="has-arrow"><i class="icon-folder"></i><span>FEES </span></a>
-                        <ul>
-                            <li><a href="#">Register Fees</a></li>
-                            <li><a href="#">Search Fees</a></li>
-                            <li><a href="#">Edit Fees</a></li>
-                            <li><a href="#">Delete Fees</a></li>
-                        </ul>
-                    </li>
-                    <li class="top">
-                        <a href="#Maps" class="has-arrow"><i class="icon-folder"></i> <span>SALARIES </span></a>
-                        <ul>
-                            <li><a href="#">Register Salaries</a></li>
-                            <li><a href="#">Search Salaries</a></li>
-                            <li><a href="#">Edit Salaries</a></li>
-                            <li><a href="#">Delete Salaries</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li class="heading">SECURITIES</li> -->
-                    <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>RESULTS </span></a>
-                        <ul>
-                            <li><a href="UserDataRegister.html">Successfull Students</a></li>
-                            <li><a href="UserDataRegisterDisplay.html">Usuccessfull Students</a></li>
-                        </ul>
-                    </li> 
-                    <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>BUSES </span></a>
-                        <ul>
-                            <li><a href="UserDataRegister.html">Register Buses</a></li>
-                            <li><a href="UserDataRegisterDisplay.html">Search Buses</a></li>
-                            <li><a href="UserDataEditDisplay.html">Edit Buses</a></li>
-                            <li><a href="UserDataDeleteDisplay.html">Delete Buses</a></li>
-                        </ul>
-                    </li> 
-                    <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>USERS </span></a>
-                        <ul>
-                            <li><a href="UserDataRegister.html">Register Users</a></li>
-                            <li><a href="UserDataRegisterDisplay.html">Search Users</a></li>
-                            <li><a href="UserDataEditDisplay.html">Edit Users</a></li>
-                            <li><a href="UserDataDeleteDisplay.html">Delete Users</a></li>
-                        </ul>
-                    </li> 
-                    <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>SETTINGS </span></a>
-                        <ul>
-                            <li><a href="SystemSettingsRegister.html">Register Settings</a></li>
-                            <li><a href="SystemSettingsRegisterDisplay.html">Search Settings</a></li>
-                            <li><a href="SystemSettingsEditDisplay.html">Edit Settings</a></li>
-                            <li><a href="SystemSettingsDeleteDisplay.html">Delete Settings</a></li>
-                        </ul>
-                    </li>                            
-                </ul>
-            </nav>
+            
+           
+            
         </div>
     </div>
     

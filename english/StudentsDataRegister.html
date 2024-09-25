@@ -962,7 +962,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT CLASS:</label>
-                                            <select name="StudentClass" placeholder="Student Class" value="" height="10" class="form-control"  required>
+                                            <select name="StudentClass" id=="StudentClass" placeholder="Student Class" value="" height="10" class="form-control"  required>
                                                 <option value="" selected="" disabled="" >Student Class</option>
                                                 <option value="	Class A	">	Class A	</option>
                                                 <option value="	Class B	">	Class B	</option>
@@ -1394,7 +1394,7 @@
   }
   // GOBOLADA
   // CLASSES
-  $("select").on("click", "option", function () {
+  $("StudentClass").on("click", "option", function () {
     if ( 3 <= $(this).siblings(":selected").length ) {
         $(this).removeAttr("selected");
     }

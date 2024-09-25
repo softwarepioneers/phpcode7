@@ -917,7 +917,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName" autofocus maxlength="28" placeholder="Student Name" value="" class="form-control" required>
+                                            <input type="text" name="StudentName" autofocus maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
@@ -962,36 +962,10 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT CLASS:</label>
-                                            <input List="Classes" name="StudentClass" placeholder="Student Class" value="" class="form-control" required>
-                                            <datalist id="Classes">
-                                                    <option value="	Class A	">
-                                                    <option value="	Class B	">
-                                                    <option value="	Class C	">
-                                                    <option value="	Class D	">
-                                                    <option value="	Class E	">
-                                                    <option value="	Class F	">
-                                                    <option value="	Class G	">
-                                                    <option value="	Class H	">
-                                                    <option value="	Class I	">
-                                                    <option value="	Class J	">
-                                                    <option value="	Class K	">
-                                                    <option value="	Class L	">
-                                                    <option value="	Class M	">
-                                                    <option value="	Class N	">
-                                                    <option value="	Class O	">
-                                                    <option value="	Class P	">
-                                                    <option value="	Class Q	">
-                                                    <option value="	Class R	">
-                                                    <option value="	Class S	">
-                                                    <option value="	Class T	">
-                                                    <option value="	Class U	">
-                                                    <option value="	Class V	">
-                                                    <option value="	Class W	">
-                                                    <option value="	Class X	">
-                                                    <option value="	Class Y	">
-                                                    <option value="	Class X	">
-                                                    
-                                            </datalist>
+                                            <select name="StudentClass" id="StudentClass" value="" class="form-control" required ">
+                                                <option value="" selected="" disabled="" >Student Class</option>
+                                            </select>
+                                            
                                             <!-- <select name="StudentClass"  autocomplete="on" id="StudentClass" placeholder="Student Class" value="" height="10" class="form-control"  required>
                                                 <option value="" selected="" disabled="" >Student Class</option>
                                                 
@@ -1007,138 +981,22 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NATIONALITY:</label>
-                                            <input List="Nationality" name="StudentNationality" placeholder="Student Nationality" value="" class="form-control" required>
-                                            <datalist id="Nationality">
-                                                <option value="	Afghanistan	">
-                                                    <option value="	Algeria	">
-                                                    <option value="	Andorra	">
-                                                    <option value="	Angola	">
-                                                    <option value="	Anguilla">
-                                                    <option value="	Antigua	">
-                                                    <option value="	Argentina">	
-                                                    <option value="	Armenia	">
-                                                    <option value="	Aruba	">
-                                                    <option value="	Australia">
-                                                    <option value="	Azerbaijan">
-                                                    <option value="	Bahrain	">
-                                                    <option value="	Bangladesh">
-                                                    <option value="	Belgium	">
-                                                    <option value="	Belize	">
-                                                    <option value="	Benin	">
-                                                    <option value="	Bermuda	">
-                                                    <option value="	Bhutan	">
-                                                    <option value="	Bolivia ">
-                                                    <option value="	Botswana">
-                                                    <option value="	British ">	
-                                                    <option value="	Brunei	">
-                                                    <option value="	Bulgaria">
-                                                    <option value="	Burundi	">
-                                                    <option value="	Byelorussia">
-                                                    <option value="	Cambodia">
-                                                    <option value="	Cape Verde">
-                                                    <option value="	Chile">
-                                                    <option value="	China">
-                                                    <option value="	Colombia">
-                                                    <option value="	Costa Rica">
-                                                    <option value="	Cuba">
-                                                    <option value="	Cyprus">
-                                                    <option value="	Denmark">
-                                                    <option value="	Djibouti">
-                                                    <option value="	Egypt">
-                                                    <option value="	El Salvador">
-                                                    <option value="	Estonia	">
-                                                    <option value="	Ethiopia">
-                                                    <option value="	Finland	">
-                                                    <option value="	France	">
-                                                    <option value="	Gabon	">
-                                                    <option value="	Gambia	">
-                                                    <option value="	Georgia	">
-                                                    <option value="	Germany	">
-                                                    <option value="	Ghana	">
-                                                    <option value="	Greece	">
-                                                    <option value="	Grenada	">
-                                                    <option value="	Guadeloupe	">
-                                                    <option value="	Guyana	">
-                                                    <option value="	Haiti	">
-                                                    <option value="	Holland	">
-                                                    <option value="	Honduras	">
-                                                    <option value="	Iceland	">
-                                                    <option value="	India	">
-                                                    <option value="	Indonesia	">
-                                                    <option value="	Iraq	">
-                                                    <option value="	Ireland	">
-                                                    <option value="	Israel	">
-                                                    <option value="	Italy	">
-                                                    <option value="	Jamaica	">
-                                                    <option value="	Japan	">
-                                                    <option value="	Jordan	">
-                                                    <option value="	Kampuchea	">
-                                                    <option value="	Kiribati	">
-                                                    <option value="	Kuwait	">
-                                                    <option value="	Laos	">
-                                                    <option value="	Latvia	">
-                                                    <option value="	Lebanon	">
-                                                    <option value="	Lesotho	">
-                                                    <option value="	Liberia	">
-                                                    <option value="	Libya	">
-                                                    <option value="	Lithuania	">
-                                                    <option value="	Macedonia	">
-                                                    <option value="	Malaysia	">
-                                                    <option value="	Malta	">
-                                                    <option value="	Martinique	">
-                                                    <option value="	Monaco	">
-                                                    <option value="	Mongolia	">
-                                                    <option value="	Mozambique	">
-                                                    <option value="	Nauru	">
-                                                    <option value="	Nepal	">
-                                                    <option value="	Netherlands	">
-                                                    <option value="	Nigeria 	">
-                                                    <option value="	North Korea	">
-                                                    <option value="	Oman	">
-                                                    <option value="	Pakistan	">
-                                                    <option value="	Paraguay	">
-                                                    <option value="	Philippines	">
-                                                    <option value="	Portugal	">
-                                                    <option value="	Romania	">
-                                                    <option value="	Russia	">
-                                                    <option value="	Rwanda	">
-                                                    <option value="	San Marino	">
-                                                    <option value="	Senegal	">
-                                                    <option value="	Seychelles	">
-                                                    <option value="	Singapore	">
-                                                    <option value="	Somaliland	">
-                                                    <option value="	South Korea	">
-                                                    <option value="	Spain	">
-                                                    <option value="	Sri Lanka	">
-                                                    <option value="	Suriname	">
-                                                    <option value="	Switzerland	">
-                                                    <option value="	Taiwan	">
-                                                    <option value="	Tanzania	">
-                                                    <option value="	Tonga	">
-                                                    <option value="	Tunisia	">
-                                                    <option value="	Turkey	">
-                                                    <option value="	Uganda	">
-                                                    <option value="	Ukraine  	">
-                                                    <option value="	Uzebekistan	">
-                                                    <option value="	Yemen	">
-                                                    <option value="	Yugoslavia	">
-                                                    <option value="	Zambia	">
-                                                    <option value="	Zimbabwe	">
-                                                  
-                                            </datalist>
+                                            <select name="StudentNationality" id="StudentNationality" value="" class="form-control" required ">
+                                                <option value="" selected="" disabled="" >Student Nationality</option>
+                                            </select>
                                             
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" required>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT WHATSAPP:</label>
-                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" required>
+                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                                         </div>
                                     </div>
                                    

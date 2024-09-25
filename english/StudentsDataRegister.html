@@ -924,7 +924,6 @@
                                         <div class="form-group ">
                                             <label>STUDENT REGISTRATION:</label>
                                             <input type="text" placeholder="Student Registration" value="" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-                                            <!-- <input type="date" name="StudentRegistration" placeholder="Student Registration" value="" class="form-control" required> -->
                                         </div>
                                     </div>
                                     <div class="col">
@@ -942,13 +941,22 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT SCHOOL:</label>
-                                            <input type="text" name="StudentSchool" placeholder="Student School" value="" class="form-control" required>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="SALAAMA SCHOOLS">SALAAMA SCHOOLS</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT STAGE:</label>
-                                            <input type="text" name="StudentStage" placeholder="Student Stage" value="" class="form-control" required>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="Kindergarten"     >Kindergarten</option>
+                                                <option value="Primary"          >Primary</option>
+                                                <option value="Preparatory"      >Preparatory</option>
+                                                <option value="Secondary"        >Secondary</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col">

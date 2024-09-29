@@ -918,13 +918,13 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control"  required>
+                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT REGISTRATION DATE:</label>
-                                            <input type="date" name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  required>
+                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  /> 
                                         </div>
                                     </div>
                                     <div class="col">
@@ -990,13 +990,13 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control"  required>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT WHATSAPP:</label>
-                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control"  required>
+                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                    
@@ -1034,6 +1034,7 @@
                                  
                                   </div>
                                    
+                                                               
                               
                               
                                 <button type="submit" class="btn btn-info">REGISTER STUDENT DATA</button>

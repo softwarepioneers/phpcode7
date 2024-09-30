@@ -913,91 +913,82 @@
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT NAME:</label>
-                                            <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
+                                            <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT REGISTRATION DATE:</label>
-                                            <input type="text" name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  /> 
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT TYPE:</label>
                                             <select name="ParentType" placeholder="Parent Type" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >Parent Type</option>
-                                                <option value="Male">FATHER</option>
-                                                <option value="Female">MOTHER</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
                                             </select>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row">
-
+                                  </div>
+                                  <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT EMAIL:</label>
-                                            <input type="text" name="ParentEmail"  maxlength="28" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
+                                            <label>PARENT SCHOOL:</label>
+                                            <select name="ParentSchool" placeholder="Parent School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT MOBILE:</label>
-                                            <input type="text" name="ParentMobile" placeholder="Parent Mobile" value="" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                                            <label>PARENT STAGE:</label>
+                                            <select name="ParentStage" placeholder="Parent Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent Stage</option>
+                                                <option value="Kindergarten"     >Kindergarten</option>
+                                                <option value="Primary"          >Primary</option>
+                                                <option value="Preparatory"      >Preparatory</option>
+                                                <option value="Secondary"        >Secondary</option>
+                                            </select>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT PHONE:</label>
-                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                                            <label>PARENT CLASS:</label>
+                                            <input type="text" name="ParentClass"  maxlength="28" placeholder="Parent Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
                                         </div>
                                     </div>
-
-                                </div>
-
-                                
-
-                                <div class="row">
-
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT WHATSAPP:</label>
-                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
-                                        </div>
-                                    </div>
-
+                                   
+                                  </div>
+                                  <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT NATIONALITY:</label>
-                                            <select name="ParentNationality" id="ParentNationality" value="" class="form-control" required ">
-                                                <option value="" selected="" disabled="" >Parent Nationality</option>
-                                                <option value="Somaliland">Somaliland</option>
-                                                <option value="Others">Others</option>
-                                            </select>
+                                            <input type="text" name="ParentNationality"  maxlength="28" placeholder="Parent Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT ADDRESS:</label>
-                                            <input type="text" name="ParentAddress"  maxlength="28" placeholder="Parent Address" value="" class="form-control" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
-                                           
+                                            <label>PARENT PHONE:</label>
+                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>PARENT WHATSAPP:</label>
+                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
                                   
-                                <div class="row">
-
+                                  <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT REGION:</label>
@@ -1007,7 +998,6 @@
                                            
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT CITY:</label>
@@ -1017,7 +1007,6 @@
                                             
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT DISTRICT:</label>
@@ -1029,7 +1018,9 @@
                                     </div>
                                    
                                  
-                                </div>
+                                  </div>
+                                   
+
                                    
                                                          
                                 <button type="submit" class="btn btn-danger">DELETE PARENTS DATA</button>

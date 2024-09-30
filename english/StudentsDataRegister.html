@@ -953,24 +953,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT CLASS:</label>
-                                            <select id="multiselect4-filter" name="multiselect4[]" class="multiselect multiselect-custom" multiple="multiple">
-                                                <option value="bootstrap">Bootstrap</option>
-                                                <option value="bootstrap-marketplace">Bootstrap Marketplace</option>
-                                                <option value="bootstrap-theme">Bootstrap Theme</option>
-                                                <option value="html">HTML</option>
-                                                <option value="html-template">HTML Template</option>
-                                                <option value="wp-marketplace">WordPress Marketplace</option>
-                                                <option value="wp-plugin">WordPress Plugin</option>
-                                                <option value="wp-theme">WordPress Theme</option>
-                                            </select>
-                                            <!-- <select name="StudentClass" id="StudentClass" value="" class="form-control" required ">
-                                                <option value="" selected="" disabled="" >Student Class</option>
-                                                <option value="Class A"     >Class A</option>
-                                                <option value="Class B"          >Class B</option>
-                                                <option value="Class C"      >Class C</option>
-                                                <option value="Class D"        >Class D</option>
-                                            </select> -->
-                                                                
+                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
                                         </div>
                                     </div>
                                    
@@ -979,12 +962,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NATIONALITY:</label>
-                                            <select name="StudentNationality" id="StudentNationality" value="" class="form-control" required ">
-                                                <option value="" selected="" disabled="" >Student Nationality</option>
-                                                <option value="Somaliland">Somaliland</option>
-                                                <option value="Others">Others</option>
-                                            </select>
-                                            
+                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
                                         </div>
                                     </div>
                                     <div class="col">

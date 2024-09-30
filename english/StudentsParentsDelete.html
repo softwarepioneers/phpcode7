@@ -916,13 +916,13 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT NAME:</label>
-                                            <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />
+                                            <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  /> 
+                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
                                     <div class="col">
@@ -939,29 +939,20 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT SCHOOL:</label>
-                                            <select name="ParentSchool" placeholder="Parent School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Parent School</option>
-                                                <option value="Salaama School">Salaama School</option>
-                                            </select>
+                                            <label>PARENT MOBILE:</label>
+                                            <input type="text" name="ParentMobile" placeholder="Parent Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT STAGE:</label>
-                                            <select name="ParentStage" placeholder="Parent Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Parent Stage</option>
-                                                <option value="Kindergarten"     >Kindergarten</option>
-                                                <option value="Primary"          >Primary</option>
-                                                <option value="Preparatory"      >Preparatory</option>
-                                                <option value="Secondary"        >Secondary</option>
-                                            </select>
+                                            <label>PARENT EMAIL:</label>
+                                            <input type="text" name="ParentEmail"  maxlength="90" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT CLASS:</label>
-                                            <input type="text" name="ParentClass"  maxlength="28" placeholder="Parent Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
+                                            <label>PARENT ADDRESS:</label>
+                                            <input type="text" name="ParentAddress"  maxlength="90" placeholder="Parent Address" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                    
@@ -970,7 +961,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT NATIONALITY:</label>
-                                            <input type="text" name="ParentNationality"  maxlength="28" placeholder="Parent Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required />                    
+                                            <input type="text" name="ParentNationality"  maxlength="28" placeholder="Parent Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                     <div class="col">

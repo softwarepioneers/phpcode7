@@ -915,42 +915,44 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT ID:</label>
-                                            <input type="text" name="ParentId" placeholder="Parent Id" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT ROLL:</label>
-                                            <input type="text" name="ParentRoll" placeholder="Parent Roll" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
                                             <label>PARENT NAME:</label>
-                                            <input type="text" name="ParentName" placeholder="Parent Name" value="" class="form-control" required>
+                                            <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
-                                   
-                                  </div>
-
-                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>PARENT REGISTRATION DATE:</label>
+                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT TYPE:</label>
-                                            <input type="text" name="ParentType" placeholder="Parent Type" value="" class="form-control" required>
+                                            <select name="ParentType" placeholder="Parent Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent Type</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>PARENT MOBILE:</label>
+                                            <input type="text" name="ParentMobile" placeholder="Parent Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT USER:</label>
-                                            <input type="text" name="ParentUser" placeholder="Parent User" value="" class="form-control" required>
+                                            <label>PARENT EMAIL:</label>
+                                            <input type="text" name="ParentEmail"  maxlength="90" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT PASSWORD:</label>
-                                            <input type="text" name="ParentPassword" placeholder="Parent Password" value="" class="form-control" required>
+                                            <label>PARENT ADDRESS:</label>
+                                            <input type="text" name="ParentAddress"  maxlength="90" placeholder="Parent Address" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                    
@@ -959,244 +961,56 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT NATIONALITY:</label>
-                                            <input type="text" name="ParentNationality" placeholder="Parent Nationality" value="" class="form-control" required>
+                                            <input type="text" name="ParentNationality"  maxlength="28" placeholder="Parent Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT ADDRESS:</label>
-                                            <input type="text" name="ParentAddress" placeholder="Parent Address" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT EMAIL:</label>
-                                            <input type="text" name="ParentEmail" placeholder="Parent Email" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <!-- <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT PHONE:</label>
-                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT MOBILE:</label>
-                                            <input type="text" name="ParentMobile" placeholder="Parent Mobile" value="" class="form-control" required>
+                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT WHATSAPP:</label>
-                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" required>
+                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                    
-                                  </div> -->
+                                  </div>
+                                  
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT REGION:</label>
-                                            <input type="text" name="ParentRegion" placeholder="Parent Region" value="" class="form-control" required>
+                                            <select name="ParentRegion" id="subject" placeholder="Parent Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent Region</option>
+                                            </select>
+                                           
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT CITY:</label>
-                                            <input type="text" name="ParentCity" placeholder="Parent City" value="" class="form-control" required>
-                                        </div> 
+                                            <select name="ParentCity" id="topic" placeholder="Parent Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent City</option>
+                                            </select>
+                                            
+                                        </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT DISTRICT:</label>
-                                            <input type="text" name="ParentDistrict" placeholder="Parent District" value="" class="form-control" required>
+                                            <select name="ParentDistrict" id="chapter" placeholder="Parent chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Parent District</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
                                    
-                                  </div>
-
-
-                                
-                                  <!-- </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Parent NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div> -->
-
                                  
-                                
-                                <!-- <div class="form-group">
-                                    <label>Text Area</label>
-                                    <textarea class="form-control" rows="5" cols="30" required></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Checkbox</label>
-                                    <br/>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Option 1</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 2</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 3</span>
-                                    </label>
-                                    <p id="error-checkbox"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Radio Button</label>
-                                    <br />
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
-                                        <span><i></i>Male</span>
-                                    </label>
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="female">
-                                        <span><i></i>Female</span>
-                                    </label>
-                                    <p id="error-radio"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="food">Multiselect</label>
-                                    <br/>
-                                    <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
-                                        <option value="cheese">Cheese</option>
-                                        <option value="tomatoes">Tomatoes</option>
-                                        <option value="mozarella">Mozzarella</option>
-                                        <option value="mushrooms">Mushrooms</option>
-                                        <option value="pepperoni">Pepperoni</option>
-                                        <option value="onions">Onions</option>
-                                    </select>
-                                    <p id="error-multiselect"></p>
-                                </div> -->
-                                <!-- <div class="card">
-                                    <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
-                                        <thead>
-                                            <tr>
-                                                <th>ISLAMIC:</th>
-                                                <th>ARABIC:</th>
-                                                <th>SOMALI:</th>
-                                                <th>ENGLISH:</th>
-                                                <th>MATHS:</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="IslamicEducation" placeholder="Islamic Education" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ArabicLanguage" placeholder="Arabic Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SomaliLanguage" placeholder="Somali Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="EnglishLanguage" placeholder="English Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="MathsScience" placeholder="Maths Science" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-                                            <thead>
-                                                <tr>
-                                                    <th>CHEMISTRY:</th>
-                                                    <th>PHYSICS:</th>
-                                                    <th>BIOLOGY:</th>
-                                                    <th>COMPUTER:</th>
-                                                    <th>SPORTS:</th>
-                                                </tr>
-                                            </thead>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="ChemistryScience" placeholder="Chemistry Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="PhysicsScience" placeholder="Physics Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="BiologyScience" placeholder="Biology Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ComputerScience" placeholder="Computer Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SportEducation" placeholder="Sport Education" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-
-                                        
-                                        </tbody>
-                                    
-                                    </table>
-                               </div> -->
-
+                                  </div>
+                            
                                
                                 <button type="submit" class="btn btn-info">EDIT PARENTS DATA</button>
                             </form>

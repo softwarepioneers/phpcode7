@@ -1014,13 +1014,9 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT FEES REMARK:</label>
-                                            <select name="StudentFeeRemark" placeholder="Student Fee Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Fee Remark</option>
-                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
-                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
-                                            </select>
-                                        </div>
+                                            <label>STUDENT FEES AMOUT:</label>
+                                            <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div> 
                                     </div>
                                    
                                   </div>

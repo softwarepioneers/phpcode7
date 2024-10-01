@@ -922,10 +922,16 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>METHODN PAYMENT:</label>
+                                            <select name="MethodPayment" placeholder="Method Payment" value=""  class="form-control" required></select>
+                                                <option value="" selected="" disabled="" >Method Payment</option>
+                                                <option value="CASH">CASH</option>
+                                                <option value="E-CADH">E-CADH</option>
+                                            </select>
+                                            <input type="text" name="MethodPayment"  maxlength="28" placeholder="Method Payment" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
+                                   
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT TYPE:</label>
@@ -994,14 +1000,14 @@
                                         <div class="form-group ">
                                             <label>STUDENT FEES DATE:</label>
                                             <input  type="text"  name="StudentFeeDate" placeholder="Student Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                            <!-- <input type="text" name="StudentFeeDate" placeholder="Student Fee Date" value="" class="form-control" required> -->
+                                          
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT FEES AMOUT:</label>
                                             <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-                                            <!-- <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" required> -->
+                                           
                                         </div> 
                                     </div>
                                     

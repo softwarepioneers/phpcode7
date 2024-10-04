@@ -919,7 +919,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName" placeholder="Student Name" value="" class="form-control" required>
+                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
 
@@ -969,25 +969,31 @@
                                   </div>
 
                                   <div class="row">
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT SCHOOL:</label>
-                                            <input type="text" name="StudentSchool" placeholder="Student School" value="" class="form-control" required>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT STAGE:</label>
-                                            <input type="text" name="StudentStage" placeholder="Student Stage" value="" class="form-control" required>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="Kindergarten"     >Kindergarten</option>
+                                                <option value="Primary"          >Primary</option>
+                                                <option value="Preparatory"      >Preparatory</option>
+                                                <option value="Secondary"        >Secondary</option>
+                                            </select>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT CLASS:</label>
-                                            <input type="text" name="StudentClass" placeholder="Student Class" value="" class="form-control" required>
+                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                    
@@ -1025,7 +1031,7 @@
                                                 
                                             </div>
                                         </div>  
-                                                                         
+
                                   </div>
 
                                 <button type="submit" class="btn btn-info">REGISTER STUDENT ATTENDANCE</button>

@@ -922,6 +922,16 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
+                                            <label>STUDENT TYPE:</label>
+                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Type</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
                                             <label>METHOD PAYMENT:</label>
                                             <select name="MethodPayment" placeholder="Method Payment" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >Method Payment</option>
@@ -931,18 +941,38 @@
                                                                
                                         </div>
                                     </div>
-                                   
+                                  </div>
+
+                                  <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT TYPE:</label>
-                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
+                                            <label>STUDENT FEE DATE:</label>
+                                            <input  type="text"  name="StudentFeeDate" placeholder="Student Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT FEE AMOUT:</label>
+                                            <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                           
+                                        </div> 
+                                    </div>
+                                    
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT FEE REMARK:</label>
+                                            <select name="StudentFeeRemark" placeholder="Student Fee Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Fee Remark</option>
+                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
+                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
                                             </select>
                                         </div>
                                     </div>
+                                   
                                   </div>
+
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
@@ -994,37 +1024,7 @@
                                     </div>
                                    
                                   </div>
-                                
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT FEE DATE:</label>
-                                            <input  type="text"  name="StudentFeeDate" placeholder="Student Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                          
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT FEE AMOUT:</label>
-                                            <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-                                           
-                                        </div> 
-                                    </div>
-                                    
-
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT FEE REMARK:</label>
-                                            <select name="StudentFeeRemark" placeholder="Student Fee Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Fee Remark</option>
-                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
-                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-
+                            
                                 
                                 <button type="submit" class="btn btn-danger">DELETE STUDENT PAYMENTS</button>
                                 <button type="reset" class="btn btn-danger">RESET STUDENT PAYMENTS</button>

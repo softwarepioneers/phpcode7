@@ -919,12 +919,7 @@
                                             <input type="text" name="ParentName"  maxlength="28" placeholder="Parent Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>PARENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                        </div>
-                                    </div>
+                                   
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT TYPE:</label>
@@ -933,6 +928,12 @@
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>PARENT PHONE:</label>
+                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                   </div>
@@ -945,16 +946,17 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT EMAIL:</label>
-                                            <input type="text" name="ParentEmail"  maxlength="90" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>PARENT WHATSAPP:</label>
+                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT ADDRESS:</label>
-                                            <input type="text" name="ParentAddress"  maxlength="90" placeholder="Parent Address" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>PARENT EMAIL:</label>
+                                            <input type="text" name="ParentEmail"  maxlength="90" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
+                                   
                                    
                                   </div>
                                   <div class="row">
@@ -966,16 +968,18 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT PHONE:</label>
-                                            <input type="text" name="ParentPhone" placeholder="Parent Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>PARENT ADDRESS:</label>
+                                            <input type="text" name="ParentAddress"  maxlength="90" placeholder="Parent Address" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>PARENT WHATSAPP:</label>
-                                            <input type="text" name="ParentWhatsApp" placeholder="Parent WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>PARENT REGISTRATION DATE:</label>
+                                            <input  type="text"  name="ParentRegistrationDate" placeholder="Parent Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
+                                   
+                                 
                                    
                                   </div>
                                   

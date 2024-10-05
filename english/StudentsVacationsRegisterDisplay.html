@@ -9,23 +9,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="description" content="Mplify Bootstrap 4.1.1 Admin Template">
 <meta name="author" content="ThemeMakker, design by: ThemeMakker.com">
+
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
 <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../assets/vendor/animate-css/animate.min.css">
 <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="../assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
+<link rel="stylesheet" href="../assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
+
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/color_skins.css">
-<style>
-    td.details-control {
-    background: url('../assets/images/details_open.png') no-repeat center center;
-    cursor: pointer;
-}
-    tr.shown td.details-control {
-        background: url('../assets/images/details_close.png') no-repeat center center;
-    }
-</style>
 </head>
 <body class="theme-blue">
 
@@ -59,14 +56,11 @@
                         </div>                        
                         <a href="javascript:void(0);" class="btn-toggle-fullwidth btn-toggle-hide"><i class="fa fa-bars"></i></a>
                     </li>
-
                     <!-- <li>
                         <form id="navbar-search" class="navbar-form search-form">
                             <input value="" class="form-control" placeholder="Search here..." type="text">
                             <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
                         </form>
-
-                       
                     </li> -->
                     <li>
                         <div id="navbar-menu">
@@ -138,8 +132,8 @@
                                         </li>
                                         <li class="footer"><a href="javascript:void(0);" class="more">See all notifications</a></li>
                                     </ul>
-                                </li> -->
-                                <!-- <li class="dropdown">
+                                </li>
+                                <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown"><i class="icon-flag"></i><span class="notification-dot"></span></a>
                                     <ul class="dropdown-menu animated bounceIn task">
                                         <li class="header"><strong>Project</strong></li>
@@ -189,8 +183,8 @@
                                         </li>
                                         <li class="footer"><a href="javascript:void(0);">View All</a></li>
                                     </ul>
-                                </li> -->
-                                <!-- <li class="dropdown">
+                                </li>
+                                <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                     <ul class="dropdown-menu animated flipInX choose_language">                                        
                                         <li><a href="javascript:void(0);">English</a></li>
@@ -235,6 +229,7 @@
             </div>
         </div>
     </nav>
+
     <br>
     <div id="leftsidebar" class="sidebar">
         <div class="sidebar-scroll">
@@ -250,105 +245,192 @@
                     <li class="middle">
                         <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>STUDENTS</span></a>
                         <ul>
-                            <li><a href="#">Register  Students</a></li>
-                            <li><a href="#">Search  Students</a></li>
-                            <li><a href="#">Edit  Students</a></li>
-                            <li><a href="#">Delete  Students</a></li>
+                            <li><a href="StudentsDataRegister.html">Register  Data</a></li>
+                            <li><a href="StudentsDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="StudentsDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="StudentsDataDeleteDisplay.html">Delete  Data</a></li>
+
+                            <li><a href="StudentsParentsRegister.html">Register  Parents</a></li>
+                            <li><a href="StudentsParentsRegisterDisplay.html">Search  Parents</a></li>
+                            <li><a href="StudentsParentsEditDisplay.html">Edit  Parents</a></li>
+                            <li><a href="StudentsParentsDeleteDisplay.html">Delete  Parents</a></li>
+
+                            <li><a href="StudentsMarksRegister.html">Register  Marks</a></li>
+                            <li><a href="StudentsMarksRegisterDisplay.html">Search  Marks</a></li>
+                            <li><a href="StudentsMarksEditDisplay.html">Edit  Marks</a></li>
+                            <li><a href="StudentsMarksDeleteDisplay.html">Delete  Marks</a></li>
+
+                            <li><a href="StudentsFeesRegister.html">Register  Fees</a></li>
+                            <li><a href="StudentsFeesRegisterDisplay.html">Search  Fees</a></li>
+                            <li><a href="StudentsFeesEditDisplay.html">Edit  Fees</a></li>
+                            <li><a href="StudentsFeesDeleteDisplay.html">Delete  Fees</a></li>
+
+                            <li><a href="StudentsAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="StudentsAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="StudentsAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="StudentsAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="StudentsVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="StudentsVacationsRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="StudentsVacationsEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="StudentsVacationsDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="StudentsPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="StudentsPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="StudentsPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="StudentsPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>PARENTS</span></a>
-                        <ul>
-                            <li><a href="#">Register  Parents</a></li>
-                            <li><a href="#">Search  Parents</a></li>
-                            <li><a href="#">Edit  Parents</a></li>
-                            <li><a href="#">Delete  Parents</a></li>
-                        </ul>
-                    </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>MARKS</span></a>
-                        <ul>
-                            <li><a href="#">Register  Marks</a></li>
-                            <li><a href="#">Search  Marks</a></li>
-                            <li><a href="#">Edit  Marks</a></li>
-                            <li><a href="#">Delete  Marks</a></li>
-                        </ul>
-                    </li>
+                    
                     <li class="middle">
                         <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>TEACHERS</span></a>
                         <ul>
-                            <li><a href="#">Register  Teachers</a></li>
-                            <li><a href="#">Search  Teachers</a></li>
-                            <li><a href="#">Edit  Teachers</a></li>
-                            <li><a href="#">Delete  Teachers</a></li>
+                            <li><a href="TeachersDataRegister.html">Register  Data</a></li>
+                            <li><a href="TeachersDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="TeachersDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="TeachersDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="TeachersTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="TeachersTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="TeachersTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="TeachersTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="TeachersSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="TeachersSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="TeachersSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="TeachersSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="TeachersAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="TeachersVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="TeachersPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="TeachersPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="TeachersPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="TeachersPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
                     <li class="middle">
                         <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>EMPLOYEES</span></a>
                         <ul>
-                            <li><a href="#">Register  Employees</a></li>
-                            <li><a href="#">Search  Employees</a></li>
-                            <li><a href="#">Edit  Employees</a></li>
-                            <li><a href="#">Delete  Employees</a></li>
+                            <li><a href="EmployeeDataRegister.html">Register  Data</a></li>
+                            <li><a href="EmployeeDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="EmployeeDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="EmployeeDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="EmployeeTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="EmployeeTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="EmployeeTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="EmployeeTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="EmployeeSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="EmployeeSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="EmployeeSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="EmployeeSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="EmployeeAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="EmployeeVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="EmployeePaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="EmployeePaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="EmployeePaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="EmployeePaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
                     <li class="middle">
                         <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>LABORERS</span></a>
                         <ul>
-                            <li><a href="#">Register  Laborers</a></li>
-                            <li><a href="#">Search  Laborers</a></li>
-                            <li><a href="#">Edit  Laborers</a></li>
-                            <li><a href="#">Delete  Laborers</a></li>
+                            <li><a href="LaborerDataRegister.html">Register  Data</a></li>
+                            <li><a href="LaborerDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="LaborerDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="LaborerDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="LaborerTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="LaborerTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="LaborerTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="LaborerTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="LaborerSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="LaborerSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="LaborerSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="LaborerSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="LaborerAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="LaborerVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="LaborerPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="LaborerPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="LaborerPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="LaborerPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
                     <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>DRIVER</span></a>
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>DRIVERS</span></a>
                         <ul>
-                            <li><a href="">Register  Drivers</a></li>
-                            <li><a href="">Search  Drivers</a></li>
-                            <li><a href="#">Edit  Drivers</a></li>
-                            <li><a href="#">Delete  Drivers</a></li>
+                            <li><a href="DriverDataRegister.html">Register  Data</a></li>
+                            <li><a href="DriverDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="DriverDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="DriverDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="DriverTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="DriverTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="DriverTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="DriverTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="DriverSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="DriverSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="DriverSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="DriverSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="DriverAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="DriverVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="DriverPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="DriverPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="DriverPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="DriverPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
+
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>PERIODS</span></a>
+                        <ul>
+                            <li><a href="PeriodsRegister.html">Register  periods</a></li>
+                            <li><a href="PeriodsRegisterDisplay.html">Search  periods</a></li>
+                            <li><a href="PeriodsEditDisplay.html">Edit  periods</a></li>
+                            <li><a href="PeriodsDeleteDisplay.html">Delete  periods</a></li>
+ 
+                        </ul>
+                    </li>
+
                   
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>ATTENDANCE</span></a>
-                        <ul>
-                            <li><a href="#">Register  Attendance</a></li>
-                            <li><a href="#">Search  Attendance</a></li>
-                            <li><a href="#">Edit  Attendance</a></li>
-                            <li><a href="#">Delete  Attendance</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>VACATIONS</span></a>
-                        <ul>
-                            <li><a href="#">Register  Vacations</a></li>
-                            <li><a href="#">Search  Vacations</a></li>
-                            <li><a href="#">Edit  Vacations</a></li>
-                            <li><a href="#">Delete  Vacations</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>FEES</span></a>
-                        <ul>
-                            <li><a href="#">Register  Fees</a></li>
-                            <li><a href="#">Search  Fees</a></li>
-                            <li><a href="#">Edit  Fees</a></li>
-                            <li><a href="#">Delete  Fees</a></li>
-                        </ul>
-                    </li>
-                    <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>SALARIES</span></a>
-                        <ul>
-                            <li><a href="#">Register  Salaries</a></li>
-                            <li><a href="#">Search  Salaries</a></li>
-                            <li><a href="#">Edit  Salaries</a></li>
-                            <li><a href="#">Delete  Salaries</a></li>
-                        </ul>
-                    </li>
                    
                     <!-- <li>
                         <a href="#FileManager" class="has-arrow"><i class="icon-user"></i><span>ATTENDANCE </span></a>
@@ -388,14 +470,39 @@
                     </li> -->
                     <!-- <li class="heading">SECURITIES</li> -->
                     <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>RESULTS </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Successfull Students</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Usuccessfull Students</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>BUSES </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Register Buses</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Buses</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Buses</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Buses</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
                         <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>USERS </span></a>
                         <ul>
-                            <li><a href="#">Register Users</a></li>
-                            <li><a href="#">Search Users</a></li>
-                            <li><a href="#">Edit Users</a></li>
-                            <li><a href="#">Delete Users</a></li>
+                            <li><a href="UserDataRegister.html">Register Users</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Users</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Users</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Users</a></li>
                         </ul>
-                    </li>                        
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>SETTINGS </span></a>
+                        <ul>
+                            <li><a href="SystemSettingsRegister.html">Register Settings</a></li>
+                            <li><a href="SystemSettingsRegisterDisplay.html">Search Settings</a></li>
+                            <li><a href="SystemSettingsEditDisplay.html">Edit Settings</a></li>
+                            <li><a href="SystemSettingsDeleteDisplay.html">Delete Settings</a></li>
+                        </ul>
+                    </li>                            
                 </ul>
             </nav>
         </div>
@@ -487,9 +594,9 @@
                 </div>
             </div>
         </div>
-    </div>
-     -->
-    <!-- <div id="rightsidebar" class="right-sidebar">
+    </div> -->
+    
+    <div id="rightsidebar" class="right-sidebar">
         <ul class="nav nav-tabs tab-nav-right" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins" aria-expanded="true">Mplify</a></li>
             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#contact" aria-expanded="false">Contact</a></li>
@@ -781,25 +888,210 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div id="main-content">
         <div class="container-fluid">
             <div class="block-header">
-                 <div class="row">
+                <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2> STUDENTS VACATIONS:</h2>
-                    </div>             
-                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
+                        <h2>STUDENTS DATA:</h2>
+                    </div>            
+                    <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
-                            <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>                            
                             <li class="breadcrumb-item">Table</li>
-                            <li class="breadcrumb-item active">Jquery Datatable</li>
+                            <li class="breadcrumb-item active">Table Example</li>
                         </ul>
-                    </div>  -->
-                </div> 
+                    </div> -->
+                </div>
             </div>
             
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <!-- <div class="card">
+                         <div class="header">
+                            <h2>Basic Example 1</h2>
+                        </div> 
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table m-b-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Patients</th>
+                                            <th>Adress</th>
+                                            <th>START Date</th>
+                                            <th>END Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span>John</span></td>
+                                            <td><span class="text-info">70 Bowman St. South Windsor, CT 06074</span></td>
+                                            <td>Sept 13, 2017</td>
+                                            <td>Sept 16, 2017</td>
+                                            <td><span class="badge badge-success">Admit</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><span>Jack Bird</span></td>
+                                            <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
+                                            <td>Sept 13, 2017</td>
+                                            <td>Sept 22, 2017</td>
+                                            <td><span class="badge badge-default">Discharge</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><span>Dean Otto</span></td>
+                                            <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
+                                            <td>Sept 13, 2017</td>
+                                            <td>Sept 23, 2017</td>
+                                            <td><span class="badge badge-success">Admit</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><span>Jack Bird</span></td>
+                                            <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span></td>
+                                            <td>Sept 17, 2017</td>
+                                            <td>Sept 16, 2017</td>
+                                            <td><span class="badge badge-default">Discharge</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><span>Hughe L.</span></td>
+                                            <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span></td>
+                                            <td>Sept 18, 2017</td>
+                                            <td>Sept 18, 2017</td>
+                                            <td><span class="badge badge-success">Admit</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
+                    </div> -->
+                    <!-- <div class="card">
+                         <div class="header">
+                            <h2>Basic Example 2</h2>
+                        </div> 
+                        <div class="body">
+                            
+                            <div class="table-responsive">
+                                <table class="table table-hover m-b-0 c_list">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="fancy-checkbox">
+                                                    <input class="select-all" type="checkbox" name="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <th>Name</th>                                    
+                                            <th>Phone</th>                                    
+                                            <th>Address</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td style="width: 50px;">
+                                                <label class="fancy-checkbox">
+                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <img src="../assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
+                                                <p class="c_name">John Smith <span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                            </td>
+                                            <td>
+                                                <span class="phone"><i class="fa fa-phone m-r-10"></i>264-625-2583</span>
+                                            </td>                                   
+                                            <td>
+                                                <address><i class="fa fa-map-marker"></i>123 6th St. Melbourne, FL 32904</address>
+                                            </td>
+                                            <td>                                            
+                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="fancy-checkbox">
+                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle avatar" alt="">
+                                                <p class="c_name">Hossein Shams <span class="badge badge-info m-l-10 hidden-sm-down">Google</span></p>
+                                            </td>
+                                            <td>
+                                                <span class="phone"><i class="fa fa-phone m-r-10"></i>264-625-5689</span>
+                                            </td>                                    
+                                            <td>
+                                                <address><i class="fa fa-map-marker"></i>44 Shirley Ave. West Chicago, IL 60185</address>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="fancy-checkbox">
+                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <img src="../assets/images/xs/avatar9.jpg" class="rounded-circle avatar" alt="">
+                                                <p class="c_name">Frank Camly</p>
+                                            </td>
+                                            <td>
+                                                <span class="phone"><i class="fa fa-phone m-r-10"></i>264-625-9999</span>
+                                            </td>
+                                            <td>
+                                                <address><i class="fa fa-map-marker"></i>123 6th St. Melbourne, FL 32904</address>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="fancy-checkbox">
+                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <img src="../assets/images/xs/avatar10.jpg" class="rounded-circle avatar" alt="">
+                                                <p class="c_name">Tim Hank<span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                            </td>
+                                            <td>
+                                                <span class="phone"><i class="fa fa-phone m-r-10"></i>264-625-1212</span>
+                                            </td>
+                                            <td>
+                                                <address><i class="fa fa-map-marker"></i>70 Bowman St. South Windsor, CT 06074</address>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
             <div class="row clearfix">
                 <div class="col-lg-12">
                     <div class="card">
@@ -811,12 +1103,12 @@
                                 <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th> NAME</th>
+                                            <th> DATE</th>
+                                            <th> TYPE</th>
+                                            <th> SCHOOL</th>
+                                            <th> STAGE</th>
+                                            <th> CLASS</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -827,6 +1119,7 @@
                                             <td>61</td>
                                             <td>2011/04/25</td>
                                             <td>$320,800</td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Garrett Winters</td>
@@ -883,6 +1176,7 @@
                                             <td>55</td>
                                             <td>2010/10/14</td>
                                             <td>$327,900</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Colleen Hurst</td>
@@ -891,6 +1185,7 @@
                                             <td>39</td>
                                             <td>2009/09/15</td>
                                             <td>$205,500</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Sonya Frost</td>
@@ -899,6 +1194,7 @@
                                             <td>23</td>
                                             <td>2008/12/13</td>
                                             <td>$103,600</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Jena Gaines</td>
@@ -907,6 +1203,7 @@
                                             <td>30</td>
                                             <td>2008/12/19</td>
                                             <td>$90,560</td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Quinn Flynn</td>
@@ -915,6 +1212,7 @@
                                             <td>22</td>
                                             <td>2013/03/03</td>
                                             <td>$342,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Charde Marshall</td>
@@ -923,6 +1221,7 @@
                                             <td>36</td>
                                             <td>2008/10/16</td>
                                             <td>$470,600</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Haley Kennedy</td>
@@ -931,6 +1230,7 @@
                                             <td>43</td>
                                             <td>2012/12/18</td>
                                             <td>$313,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Tatyana Fitzpatrick</td>
@@ -939,6 +1239,7 @@
                                             <td>19</td>
                                             <td>2010/03/17</td>
                                             <td>$385,750</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Michael Silva</td>
@@ -947,6 +1248,7 @@
                                             <td>66</td>
                                             <td>2012/11/27</td>
                                             <td>$198,500</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Paul Byrd</td>
@@ -955,6 +1257,7 @@
                                             <td>64</td>
                                             <td>2010/06/09</td>
                                             <td>$725,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Gloria Little</td>
@@ -963,6 +1266,7 @@
                                             <td>59</td>
                                             <td>2009/04/10</td>
                                             <td>$237,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Bradley Greer</td>
@@ -971,6 +1275,7 @@
                                             <td>41</td>
                                             <td>2012/10/13</td>
                                             <td>$132,000</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Dai Rios</td>
@@ -979,6 +1284,7 @@
                                             <td>35</td>
                                             <td>2012/09/26</td>
                                             <td>$217,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Jenette Caldwell</td>
@@ -987,6 +1293,7 @@
                                             <td>30</td>
                                             <td>2011/09/03</td>
                                             <td>$345,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Yuri Berry</td>
@@ -995,6 +1302,7 @@
                                             <td>40</td>
                                             <td>2009/06/25</td>
                                             <td>$675,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Caesar Vance</td>
@@ -1003,6 +1311,7 @@
                                             <td>21</td>
                                             <td>2011/12/12</td>
                                             <td>$106,450</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Doris Wilder</td>
@@ -1011,6 +1320,7 @@
                                             <td>23</td>
                                             <td>2010/09/20</td>
                                             <td>$85,600</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Angelica Ramos</td>
@@ -1019,6 +1329,7 @@
                                             <td>47</td>
                                             <td>2009/10/09</td>
                                             <td>$1,200,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Gavin Joyce</td>
@@ -1027,6 +1338,7 @@
                                             <td>42</td>
                                             <td>2010/12/22</td>
                                             <td>$92,575</td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Jennifer Chang</td>
@@ -1035,6 +1347,7 @@
                                             <td>28</td>
                                             <td>2010/11/14</td>
                                             <td>$357,650</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Brenden Wagner</td>
@@ -1043,6 +1356,7 @@
                                             <td>28</td>
                                             <td>2011/06/07</td>
                                             <td>$206,850</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Fiona Green</td>
@@ -1051,6 +1365,7 @@
                                             <td>48</td>
                                             <td>2010/03/11</td>
                                             <td>$850,000</td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Shou Itou</td>
@@ -1059,6 +1374,7 @@
                                             <td>20</td>
                                             <td>2011/08/14</td>
                                             <td>$163,000</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Michelle House</td>
@@ -1067,6 +1383,7 @@
                                             <td>37</td>
                                             <td>2011/06/02</td>
                                             <td>$95,400</td>
+                                        
                                         </tr>
                                         <tr>
                                             <td>Suki Burks</td>
@@ -1075,6 +1392,7 @@
                                             <td>53</td>
                                             <td>2009/10/22</td>
                                             <td>$114,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Prescott Bartlett</td>
@@ -1083,6 +1401,7 @@
                                             <td>27</td>
                                             <td>2011/05/07</td>
                                             <td>$145,000</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Gavin Cortez</td>
@@ -1091,6 +1410,7 @@
                                             <td>22</td>
                                             <td>2008/10/26</td>
                                             <td>$235,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Martena Mccray</td>
@@ -1099,6 +1419,7 @@
                                             <td>46</td>
                                             <td>2011/03/09</td>
                                             <td>$324,050</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Unity Butler</td>
@@ -1107,6 +1428,7 @@
                                             <td>47</td>
                                             <td>2009/12/09</td>
                                             <td>$85,675</td>
+                                           
                                         </tr>
                                         <tr>
                                             <td>Howard Hatfield</td>
@@ -1115,6 +1437,7 @@
                                             <td>51</td>
                                             <td>2008/12/16</td>
                                             <td>$164,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Hope Fuentes</td>
@@ -1123,6 +1446,7 @@
                                             <td>41</td>
                                             <td>2010/02/12</td>
                                             <td>$109,850</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Vivian Harrell</td>
@@ -1131,6 +1455,7 @@
                                             <td>62</td>
                                             <td>2009/02/14</td>
                                             <td>$452,500</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Timothy Mooney</td>
@@ -1139,6 +1464,7 @@
                                             <td>37</td>
                                             <td>2008/12/11</td>
                                             <td>$136,200</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Jackson Bradshaw</td>
@@ -1147,6 +1473,7 @@
                                             <td>65</td>
                                             <td>2008/09/26</td>
                                             <td>$645,750</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Olivia Liang</td>
@@ -1155,6 +1482,7 @@
                                             <td>64</td>
                                             <td>2011/02/03</td>
                                             <td>$234,500</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Bruno Nash</td>
@@ -1163,6 +1491,7 @@
                                             <td>38</td>
                                             <td>2011/05/03</td>
                                             <td>$163,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Sakura Yamamoto</td>
@@ -1171,6 +1500,7 @@
                                             <td>37</td>
                                             <td>2009/08/19</td>
                                             <td>$139,575</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Thor Walton</td>
@@ -1179,6 +1509,7 @@
                                             <td>61</td>
                                             <td>2013/08/11</td>
                                             <td>$98,540</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Finn Camacho</td>
@@ -1187,6 +1518,7 @@
                                             <td>47</td>
                                             <td>2009/07/07</td>
                                             <td>$87,500</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Serge Baldwin</td>
@@ -1195,6 +1527,7 @@
                                             <td>64</td>
                                             <td>2012/04/09</td>
                                             <td>$138,575</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Zenaida Frank</td>
@@ -1203,6 +1536,7 @@
                                             <td>63</td>
                                             <td>2010/01/04</td>
                                             <td>$125,250</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Zorita Serrano</td>
@@ -1211,6 +1545,7 @@
                                             <td>56</td>
                                             <td>2012/06/01</td>
                                             <td>$115,000</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Jennifer Acosta</td>
@@ -1219,6 +1554,7 @@
                                             <td>43</td>
                                             <td>2013/02/01</td>
                                             <td>$75,650</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Cara Stevens</td>
@@ -1227,6 +1563,7 @@
                                             <td>46</td>
                                             <td>2011/12/06</td>
                                             <td>$145,600</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Hermione Butler</td>
@@ -1235,6 +1572,7 @@
                                             <td>47</td>
                                             <td>2011/03/21</td>
                                             <td>$356,250</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Lael Greer</td>
@@ -1243,6 +1581,7 @@
                                             <td>21</td>
                                             <td>2009/02/27</td>
                                             <td>$103,500</td>
+                                        
                                         </tr>
                                         <tr>
                                             <td>Jonas Alexander</td>
@@ -1251,6 +1590,7 @@
                                             <td>30</td>
                                             <td>2010/07/14</td>
                                             <td>$86,500</td>
+                                         
                                         </tr>
                                         <tr>
                                             <td>Shad Decker</td>
@@ -1259,6 +1599,7 @@
                                             <td>51</td>
                                             <td>2008/11/13</td>
                                             <td>$183,000</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Michael Bruce</td>
@@ -1267,6 +1608,7 @@
                                             <td>29</td>
                                             <td>2011/06/27</td>
                                             <td>$183,000</td>
+                                          
                                         </tr>
                                         <tr>
                                             <td>Donna Snider</td>
@@ -1275,6 +1617,7 @@
                                             <td>27</td>
                                             <td>2011/01/25</td>
                                             <td>$112,000</td>
+                                         
                                         </tr>
                                     </tbody>
                                     <!-- <tfoot>
@@ -1292,1085 +1635,536 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-12"> 
-                    <div class="card">
-                        <div class="header">
-                            <h2>Table Tools<small>Basic example without any additional modification classes</small> </h2>                            
-                        </div>
-                        <div class="body">
-						<div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brielle Williamson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>New York</td>
-                                        <td>61</td>
-                                        <td>2012/12/02</td>
-                                        <td>$372,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Herrod Chandler</td>
-                                        <td>Sales Assistant</td>
-                                        <td>San Francisco</td>
-                                        <td>59</td>
-                                        <td>2012/08/06</td>
-                                        <td>$137,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rhona Davidson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Colleen Hurst</td>
-                                        <td>Javascript Developer</td>
-                                        <td>San Francisco</td>
-                                        <td>39</td>
-                                        <td>2009/09/15</td>
-                                        <td>$205,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sonya Frost</td>
-                                        <td>Software Engineer</td>
-                                        <td>Edinburgh</td>
-                                        <td>23</td>
-                                        <td>2008/12/13</td>
-                                        <td>$103,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jena Gaines</td>
-                                        <td>Office Manager</td>
-                                        <td>London</td>
-                                        <td>30</td>
-                                        <td>2008/12/19</td>
-                                        <td>$90,560</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Quinn Flynn</td>
-                                        <td>Support Lead</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2013/03/03</td>
-                                        <td>$342,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Charde Marshall</td>
-                                        <td>Regional Director</td>
-                                        <td>San Francisco</td>
-                                        <td>36</td>
-                                        <td>2008/10/16</td>
-                                        <td>$470,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Haley Kennedy</td>
-                                        <td>Senior Marketing Designer</td>
-                                        <td>London</td>
-                                        <td>43</td>
-                                        <td>2012/12/18</td>
-                                        <td>$313,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tatyana Fitzpatrick</td>
-                                        <td>Regional Director</td>
-                                        <td>London</td>
-                                        <td>19</td>
-                                        <td>2010/03/17</td>
-                                        <td>$385,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michael Silva</td>
-                                        <td>Marketing Designer</td>
-                                        <td>London</td>
-                                        <td>66</td>
-                                        <td>2012/11/27</td>
-                                        <td>$198,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Paul Byrd</td>
-                                        <td>Chief Financial Officer (CFO)</td>
-                                        <td>New York</td>
-                                        <td>64</td>
-                                        <td>2010/06/09</td>
-                                        <td>$725,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gloria Little</td>
-                                        <td>Systems Administrator</td>
-                                        <td>New York</td>
-                                        <td>59</td>
-                                        <td>2009/04/10</td>
-                                        <td>$237,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bradley Greer</td>
-                                        <td>Software Engineer</td>
-                                        <td>London</td>
-                                        <td>41</td>
-                                        <td>2012/10/13</td>
-                                        <td>$132,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dai Rios</td>
-                                        <td>Personnel Lead</td>
-                                        <td>Edinburgh</td>
-                                        <td>35</td>
-                                        <td>2012/09/26</td>
-                                        <td>$217,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jenette Caldwell</td>
-                                        <td>Development Lead</td>
-                                        <td>New York</td>
-                                        <td>30</td>
-                                        <td>2011/09/03</td>
-                                        <td>$345,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Yuri Berry</td>
-                                        <td>Chief Marketing Officer (CMO)</td>
-                                        <td>New York</td>
-                                        <td>40</td>
-                                        <td>2009/06/25</td>
-                                        <td>$675,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Caesar Vance</td>
-                                        <td>Pre-Sales Support</td>
-                                        <td>New York</td>
-                                        <td>21</td>
-                                        <td>2011/12/12</td>
-                                        <td>$106,450</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Doris Wilder</td>
-                                        <td>Sales Assistant</td>
-                                        <td>Sidney</td>
-                                        <td>23</td>
-                                        <td>2010/09/20</td>
-                                        <td>$85,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Angelica Ramos</td>
-                                        <td>Chief Executive Officer (CEO)</td>
-                                        <td>London</td>
-                                        <td>47</td>
-                                        <td>2009/10/09</td>
-                                        <td>$1,200,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gavin Joyce</td>
-                                        <td>Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>42</td>
-                                        <td>2010/12/22</td>
-                                        <td>$92,575</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jennifer Chang</td>
-                                        <td>Regional Director</td>
-                                        <td>Singapore</td>
-                                        <td>28</td>
-                                        <td>2010/11/14</td>
-                                        <td>$357,650</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brenden Wagner</td>
-                                        <td>Software Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td>28</td>
-                                        <td>2011/06/07</td>
-                                        <td>$206,850</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fiona Green</td>
-                                        <td>Chief Operating Officer (COO)</td>
-                                        <td>San Francisco</td>
-                                        <td>48</td>
-                                        <td>2010/03/11</td>
-                                        <td>$850,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shou Itou</td>
-                                        <td>Regional Marketing</td>
-                                        <td>Tokyo</td>
-                                        <td>20</td>
-                                        <td>2011/08/14</td>
-                                        <td>$163,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michelle House</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Sidney</td>
-                                        <td>37</td>
-                                        <td>2011/06/02</td>
-                                        <td>$95,400</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Suki Burks</td>
-                                        <td>Developer</td>
-                                        <td>London</td>
-                                        <td>53</td>
-                                        <td>2009/10/22</td>
-                                        <td>$114,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Prescott Bartlett</td>
-                                        <td>Technical Author</td>
-                                        <td>London</td>
-                                        <td>27</td>
-                                        <td>2011/05/07</td>
-                                        <td>$145,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gavin Cortez</td>
-                                        <td>Team Leader</td>
-                                        <td>San Francisco</td>
-                                        <td>22</td>
-                                        <td>2008/10/26</td>
-                                        <td>$235,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Martena Mccray</td>
-                                        <td>Post-Sales support</td>
-                                        <td>Edinburgh</td>
-                                        <td>46</td>
-                                        <td>2011/03/09</td>
-                                        <td>$324,050</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Unity Butler</td>
-                                        <td>Marketing Designer</td>
-                                        <td>San Francisco</td>
-                                        <td>47</td>
-                                        <td>2009/12/09</td>
-                                        <td>$85,675</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Howard Hatfield</td>
-                                        <td>Office Manager</td>
-                                        <td>San Francisco</td>
-                                        <td>51</td>
-                                        <td>2008/12/16</td>
-                                        <td>$164,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hope Fuentes</td>
-                                        <td>Secretary</td>
-                                        <td>San Francisco</td>
-                                        <td>41</td>
-                                        <td>2010/02/12</td>
-                                        <td>$109,850</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vivian Harrell</td>
-                                        <td>Financial Controller</td>
-                                        <td>San Francisco</td>
-                                        <td>62</td>
-                                        <td>2009/02/14</td>
-                                        <td>$452,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Timothy Mooney</td>
-                                        <td>Office Manager</td>
-                                        <td>London</td>
-                                        <td>37</td>
-                                        <td>2008/12/11</td>
-                                        <td>$136,200</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jackson Bradshaw</td>
-                                        <td>Director</td>
-                                        <td>New York</td>
-                                        <td>65</td>
-                                        <td>2008/09/26</td>
-                                        <td>$645,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Olivia Liang</td>
-                                        <td>Support Engineer</td>
-                                        <td>Singapore</td>
-                                        <td>64</td>
-                                        <td>2011/02/03</td>
-                                        <td>$234,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bruno Nash</td>
-                                        <td>Software Engineer</td>
-                                        <td>London</td>
-                                        <td>38</td>
-                                        <td>2011/05/03</td>
-                                        <td>$163,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sakura Yamamoto</td>
-                                        <td>Support Engineer</td>
-                                        <td>Tokyo</td>
-                                        <td>37</td>
-                                        <td>2009/08/19</td>
-                                        <td>$139,575</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thor Walton</td>
-                                        <td>Developer</td>
-                                        <td>New York</td>
-                                        <td>61</td>
-                                        <td>2013/08/11</td>
-                                        <td>$98,540</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Finn Camacho</td>
-                                        <td>Support Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td>47</td>
-                                        <td>2009/07/07</td>
-                                        <td>$87,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Serge Baldwin</td>
-                                        <td>Data Coordinator</td>
-                                        <td>Singapore</td>
-                                        <td>64</td>
-                                        <td>2012/04/09</td>
-                                        <td>$138,575</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Zenaida Frank</td>
-                                        <td>Software Engineer</td>
-                                        <td>New York</td>
-                                        <td>63</td>
-                                        <td>2010/01/04</td>
-                                        <td>$125,250</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Zorita Serrano</td>
-                                        <td>Software Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td>56</td>
-                                        <td>2012/06/01</td>
-                                        <td>$115,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jennifer Acosta</td>
-                                        <td>Junior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>43</td>
-                                        <td>2013/02/01</td>
-                                        <td>$75,650</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cara Stevens</td>
-                                        <td>Sales Assistant</td>
-                                        <td>New York</td>
-                                        <td>46</td>
-                                        <td>2011/12/06</td>
-                                        <td>$145,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hermione Butler</td>
-                                        <td>Regional Director</td>
-                                        <td>London</td>
-                                        <td>47</td>
-                                        <td>2011/03/21</td>
-                                        <td>$356,250</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lael Greer</td>
-                                        <td>Systems Administrator</td>
-                                        <td>London</td>
-                                        <td>21</td>
-                                        <td>2009/02/27</td>
-                                        <td>$103,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jonas Alexander</td>
-                                        <td>Developer</td>
-                                        <td>San Francisco</td>
-                                        <td>30</td>
-                                        <td>2010/07/14</td>
-                                        <td>$86,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shad Decker</td>
-                                        <td>Regional Director</td>
-                                        <td>Edinburgh</td>
-                                        <td>51</td>
-                                        <td>2008/11/13</td>
-                                        <td>$183,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michael Bruce</td>
-                                        <td>Javascript Developer</td>
-                                        <td>Singapore</td>
-                                        <td>29</td>
-                                        <td>2011/06/27</td>
-                                        <td>$183,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Donna Snider</td>
-                                        <td>Customer Support</td>
-                                        <td>New York</td>
-                                        <td>27</td>
-                                        <td>2011/01/25</td>
-                                        <td>$112,000</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-							</div>
-                        </div>
-                    </div>
-                </div> -->
+
+
+             
+                
             </div>
 
+        </div>
+    </div>
+    
+</div>
+            
             <!-- <div class="row clearfix">
-                <div class="col-lg-12">
+                <div class="col-lg-6 col-md-12">
                     <div class="card">
                         <div class="header">
-                            <h2>Child rows</h2>                            
+                            <h2>Basic Example 3</h2>
                         </div>
-                        <div class="body table-responsive">
-                            <table id="example" class="table table-bordered table-hover table-striped" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Salary</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Salary</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-hover m-b-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Media</th>
+                                            <th>Name</th>
+                                            <th>Spent</th>
+                                            <th>Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-facebook fa-2x"></i>
+                                            </td>
+                                            <td>
+                                                <h6 class="margin-0">Facebook Ads</h6>
+                                                <span>1.2k Likes, 418 Shares</span>
+                                            </td>
+                                            <td>
+                                                <h6 class="m-b-0">$ 402</h6>
+                                                <span class="text-muted">Spent</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="text-success">
+                                                    23 <i class="fa fa-long-arrow-up"></i>
+                                                </div>
+                                                <div class="text-muted">up</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-twitter fa-2x"></i>
+                                            </td>
+                                            <td>
+                                                <h6 class="margin-0">Twitter Ads</h6>
+                                                <span>1k Likes, 128 Shares</span>
+                                            </td>
+                                            <td>
+                                                <h6 class="m-b-0">$ 489</h6>
+                                                <span class="text-muted">Spent</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="text-danger">                                                    
+                                                    -9 <i class="fa fa-long-arrow-down"></i>
+                                                </div>
+                                                <div class="text-muted">down</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-instagram fa-2x"></i>
+                                            </td>
+                                            <td>
+                                                <h6 class="margin-0">Instagram Post</h6>
+                                                <span>1k Follows, 228 Likes</span>
+                                            </td>
+                                            <td>
+                                                <h6 class="mb-0">$ 718 </h6>
+                                                <span class="text-muted">Spent</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class=" text-success">
+                                                    16 <i class="fa  fa-long-arrow-up"></i>
+                                                </div>
+                                                <div class="text-muted">up</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-linkedin fa-2x"></i>
+                                            </td>
+                                            <td>
+                                                <h6 class="margin-0">LinkedIn Post</h6>
+                                                <span>1k Follows, 228 Likes</span>
+                                            </td>
+                                            <td>
+                                                <h6 class="mb-0">$ 768</h6>
+                                                <span class="text-muted">Spent</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class=" text-success">
+                                                    27 <i class="fa  fa-long-arrow-up"></i>
+                                                </div>
+                                                <div class="text-muted">up</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-google-plus-circle fa-2x"></i>
+                                            </td>
+                                            <td>
+                                                <h6 class="margin-0">Google +</h6>
+                                                <span>1k Follows, 228 Likes</span>
+                                            </td>
+                                            <td>
+                                                <h6 class="mb-0">$ 1768</h6>
+                                                <span class="text-muted">Spent</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class=" text-success">
+                                                    27 <i class="fa fa-long-arrow-up"></i>
+                                                </div>
+                                                <div class="text-muted">up</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-6 col-md-12">
                     <div class="card">
                         <div class="header">
-                            <h2>Add Row</h2>                       
+                            <h2>Basic Example 4</h2>
                         </div>
                         <div class="body">
-                            <button id="addToTable" class="btn btn-primary m-b-15" type="button">
-                                <i class="icon wb-plus" aria-hidden="true"></i> Add row
-                            </button>
-							<div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped" id="addrowExample">
+                            <div class="table-responsive social_media_table">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
+                                        <th>Media</th>
                                         <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Actions</th>
+                                        <th>Like</th>
+                                        <th>Comments</th>
+                                        <th>Share</th>
+                                        <th>Members</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="gradeA">
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                    <tr>
+                                        <td><span class="social_icon linkedin"><i class="fa fa-linkedin"></i></span>
+                                        </td>
+                                        <td><span class="list-name">Linked In</span>
+                                            <span class="text-muted">Florida, United States</span>
+                                        </td>
+                                        <td>19K</td>
+                                        <td>14K</td>
+                                        <td>10K</td>
+                                        <td>
+                                            <span class="badge badge-success">2341</span>
                                         </td>
                                     </tr>
-                                    <tr class="gradeA">
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                    <tr>
+                                        <td><span class="social_icon twitter-table"><i class="fa fa-twitter"></i></span>
+                                        </td>
+                                        <td><span class="list-name">Twitter</span>
+                                            <span class="text-muted">Arkansas, United States</span>
+                                        </td>
+                                        <td>7K</td>
+                                        <td>11K</td>
+                                        <td>21K</td>
+                                        <td>
+                                            <span class="badge badge-success">952</span>
                                         </td>
                                     </tr>
-                                    <tr class="gradeA">
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                    <tr>
+                                        <td><span class="social_icon facebook"><i class="fa fa-facebook"></i></span>
+                                        </td>
+                                        <td><span class="list-name">Facebook</span>
+                                            <span class="text-muted">Illunois, United States</span>
+                                        </td>
+                                        <td>15K</td>
+                                        <td>18K</td>
+                                        <td>8K</td>
+                                        <td>
+                                            <span class="badge badge-success">6127</span>
                                         </td>
                                     </tr>
-                                        <tr class="gradeA">
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                    <tr>
+                                        <td><span class="social_icon google"><i class="fa fa-google-plus"></i></span>
+                                        </td>
+                                        <td><span class="list-name">Google Plus</span>
+                                            <span class="text-muted">Arizona, United States</span>
+                                        </td>
+                                        <td>15K</td>
+                                        <td>18K</td>
+                                        <td>154</td>
+                                        <td>
+                                            <span class="badge badge-success">325</span>
                                         </td>
                                     </tr>
-                                    <tr class="gradeA">
-                                        <td>Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                    <tr>
+                                        <td><span class="social_icon youtube"><i class="fa fa-youtube-play"></i></span>
                                         </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Brielle Williamson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                        <td><span class="list-name">YouTube</span>
+                                            <span class="text-muted">Alaska, United States</span>
                                         </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Herrod Chandler</td>
-                                        <td>Sales Assistant</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Rhona Davidson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Colleen Hurst</td>
-                                        <td>Javascript Developer</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Sonya Frost</td>
-                                        <td>Software Engineer</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Jena Gaines</td>
-                                        <td>Office Manager</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Quinn Flynn</td>
-                                        <td>Support Lead</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Charde Marshall</td>
-                                        <td>Regional Director</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Haley Kennedy</td>
-                                        <td>Senior Marketing Designer</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Tatyana Fitzpatrick</td>
-                                        <td>Regional Director</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Michael Silva</td>
-                                        <td>Marketing Designer</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Paul Byrd</td>
-                                        <td>Chief Financial Officer (CFO)</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Gloria Little</td>
-                                        <td>Systems Administrator</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Bradley Greer</td>
-                                        <td>Software Engineer</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Dai Rios</td>
-                                        <td>Personnel Lead</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Jenette Caldwell</td>
-                                        <td>Development Lead</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Yuri Berry</td>
-                                        <td>Chief Marketing Officer (CMO)</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Caesar Vance</td>
-                                        <td>Pre-Sales Support</td>
-                                        <td>New York</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Doris Wilder</td>
-                                        <td>Sales Assistant</td>
-                                        <td>Sidney</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Angelica Ramos</td>
-                                        <td>Chief Executive Officer (CEO)</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Gavin Joyce</td>
-                                        <td>Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Jennifer Chang</td>
-                                        <td>Regional Director</td>
-                                        <td>Singapore</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Brenden Wagner</td>
-                                        <td>Software Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Fiona Green</td>
-                                        <td>Chief Operating Officer (COO)</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Shou Itou</td>
-                                        <td>Regional Marketing</td>
-                                        <td>Tokyo</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Michelle House</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Sidney</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Suki Burks</td>
-                                        <td>Developer</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Prescott Bartlett</td>
-                                        <td>Technical Author</td>
-                                        <td>London</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Gavin Cortez</td>
-                                        <td>Team Leader</td>
-                                        <td>San Francisco</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>Martena Mccray</td>
-                                        <td>Post-Sales support</td>
-                                        <td>Edinburgh</td>
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing m-r-5 button-save"
-                                            data-toggle="tooltip" data-original-title="Save" hidden><i class="icon-drawer" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-editing button-discard"
-                                            data-toggle="tooltip" data-original-title="Discard" hidden><i class="icon-close" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            data-toggle="tooltip" data-original-title="Edit"><i class="icon-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            data-toggle="tooltip" data-original-title="Remove"><i class="icon-trash" aria-hidden="true"></i></button>
+                                        <td>15K</td>
+                                        <td>18K</td>
+                                        <td>200</td>
+                                        <td>
+                                            <span class="badge badge-success">160</span>
                                         </td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </tfoot>
                             </table>
-							</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Basic Example 5</h2>
+                            <ul class="header-dropdown">
+                                <li> <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="pulse"><i class="icon-refresh"></i></a></li>
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="icon-size-fullscreen"></i></a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right animated bounceIn">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">                          
+                            <div class="table-responsive">
+                                <table class="table m-b-0 table-hover">
+                                    <thead>
+                                        <tr>                                    
+                                            <th>Application</th>
+                                            <th>Team</th>
+                                            <th>Change</th>
+                                            <th>Sales</th>                                    
+                                            <th>Price</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h6>Alpino 4.1</h6>
+                                                <span>thememakker To By Again</span>
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled team-info">
+                                                    <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1.5" data-line-Color="#00c5dc"
+                                                data-fill-Color="transparent">3,5,1,6,5,4,8,3</div>
+                                            </td>
+                                            <td>11,200</td>
+                                            <td>$83</td>
+                                            <td><strong>$22,520</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h6>Compass 2.0</h6>
+                                                <span>thememakker To By Again</span>
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled team-info">
+                                                    <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>                                                    
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1.5" data-line-Color="#f4516c"
+                                                data-fill-Color="transparent">4,6,3,2,5,6,5,4</div>
+                                            </td>
+                                            <td>11,200</td>
+                                            <td>$66</td>
+                                            <td><strong>$13,205</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h6>Nexa 1.1</h6>
+                                                <span>thememakker To By Again</span>
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled team-info">
+                                                    <li><img src="../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                                
+                                                    <li><img src="../assets/images/xs/avatar6.jpg" alt="Avatar"></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1.5" data-line-Color="#31db3d"
+                                                data-fill-Color="transparent">7,3,2,1,5,4,6,8</div>
+                                            </td>
+                                            <td>12,080</td>
+                                            <td>$93</td>
+                                            <td><strong>$17,700</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h6>Oreo 2.2</h6>
+                                                <span>ThemeMakker To By Again</span>
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled team-info">
+                                                    <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                                    <li><img src="../assets/images/xs/avatar9.jpg" alt="Avatar"></li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1.5" data-line-Color="#2d342e"
+                                                data-fill-Color="transparent">3,1,2,5,4,6,2,3</div>
+                                            </td>
+                                            <td>18,200</td>
+                                            <td>$178</td>
+                                            <td><strong>$17,700</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Basic Example 6</h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-hover m-b-0">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fa fa-circle text-success"></i></td>
+                                            <td>Twitter</td>
+                                            <td><span>862 Records</span></td>
+                                            <td>35% <i class="fa fa-caret-up "></i></td>
+                                            <td><span class="sparkbar">5,8,6,3,5,9,2</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-circle text-info"></i></td>
+                                            <td>Facebook</td>
+                                            <td><span>451 Records</span></td>
+                                            <td>15% <i class="fa fa-caret-up "></i></td>
+                                            <td><span class="sparkbar">8,2,1,5,-2,6,-4</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-circle text-warning"></i></td>
+                                            <td>Mailchimp</td>
+                                            <td><span>502 Records</span></td>
+                                            <td>20% <i class="fa fa-caret-down"></i></td>
+                                            <td><span class="sparkbar">2,3,3,-2,-8,4,8</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-circle text-danger"></i></td>
+                                            <td>Google</td>
+                                            <td><span>502 Records</span></td>
+                                            <td>20% <i class="fa fa-caret-up "></i></td>
+                                            <td><span class="sparkbar">5,5,5,6,3,2,1</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-circle "></i></td>
+                                            <td>Other</td>
+                                            <td><span>237 Records</span></td>
+                                            <td>10% <i class="fa fa-caret-down"></i></td>
+                                            <td><span class="sparkbar">5,8,6,3,5,9,2</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Basic Example 7</h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive social_media_table">
+                                <table class="table table-hover m-b-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>Twitter</td>
+                                            <td><span>862 Records</span></td>
+                                            <td><i class="icon-bubble text-info"><span class="m-l-5">241</span></i></td>
+                                            <td><i class="icon-like text-success"><span class="m-l-5">595</span></i></td>
+                                            <td style="width: 150px;">
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> <span class="sr-only">40% Complete</span> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Facebook</td>
+                                            <td><span>451 Records</span></td>
+                                            <td><i class="icon-bubble text-info"><span class="m-l-5">540</span></i></td>
+                                            <td><i class="icon-like text-success"><span class="m-l-5">1K</span></i></td>
+                                            <td><div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"> <span class="sr-only">15% Complete</span> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LinkedIn</td>
+                                            <td><span>502 Records</span></td>
+                                            <td><i class="icon-bubble text-info"><span class="m-l-5">102</span></i></td>
+                                            <td><i class="icon-like text-success"><span class="m-l-5">201</span></i></td>
+                                            <td><div class="progress progress-xs">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">100% Complete</span> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Google</td>
+                                            <td><span>502 Records</span></td>
+                                            <td><i class="icon-bubble text-info"><span class="m-l-5">21</span></i></td>
+                                            <td><i class="icon-like text-success"><span class="m-l-5">28</span></i></td>
+                                            <td><div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"> <span class="sr-only">85% Complete</span> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Other</td>
+                                            <td><span>237 Records</span></td>
+                                            <td><i class="icon-bubble text-info"><span class="m-l-5">9</span></i></td>
+                                            <td><i class="icon-like text-success"><span class="m-l-5">15</span></i></td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> <span class="sr-only">40% Complete</span> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Basic Example 8</h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table center-aligned-table">
+                                    <thead>
+                                    <tr>
+                                        <th>Order No</th>
+                                        <th>Product Name</th>
+                                        <th>Purchased On</th>
+                                        <th>Shipping Status</th>
+                                        <th>Payment Method</th>
+                                        <th>Payment Status</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Q01</td>
+                                        <td>Iphone 7</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Dispatched</td>
+                                        <td>Credit card</td>
+                                        <td><label class="badge">Approved</label></td>
+                                        <td><a href="javascript:void(0);" class="btn btn-success btn-sm">View Order</a></td>
+                                        <td><button class="btn btn-danger btn-sm"><i class="icon-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q02</td>
+                                        <td>Galaxy S8</td>
+                                        <td>18 Jan 2018</td>
+                                        <td>Dispatched</td>
+                                        <td>Internet banking</td>
+                                        <td><label class="badge">Pending</label></td>
+                                        <td><a href="javascript:void(0);" class="btn btn-success btn-sm">View Order</a></td>
+                                        <td><button class="btn btn-danger btn-sm"><i class="icon-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q03</td>
+                                        <td>Amazon Echo</td>
+                                        <td>22 Feb 2018</td>
+                                        <td>Dispatched</td>
+                                        <td>Credit card</td>
+                                        <td><label class="badge">Approved</label></td>
+                                        <td><a href="javascript:void(0);" class="btn btn-success btn-sm">View Order</a></td>
+                                        <td><button class="btn btn-danger btn-sm"><i class="icon-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q04</td>
+                                        <td>Google Pixel</td>
+                                        <td>22 Feb 2018</td>
+                                        <td>Dispatched</td>
+                                        <td>Cash on delivery</td>
+                                        <td><label class="badge">Rejected</label></td>
+                                        <td><a href="javascript:void(0);" class="btn btn-success btn-sm">View Order</a></td>
+                                        <td><button class="btn btn-danger btn-sm"><i class="icon-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q05</td>
+                                        <td>Mac Mini</td>
+                                        <td>8 March 2018</td>
+                                        <td>Dispatched</td>
+                                        <td>Debit card</td>
+                                        <td><label class="badge">Approved</label></td>
+                                        <td><a href="javascript:void(0);" class="btn btn-success btn-sm">View Order</a></td>
+                                        <td><button class="btn btn-danger btn-sm"><i class="icon-trash"></i></button></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2381,6 +2175,9 @@
     
 </div>
 
+<!-- Javascript -->
+ 
+<!-- Javascript -->
 <!-- Javascript -->
 <script src="assets/bundles/libscripts.bundle.js"></script>    
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
@@ -2398,5 +2195,8 @@
 <script src="assets/bundles/mainscripts.bundle.js"></script>
 <script src="assets/bundles/morrisscripts.bundle.js"></script>
 <script src="assets/js/pages/tables/jquery-datatable.js"></script>
+<script>
+    $('.sparkbar').sparkline('html', { type: 'bar' });
+</script>
 </body>
 </html>

@@ -937,7 +937,8 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT ATTENDANCE TIME:</label>
-                                            <input type="time" name="StudentAttendanceTime" placeholder="Student Attendance Time" value="" class="form-control" required>
+                                            <input type="text" name="StudentAttendanceTime" placeholder="Student Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
+                                            <!-- <input type="time" name="StudentAttendanceTime" placeholder="Student Attendance Time" value="" class="form-control" required> -->
                                         </div>
                                     </div>
 

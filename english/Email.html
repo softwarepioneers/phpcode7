@@ -10,7 +10,7 @@
 <meta name="description" content="Mplify Bootstrap 4.1.1 Admin Template">
 <meta name="author" content="ThemeMakker, design by: ThemeMakker.com">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
 <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../assets/vendor/animate-css/animate.min.css">
@@ -895,7 +895,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>CONTACTS CUSTOMERS</h2>
+                        <h2>CONTACTS CUSTOMERS:</h2>
                     </div>            
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -916,12 +916,12 @@
                         <div class="body">
                             <form id="basic-form" method="post" novalidate>
                                 <div class="form-group">
-                                    <label>Text Input</label>
-                                    <input type="text" class="form-control" required>
+                                    <label>Customer Name:</label>
+                                    <input type="text" name="Customer" id="Customer" autocomplete="off" placeholder="Customer Name" required class="form-control custom-form-control input-lg uc-text" />
                                 </div>
                                 <div class="form-group">
-                                    <label>Email Input</label>
-                                    <input type="email" class="form-control" required>
+                                    <label>Customer Email</label>
+                                    <input type="email" name="Email" id="Email" autocomplete="off" placeholder="Customer Email" required class="form-control custom-form-control input-lg uc-text" />
                                 </div>
                                 <div class="form-group">
                                     <label>Text Area</label>
@@ -971,7 +971,7 @@
                                     <p id="error-multiselect"></p>
                                 </div> -->
                                 <br>
-                                <button type="submit" class="btn btn-primary">Validate</button>
+                                <button type="submit" class="btn btn-primary">SEND</button>
                             </form>
                         </div>
                     </div>

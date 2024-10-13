@@ -955,20 +955,18 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>USER ACTIVATION:</label>
-                                            <select name="UserActivation" placeholder="User Activation" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >User Activation</option>
-                                                <option value="ACTIVATION"    >ACTIVATION</option>
-                                                <option value="SUSPENSION"    >SUSPENSION</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>USER START DATE:</label>
                                             <input  type="text"  name="UserStartDate" placeholder="User Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>USER END DATE:</label>
+                                            <input  type="text"  name="UserEndDate" placeholder="User End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
                                     <!-- <div class="col">
@@ -980,10 +978,15 @@
                                    
                                   </div>
                                   <div class="row">
+                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>USER END DATE:</label>
-                                            <input  type="text"  name="UserEndDate" placeholder="User End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>USER ACTIVATION:</label>
+                                            <select name="UserActivation" placeholder="User Activation" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >User Activation</option>
+                                                <option value="ACTIVATION"    >ACTIVATION</option>
+                                                <option value="SUSPENSION"    >SUSPENSION</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <!-- <div class="col">

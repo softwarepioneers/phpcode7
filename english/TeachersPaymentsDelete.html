@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>DELETE TEACHERS PAYMENTS</title>
+<title>DELETE STUDENTS PAYMENTS</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -41,7 +41,7 @@
             <div class="navbar-brand">
                 <a href="index.html">
                     <img src="../assets/images/logo-icon.svg" alt="Mplify Logo" class="img-responsive logo">
-                    <span class="name">ACADEMY</span>
+                    <span class="name">SCHOOLS</span>
                 </a>
             </div>
             
@@ -893,7 +893,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>TEACHERS PAYMENTS:</h2>
+                        <h2>DELETE STUDENTS PAYMENTS DATA:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -914,292 +914,126 @@
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER ROLL:</label>
-                                            <input type="text" name="TeacherRoll" placeholder="Teacher Roll" value="" class="form-control" required>
+                                            <label>STUDENT NAME:</label>
+                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER NAME:</label>
-                                            <input type="text" name="TeacherName" placeholder="Teacher Name" value="" class="form-control" required>
+                                            <label>STUDENT TYPE:</label>
+                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Type</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER SCHOOL:</label>
-                                            <input type="text" name="TeacherSchool" placeholder="Teacher School" value="" class="form-control" required>
+                                            <label>METHOD PAYMENT:</label>
+                                            <select name="MethodPayment" placeholder="Method Payment" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Method Payment</option>
+                                                <option value="CASH">CASH</option>
+                                                <option value="E-CADH">E-CADH</option>
+                                            </select>
+                                                               
                                         </div>
                                     </div>
                                   </div>
 
                                   <div class="row">
+
+                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER SEX:</label>
-                                            <input type="text" name="TeacherSex" placeholder="Teacher Sex" value="" class="form-control" required>
+                                            <label>STUDENT FEE DATE:</label>
+                                            <input  type="text"  name="StudentFeeDate" placeholder="Student Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                          
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER STAGE:</label>
-                                            <input type="text" name="TeacherStage" placeholder="Teacher Stage" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER SUBJECT:</label>
-                                            <input type="text" name="TeacherSubject" placeholder="Teacher Subject" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER NATIONALITY:</label>
-                                            <input type="text" name="TeacherNationality" placeholder="Teacher Nationality" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER ADDRESS:</label>
-                                            <input type="text" name="TeacherAddress" placeholder="Teacher Address" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER EMAIL:</label>
-                                            <input type="text" name="TeacherEmail" placeholder="Teacher Email" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <!-- <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER PHONE:</label>
-                                            <input type="text" name="TeacherPhone" placeholder="Teacher Phone" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER MOBILE:</label>
-                                            <input type="text" name="TeacherMobile" placeholder="Teacher Mobile" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER WHATSAPP:</label>
-                                            <input type="text" name="TeacherWhatsApp" placeholder="Teacher WhatsApp" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div> -->
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER REGION:</label>
-                                            <input type="text" name="TeacherRegion" placeholder="Teacher Region" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER CITY:</label>
-                                            <input type="text" name="TeacherCity" placeholder="Teacher City" value="" class="form-control" required>
+                                            <label>STUDENT FEE AMOUT:</label>
+                                            <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                           
                                         </div> 
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHER DISTRICT:</label>
-                                            <input type="text" name="TeacherDistrict" placeholder="Teacher District" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-
-
-                                
-                                  <!-- </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Teacher NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div> -->
-
-                                 
-                                
-                                <!-- <div class="form-group">
-                                    <label>Text Area</label>
-                                    <textarea class="form-control" rows="5" cols="30" required></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Checkbox</label>
-                                    <br/>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Option 1</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 2</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 3</span>
-                                    </label>
-                                    <p id="error-checkbox"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Radio Button</label>
-                                    <br />
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
-                                        <span><i></i>Male</span>
-                                    </label>
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="female">
-                                        <span><i></i>Female</span>
-                                    </label>
-                                    <p id="error-radio"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="food">Multiselect</label>
-                                    <br/>
-                                    <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
-                                        <option value="cheese">Cheese</option>
-                                        <option value="tomatoes">Tomatoes</option>
-                                        <option value="mozarella">Mozzarella</option>
-                                        <option value="mushrooms">Mushrooms</option>
-                                        <option value="pepperoni">Pepperoni</option>
-                                        <option value="onions">Onions</option>
-                                    </select>
-                                    <p id="error-multiselect"></p>
-                                </div> -->
-                                <!-- <div class="card">
-                                    <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
-                                        <thead>
-                                            <tr>
-                                                <th>ISLAMIC:</th>
-                                                <th>ARABIC:</th>
-                                                <th>SOMALI:</th>
-                                                <th>ENGLISH:</th>
-                                                <th>MATHS:</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="IslamicEducation" placeholder="Islamic Education" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ArabicLanguage" placeholder="Arabic Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SomaliLanguage" placeholder="Somali Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="EnglishLanguage" placeholder="English Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="MathsScience" placeholder="Maths Science" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-                                            <thead>
-                                                <tr>
-                                                    <th>CHEMISTRY:</th>
-                                                    <th>PHYSICS:</th>
-                                                    <th>BIOLOGY:</th>
-                                                    <th>COMPUTER:</th>
-                                                    <th>SPORTS:</th>
-                                                </tr>
-                                            </thead>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="ChemistryScience" placeholder="Chemistry Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="PhysicsScience" placeholder="Physics Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="BiologyScience" placeholder="Biology Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ComputerScience" placeholder="Computer Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SportEducation" placeholder="Sport Education" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-
-                                        
-                                        </tbody>
                                     
-                                    </table>
-                               </div> -->
 
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT RECEIPT NUMBER:</label>
+                                            <input type="text" name="StudentReceiptNumber" placeholder="Student Receipt Number" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
                                 
-                                <button type="submit" class="btn btn-danger">DELETE TEACHER PAYMENTS</button>
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT NATIONALITY:</label>
+                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT PHONE:</label>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT FEE REMARK:</label>
+                                            <select name="StudentFeeRemark" placeholder="Student Fee Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Fee Remark</option>
+                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
+                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT SCHOOL:</label>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT STAGE:</label>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="Kindergarten"     >Kindergarten</option>
+                                                <option value="Primary"          >Primary</option>
+                                                <option value="Preparatory"      >Preparatory</option>
+                                                <option value="Secondary"        >Secondary</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT CLASS:</label>
+                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                            
+                                
+                                  <button type="submit" class="btn btn-danger">DELETE</button>
+                                  <button type="reset" class="btn btn-danger">CANCEL</button>
                             </form>
                         </div>
                     </div>

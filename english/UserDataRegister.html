@@ -894,7 +894,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>REGISTER STUDENTS DATA:</h2>
+                        <h2>REGISTER USERS DATA:</h2>
                     </div>           
                 </div>
             </div>
@@ -907,21 +907,21 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>USER NAME:</label>
+                                            <input type="text" name="UserName"  maxlength="28" placeholder="User Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>USER REGISTRATION DATE:</label>
+                                            <input  type="text"  name="UserRegistrationDate" placeholder="User Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT TYPE:</label>
-                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
+                                            <label>USER TYPE:</label>
+                                            <select name="UserType" placeholder="User Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >User Type</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                             </select>
@@ -931,18 +931,18 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
+                                            <label>USER SCHOOL:</label>
+                                            <select name="UserSchool" placeholder="User School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >User School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                            <label>USER STAGE:</label>
+                                            <select name="UserStage" placeholder="User Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >User Stage</option>
                                                 <option value="Kindergarten"     >Kindergarten</option>
                                                 <option value="Primary"          >Primary</option>
                                                 <option value="Preparatory"      >Preparatory</option>
@@ -952,8 +952,8 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CLASS:</label>
-                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <label>USER CLASS:</label>
+                                            <input type="text" name="UserClass"  maxlength="28" placeholder="User Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                    
@@ -961,20 +961,20 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NATIONALITY:</label>
-                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <label>USER NATIONALITY:</label>
+                                            <input type="text" name="UserNationality"  maxlength="28" placeholder="User Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>USER PHONE:</label>
+                                            <input type="text" name="UserPhone" placeholder="User Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT WHATSAPP:</label>
-                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>USER WHATSAPP:</label>
+                                            <input type="text" name="UserWhatsApp" placeholder="User WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                    
@@ -983,27 +983,27 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGION:</label>
-                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            <label>USER REGION:</label>
+                                            <select name="UserRegion" id="subject" placeholder="User Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >User Region</option>
                                             </select>
                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CITY:</label>
-                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student City</option>
+                                            <label>USER CITY:</label>
+                                            <select name="UserCity" id="topic" placeholder="User City" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >User City</option>
                                             </select>
                                             
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT DISTRICT:</label>
-                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student District</option>
+                                            <label>USER DISTRICT:</label>
+                                            <select name="UserDistrict" id="chapter" placeholder="User District" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >User District</option>
                                             </select>
                                             
                                         </div>

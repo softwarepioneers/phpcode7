@@ -924,7 +924,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>USER PASSWORD:</label>
-                                            <input type="text" name="UserPassword"  maxlength="28" placeholder="User Password" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <input type="text" name="UserPassword"  maxlength="28" placeholder="User Password" value="" class="form-control"  required >
                                         </div>
                                     </div>
                                     <!-- <div class="col">
@@ -938,13 +938,23 @@
                                             <label>USER TYPE:</label>
                                             <select name="UserType" placeholder="User Type" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >User Type</option>
-                                                <option value="KINDERGARTEN"     >KINDERGARTEN</option>
-                                                <option value="PRIMARY"          >PRIMARY</option>
-                                                <option value="PREPARATORY"      >PREPARATORY</option>
-                                                <option value="SECONDARY"        >SECONDARY</option>
-                                                <option value="INSTITUTE"      >INSTITUTE</option>
-                                                <option value="UNIVERSITY"        >UNIVERSITY</option>
-                                                <option value="MINISTRY"        >MINISTRY</option>
+
+                                                <option value="KGSS"     >KGSS</option>
+                                                <option value="PRISS"          >PRISS</option>
+                                                <option value="PRESS"      >PRESS</option>
+                                                <option value="SECSS"        >SECSS</option>
+            
+                                                <option value="KGPRISS"        >KGPRISS</option>
+                                                <option value="PRIPRESS"     >PRIPRESS</option>
+                                                <option value="PRESECSS"          >PRESECSS</option>
+
+                                                <option value="KGPRIPRESS"     >KGPRIPRESS</option>
+                                                <option value="PRIPRESECSS"          >PRIPRESECSS</option>
+                                                <option value="KGPRIPRESECSS"     >KGPRIPRESECSS</option>
+
+                                                <option value="INSS"      >INSS</option>
+                                                <option value="UNIS"        >UNIS</option>
+                                                <option value="EMIS"        >EMIS</option>
                                             </select>
 
                                             <!-- <select name="UserType" placeholder="User Type" value=""  class="form-control" required>
@@ -1007,10 +1017,28 @@
                                     </div> -->
                                     <div class="col">
                                         <div class="form-group ">
+                                            <label>USER PERMISSION:</label>
+                                            <select name="UserPermission" placeholder="User Permission" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >User Permission</option>
+                                                <option value="ADMIN"    >ADMIN</option>
+                                                <option value="USERS"    >USERS</option>
+                                                <option value="STUDENTS"    >STUDENTS</option>
+                                                <option value="TEACHERS"    >TEACHERS</option>
+                                                <option value="EMPLOYEES"    >EMPLOYEES</option>
+                                                <option value="LABORERS"    >LABORERS</option>
+                                                <option value="DRIVERS"    >DRIVERS</option>
+                                                <option value="RESULTS"    >RESULTS</option>
+                                                <option value="BUSES"    >BUSES</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col">
+                                        <div class="form-group ">
                                             <label>FULL NAME:</label>
                                             <input type="text" name="FullName"  maxlength="28" placeholder="Full Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col">
                                         <div class="form-group ">
@@ -1064,7 +1092,7 @@
                                    
                                  
                                   </div>
-                                                               
+                                                             
                                    
                                                                
                               

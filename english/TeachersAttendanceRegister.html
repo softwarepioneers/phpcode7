@@ -893,7 +893,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>REGISTER STUDENTS ATTENDANCE:</h2>
+                        <h2>REGISTER TEACHERS ATTENDANCE:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -918,16 +918,16 @@
                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>TEACHERS NAME:</label>
+                                            <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT TYPE:</label>
-                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
+                                            <label>TEACHERS TYPE:</label>
+                                            <select name="TeacherType" placeholder="Teacher Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Type</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                             </select>
@@ -936,8 +936,8 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE TIME:</label>
-                                            <input type="text" name="StudentAttendanceTime" placeholder="Student Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
+                                            <label>TEACHERS ATTENDANCE TIME:</label>
+                                            <input type="text" name="TeacherAttendanceTime" placeholder="Teacher Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
                                         </div>
                                     </div>
 
@@ -947,16 +947,16 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE DATE:</label>
-                                            <input  type="text"  name="StudentAttendanceDate" placeholder="Student Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>TEACHERS ATTENDANCE DATE:</label>
+                                            <input  type="text"  name="TeacherAttendanceDate" placeholder="Teacher Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE STATUS:</label>
-                                            <select name="StudentAttendanceStatus" placeholder="Student Attendance Status" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Attendance Status</option>
+                                            <label>TEACHERS ATTENDANCE STATUS:</label>
+                                            <select name="TeacherAttendanceStatus" placeholder="Teacher Attendance Status" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Attendance Status</option>
                                                 <option value="Persent">Persent</option>
                                                 <option value="Absent">Absent</option>
                                             </select>
@@ -965,9 +965,9 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE REMARK:</label>
-                                            <select name="StudentAttendanceRemark" placeholder="Student Attendance Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Attendance Remark</option>
+                                            <label>TEACHERS ATTENDANCE REMARK:</label>
+                                            <select name="TeacherAttendanceRemark" placeholder="Teacher Attendance Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Attendance Remark</option>
                                                 <option value="Normal">Normal</option>
                                                 <option value="Emergency">Emergency</option>
                                             </select>
@@ -981,18 +981,18 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
+                                            <label>TEACHERS SCHOOL:</label>
+                                            <select name="TeacherSchool" placeholder="Teacher School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                            <label>TEACHERS STAGE:</label>
+                                            <select name="TeacherStage" placeholder="Teacher Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Stage</option>
                                                 <option value="Kindergarten"     >Kindergarten</option>
                                                 <option value="Primary"          >Primary</option>
                                                 <option value="Preparatory"      >Preparatory</option>
@@ -1002,8 +1002,8 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CLASS:</label>
-                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <label>TEACHERS CLASS:</label>
+                                            <input type="text" name="TeacherClass"  maxlength="28" placeholder="Teacher Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                    
@@ -1014,9 +1014,9 @@
                                    
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT REGION:</label>
-                                                <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student Region</option>
+                                                <label>TEACHERS REGION:</label>
+                                                <select name="TeacherRegion" id="subject" placeholder="Teacher Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher Region</option>
                                                 </select>
                                                
                                             </div>
@@ -1024,9 +1024,9 @@
 
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT CITY:</label>
-                                                <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student City</option>
+                                                <label>TEACHERS CITY:</label>
+                                                <select name="TeacherCity" id="topic" placeholder="Teacher Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher City</option>
                                                 </select>
                                                 
                                             </div>
@@ -1034,9 +1034,9 @@
 
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT DISTRICT:</label>
-                                                <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student District</option>
+                                                <label>TEACHERS DISTRICT:</label>
+                                                <select name="TeacherDistrict" id="chapter" placeholder="Teacher chapter" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher District</option>
                                                 </select>
                                                 
                                             </div>

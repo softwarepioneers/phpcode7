@@ -917,46 +917,85 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>TEACHERS NAME:</label>
-                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS REGISTRATION DATE:</label>
-                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                        </div>
-                                    </div>
-                                   
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>TEACHERS TYPE:</label>
-                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
+                                            <select name="TeacherType" placeholder="Teacher Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Type</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>METHOD PAYMENT:</label>
+                                            <select name="MethodPayment" placeholder="Method Payment" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Method Payment</option>
+                                                <option value="CASH">CASH</option>
+                                                <option value="E-CADH">E-CADH</option>
+                                            </select>
+                                                               
+                                        </div>
+                                    </div>
                                   </div>
+
+                                  <div class="row">
+
+                                    
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS FEE DATE:</label>
+                                            <input  type="text"  name="TeacherFeeDate" placeholder="Teacher Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS FEE AMOUT:</label>
+                                            <input type="text" name="TeacherFeeAmount" placeholder="Teacher Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                           
+                                        </div> 
+                                    </div>
+                                    
+
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS RECEIPT NUMBER:</label>
+                                            <input type="text" name="TeacherReceiptNumber" placeholder="Teacher Receipt Number" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                
+
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS MOBILE:</label>
-                                            <input type="text" name="StudentMobile" placeholder="Student Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>TEACHERS NATIONALITY:</label>
+                                            <input type="text" name="TeacherNationality"  maxlength="28" placeholder="Teacher Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS WHATSAPP:</label>
-                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>TEACHERS PHONE:</label>
+                                            <input type="text" name="TeacherPhone" placeholder="Teacher Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS FEES AMOUT:</label>
-                                            <input type="text" name="StudentFeeAmount" placeholder="Student Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-                                        </div> 
+                                            <label>TEACHERS FEE REMARK:</label>
+                                            <select name="TeacherFeeRemark" placeholder="Teacher Fee Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Fee Remark</option>
+                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
+                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
+                                            </select>
+                                        </div>
                                     </div>
                                    
                                   </div>
@@ -965,8 +1004,8 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>TEACHERS SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
+                                            <select name="TeacherSchool" placeholder="Teacher School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
@@ -974,8 +1013,8 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>TEACHERS STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                            <select name="TeacherStage" placeholder="Teacher Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Stage</option>
                                                 <option value="Kindergarten"     >Kindergarten</option>
                                                 <option value="Primary"          >Primary</option>
                                                 <option value="Preparatory"      >Preparatory</option>
@@ -986,33 +1025,11 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>TEACHERS CLASS:</label>
-                                            <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <input type="text" name="TeacherClass"  maxlength="28" placeholder="Teacher Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                    
                                   </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS NATIONALITY:</label>
-                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS ADDRESS:</label>
-                                            <input type="text" name="StudentAddress"  maxlength="28" placeholder="Student Address" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                
                                   
 
                                 

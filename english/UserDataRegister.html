@@ -914,7 +914,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>USER PASSWORD:</label>
-                                            <input type="text" name="UserPassword"  maxlength="28" placeholder="User Password" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <input type="text" name="UserPassword"  maxlength="28" placeholder="User Password" value="" class="form-control"  required >
                                         </div>
                                     </div>
                                     <!-- <div class="col">
@@ -928,23 +928,23 @@
                                             <label>USER TYPE:</label>
                                             <select name="UserType" placeholder="User Type" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >User Type</option>
-                                                <option value="KINDERGARTEN"     >KGSS</option>
-                                                <option value="PRIMARY"          >PRISS</option>
-                                                <option value="PREPARATORY"      >PRESS</option>
-                                                <option value="SECONDARY"        >SECSS</option>
-                                                
-                                                <option value="UNIVERSITY"        >KGPRISS</option>
-                                                <option value="KINDERGARTEN"     >PRIPRESS</option>
-                                                <option value="PRIMARY"          >PRESECSS</option>
 
-                                                <option value="KINDERGARTEN"     >KGPRIPRESS</option>
-                                                <option value="PRIMARY"          >PRIPRESECSS</option>
-                                                <option value="KINDERGARTEN"     >KGPRIPRESECSS</option>
+                                                <option value="KGSS"     >KGSS</option>
+                                                <option value="PRISS"          >PRISS</option>
+                                                <option value="PRESS"      >PRESS</option>
+                                                <option value="SECSS"        >SECSS</option>
+            
+                                                <option value="KGPRISS"        >KGPRISS</option>
+                                                <option value="PRIPRESS"     >PRIPRESS</option>
+                                                <option value="PRESECSS"          >PRESECSS</option>
 
-                                                <option value="INSTITUTE"      >INSS</option>
-                                                <option value="UNIVERSITY"        >UNIS</option>
+                                                <option value="KGPRIPRESS"     >KGPRIPRESS</option>
+                                                <option value="PRIPRESECSS"          >PRIPRESECSS</option>
+                                                <option value="KGPRIPRESECSS"     >KGPRIPRESECSS</option>
 
-                                                <option value="MINISTRY"        >EMIS</option>
+                                                <option value="INSS"      >INSS</option>
+                                                <option value="UNIS"        >UNIS</option>
+                                                <option value="EMIS"        >EMIS</option>
                                             </select>
 
                                             <!-- <select name="UserType" placeholder="User Type" value=""  class="form-control" required>

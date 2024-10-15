@@ -905,135 +905,136 @@
                         <div class="body ">
                             
 
-<form id="basic-form" method="post" >
+                            <form id="basic-form" method="post" >
+                                                    
+                                <div class="row">
                                 
-    <div class="row">
-       
-       
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT NAME:</label>
-                <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT TYPE:</label>
-                <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Type</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION DURATION:</label>
-                <input type="number" name="StudentVacationDuration" placeholder="Student Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-            </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION START DATE:</label>
-                <input  type="text"  name="StudentVacationStartDate" placeholder="Student Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION END DATE:</label>
-                <input  type="text"  name="StudentVacationEndDate" placeholder="Student Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION REMARK:</label>
-                <select name="StudentVacationRemark" placeholder="Student Vacation Remark" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Vacation Remark</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Emergency">Emergency</option>
-                </select>
-
-                
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="row">
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT SCHOOL:</label>
-                <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student School</option>
-                    <option value="Salaama School">Salaama School</option>
-                </select>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT STAGE:</label>
-                <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Stage</option>
-                    <option value="Kindergarten"     >Kindergarten</option>
-                    <option value="Primary"          >Primary</option>
-                    <option value="Preparatory"      >Preparatory</option>
-                    <option value="Secondary"        >Secondary</option>
-                </select>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT CLASS:</label>
-                <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
-            </div>
-        </div>
-       
-      </div>
-      
-      <div class="row">
-
-       
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT REGION:</label>
-                    <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student Region</option>
-                    </select>
-                   
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT CITY:</label>
-                    <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student City</option>
-                    </select>
-                    
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT DISTRICT:</label>
-                    <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student District</option>
-                    </select>
-                    
-                </div>
-            </div>  
-
-      </div>
-
+                                
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS NAME:</label>
+                                            <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS TYPE:</label>
+                                            <select name="TeacherType" placeholder="Teacher Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Type</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS VACATION DURATION:</label>
+                                            <input type="number" name="TeacherVacationDuration" placeholder="Teacher Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="row">
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS VACATION START DATE:</label>
+                                            <input  type="text"  name="TeacherVacationStartDate" placeholder="Teacher Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS VACATION END DATE:</label>
+                                            <input  type="text"  name="TeacherVacationEndDate" placeholder="Teacher Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS VACATION REMARK:</label>
+                                            <select name="TeacherVacationRemark" placeholder="Teacher Vacation Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Vacation Remark</option>
+                                                <option value="Normal">Normal</option>
+                                                <option value="Emergency">Emergency</option>
+                                            </select>
+        
+                                            
+                                        </div>
+                                    </div>
+                                
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS SCHOOL:</label>
+                                            <select name="TeacherSchool" placeholder="Teacher School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS STAGE:</label>
+                                            <select name="TeacherStage" placeholder="Teacher Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Teacher Stage</option>
+                                                <option value="Kindergarten"     >Kindergarten</option>
+                                                <option value="Primary"          >Primary</option>
+                                                <option value="Preparatory"      >Preparatory</option>
+                                                <option value="Secondary"        >Secondary</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TEACHERS CLASS:</label>
+                                            <input type="text" name="TeacherClass"  maxlength="28" placeholder="Teacher Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="row">
+        
+                                
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>TEACHERS REGION:</label>
+                                                <select name="TeacherRegion" id="subject" placeholder="Teacher Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher Region</option>
+                                                </select>
+                                            
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>TEACHERS CITY:</label>
+                                                <select name="TeacherCity" id="topic" placeholder="Teacher Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher City</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>TEACHERS DISTRICT:</label>
+                                                <select name="TeacherDistrict" id="chapter" placeholder="Teacher chapter" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Teacher District</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>  
+        
+                                </div>
+        
+        
                             
                                    
                               

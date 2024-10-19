@@ -894,7 +894,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>UPDATE TEACHERS DATA:</h2>
+                        <h2>UPDATE TEACHERS TASKS:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -913,133 +913,236 @@
                         </div>  -->
                         <div class="body ">
                             <form id="basic-form" method="post" >
-                                                    
+                                
                                 <div class="row">
-                                
-                                
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS NAME:</label>
+                                            <label>TEACHER NAME:</label>
                                             <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
-        
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS TYPE:</label>
-                                            <select name="TeacherType" placeholder="Teacher Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher Type</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
+                                            <label>TEACHER TASKS DATE:</label>
+                                            <input  type="text"  name="TeacherTasksDate" placeholder="Teacher Tasks Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
-        
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION DURATION:</label>
-                                            <input type="number" name="TeacherVacationDuration" placeholder="Teacher Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>FIRST TASK:</label>
+                                            <select   name="FirstTask" placeholder="First Task" value=""  class="anyname form-control"  required>
+                                            <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                <option value="" selected="" disabled="" >First Task</option>
+                                                <option value="OFF">OFF</option>
+                                                <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>          
+                                           </select>
+                                        
+                                             <!-- <select  name="FirstTask" placeholder="First Task" value=""  class="anyname form-control"  required>
+                                               
+                                            </select>  -->
                                         </div>
                                     </div>
-        
-                                </div>
-        
-                                <div class="row">
-        
+                                  </div>
+                                  <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION START DATE:</label>
-                                            <input  type="text"  name="TeacherVacationStartDate" placeholder="Teacher Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                        </div>
-                                    </div>
-        
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS VACATION END DATE:</label>
-                                            <input  type="text"  name="TeacherVacationEndDate" placeholder="Teacher Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-                                        </div>
-                                    </div>
-        
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS VACATION REMARK:</label>
-                                            <select name="TeacherVacationRemark" placeholder="Teacher Vacation Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher Vacation Remark</option>
-                                                <option value="Normal">Normal</option>
-                                                <option value="Emergency">Emergency</option>
-                                            </select>
-        
-                                            
-                                        </div>
-                                    </div>
-                                
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>TEACHERS SCHOOL:</label>
-                                            <select name="TeacherSchool" placeholder="Teacher School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher School</option>
-                                                <option value="Salaama School">Salaama School</option>
+                                            <label>SECOND TASK:</label>
+                                            <select name="SecondTask" placeholder="Second Task" value=""  class="anyname form-control" required>
+                                               <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                <option value="" selected="" disabled="" >Second Task</option>
+                                                <option value="OFF">OFF</option>
+                                                <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS STAGE:</label>
-                                            <select name="TeacherStage" placeholder="Teacher Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher Stage</option>
-                                                <option value="Kindergarten"     >Kindergarten</option>
-                                                <option value="Primary"          >Primary</option>
-                                                <option value="Preparatory"      >Preparatory</option>
-                                                <option value="Secondary"        >Secondary</option>
+                                            <label>THIRD TASK:</label>
+                                            <select name="ThirdTask" placeholder="Third Task" value=""  class="anyname form-control" required>
+                                                 <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Third Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS CLASS:</label>
-                                            <input type="text" name="TeacherClass"  maxlength="28" placeholder="Teacher Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <label>FOURTH TASK:</label>
+                                            <select name="FourthTask" placeholder="Fourth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Fourth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
                                         </div>
                                     </div>
-                                
-                                </div>
-                                
-                                <div class="row">
-        
-                                
-                                        <div class="col">
-                                            <div class="form-group ">
-                                                <label>TEACHERS REGION:</label>
-                                                <select name="TeacherRegion" id="subject" placeholder="Teacher Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher Region</option>
-                                                </select>
-                                            
-                                            </div>
+                                   
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>FIFTH TASK:</label>
+                                            <select name="FifthTask" placeholder="Fifth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Fifth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
                                         </div>
-        
-                                        <div class="col">
-                                            <div class="form-group ">
-                                                <label>TEACHERS CITY:</label>
-                                                <select name="TeacherCity" id="topic" placeholder="Teacher Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher City</option>
-                                                </select>
-                                                
-                                            </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>SIXTH TASK:</label>
+                                            <select name="SixthTask" placeholder="Sixth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Sixth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
                                         </div>
-        
-                                        <div class="col">
-                                            <div class="form-group ">
-                                                <label>TEACHERS DISTRICT:</label>
-                                                <select name="TeacherDistrict" id="chapter" placeholder="Teacher chapter" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher District</option>
-                                                </select>
-                                                
-                                            </div>
-                                        </div>  
-        
-                                </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>SEVENTH TASK:</label>
+                                            <select name="SeventhTask" placeholder="Seventh Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Seventh Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                  
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EIGHTH TASK:</label>
+                                            <select name="EigthTask" placeholder="Eigth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Eigth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>NINTH TASK:</label>
+                                            <select name="NinthTask" placeholder="Ninth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Ninth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>TENTH TASK:</label>
+                                            <select name="TenthTask" placeholder="Tenth Task" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Task" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Tenth Task</option>
+                                                    <option value="OFF">OFF</option>
+                                                    <option value="ISLAMIC EDUCATION">ISLAMIC EDUCATION</option>
+                                                    <option value="ARABIC LANGUAGE">ARABIC LANGUAGE</option>
+                                                    <option value="SOMALI LANGUAGE">SOMALI LANGUAGE</option>
+                                                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                                                    <option value="MATHEMATICS SCIENCE">MATHEMATICS SCIENCE</option>
+                                                    <option value="CHEMISTRY SCIENCE">CHEMISTRY SCIENCE</option>
+                                                    <option value="PHYSICS SCIENCE">PHYSICS SCIENCE</option>
+                                                    <option value="BIOLOGY SCIENCE">BIOLOGY SCIENCE</option>
+                                                    <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                                                    <option value="SPORTS EDUCATION">SPORTS EDUCATION</option>   
+                                            </select>
+                                        </div>
+                                    </div>
+                                 
+                                  </div>
         
                                            
                                    

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-<title>UPDATE TEACHERS PERIODS</title>
+<title>UPDATE CLASSES PERIODS</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -894,7 +894,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>UPDATE TEACHERS PERIODS:</h2>
+                        <h2>UPDATE CLASSES PERIODS:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -917,17 +917,28 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER NAME:</label>
-                                            <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>CLASS DAY:</label>
+                                            <select name="ClassDay" data-placeholder="Class Day" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Class Day</option>
+                                                    <option value="CLASS A">SAT</option>
+                                                    <option value="CLASS B">SUN</option>
+                                                    <option value="CLASS C">MON</option>
+                                                    <option value="CLASS D">TUE</option>
+                                                    <option value="CLASS E">WED</option>
+                                                    <option value="CLASS F">THU</option>
+                                                    <option value="CLASS G">FRI</option>
+                                            </select>
+                  
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHER CLASS:</label>
+                                            <label>CLASS NAME:</label>
                                             <!-- <input type="text" name="TeacherClass"  maxlength="28" placeholder="Teacher Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
-                                            <select name="TeacherClass" data-placeholder="Teacher Class" value=""  class="anyname form-control" required>
+                                            <select name="ClassName" data-placeholder="Class Name" value=""  class="anyname form-control" required>
                                                 <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
-                                                    <option value="" selected="" disabled="" >Teacher Class</option>
+                                                    <option value="" selected="" disabled="" >Class Name</option>
                                                     <option value="CLASS A">CLASS A</option>
                                                     <option value="CLASS B">CLASS B</option>
                                                     <option value="CLASS C">CLASS C</option>
@@ -1182,7 +1193,7 @@
                                     </div>
                                  
                                   </div>
-                                                               
+                                   
                                    
                                                                
                               

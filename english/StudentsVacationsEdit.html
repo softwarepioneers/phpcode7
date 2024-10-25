@@ -905,168 +905,169 @@
                         <div class="body ">
                             
 
-<form id="basic-form" method="post" >
+                            <form id="basic-form" method="post" >
+                                                    
+                                <div class="row">
                                 
-    <div class="row">
-       
-       
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT NAME:</label>
-                <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT TYPE:</label>
-                <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Type</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION DURATION:</label>
-                <input type="number" name="StudentVacationDuration" placeholder="Student Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-            </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION START DATE:</label>
-                <input  type="text"  name="StudentVacationStartDate" placeholder="Student Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION END DATE:</label>
-                <input  type="text"  name="StudentVacationEndDate" placeholder="Student Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT VACATION REMARK:</label>
-                <select name="StudentVacationRemark" placeholder="Student Vacation Remark" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Vacation Remark</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Emergency">Emergency</option>
-                </select>
-
-                
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="row">
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT SCHOOL:</label>
-                <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student School</option>
-                    <option value="Salaama School">Salaama School</option>
-                </select>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT STAGE:</label>
-                <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                    <option value="" selected="" disabled="" >Student Stage</option>
-                    <option value="Kindergarten"     >Kindergarten</option>
-                    <option value="Primary"          >Primary</option>
-                    <option value="Preparatory"      >Preparatory</option>
-                    <option value="Secondary"        >Secondary</option>
-                </select>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-group ">
-                <label>STUDENT CLASS:</label>
-                <!-- <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
-                <select name="StudentClass" data-placeholder="Student Class" value=""  class="anyname form-control" required>
-                    <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
-                        <option value="" selected="" disabled="" >Student Class</option>
-                        <option value="CLASS A">CLASS A</option>
-                        <option value="CLASS B">CLASS B</option>
-                        <option value="CLASS C">CLASS C</option>
-                        <option value="CLASS D">CLASS D</option>
-                        <option value="CLASS E">CLASS E</option>
-                        <option value="CLASS F">CLASS F</option>
-                        <option value="CLASS G">CLASS G</option>
-                        <option value="CLASS H">CLASS H</option>
-                        <option value="CLASS I">CLASS I</option>
-                        <option value="CLASS J">CLASS J</option>
-                        <option value="CLASS K">CLASS K</option>
-                        <option value="CLASS L">CLASS L</option>
-                        <option value="CLASS M">CLASS M</option>
-                        <option value="CLASS N">CLASS N</option>
-                        <option value="CLASS O">CLASS O</option>
-                        <option value="CLASS P">CLASS P</option>
-                        <option value="CLASS Q">CLASS Q</option>
-                        <option value="CLASS R">CLASS R</option>
-                        <option value="CLASS S">CLASS S</option>
-                        <option value="CLASS T">CLASS T</option>
-                        <option value="CLASS U">CLASS U</option>
-                        <option value="CLASS V">CLASS V</option>
-                        <option value="CLASS W">CLASS W</option>
-                        <option value="CLASS X">CLASS X</option>
-                        <option value="CLASS Y">CLASS Y</option>
-                        <option value="CLASS Z">CLASS Z</option>
-
-               </select>
-
-            </div>
-        </div>
-
-       
-      </div>
-      
-      <div class="row">
-
-       
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT REGION:</label>
-                    <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student Region</option>
-                    </select>
-                   
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT CITY:</label>
-                    <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student City</option>
-                    </select>
-                    
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group ">
-                    <label>STUDENT DISTRICT:</label>
-                    <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                        <option value="" selected="" disabled="" >Student District</option>
-                    </select>
-                    
-                </div>
-            </div>  
-
-      </div>
-
+                                
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT NAME:</label>
+                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT TYPE:</label>
+                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Type</option>
+                                                <option value="BOY">BOY</option>
+                                                <option value="GIRL">GIRL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT VACATION DURATION:</label>
+                                            <input type="number" name="StudentVacationDuration" placeholder="Student Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="row">
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT VACATION START DATE:</label>
+                                            <input  type="text"  name="StudentVacationStartDate" placeholder="Student Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT VACATION END DATE:</label>
+                                            <input  type="text"  name="StudentVacationEndDate" placeholder="Student Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT VACATION REMARK:</label>
+                                            <select name="StudentVacationRemark" placeholder="Student Vacation Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Vacation Remark</option>
+                                                <option value="Normal">Normal</option>
+                                                <option value="Emergency">Emergency</option>
+                                            </select>
+        
+                                            
+                                        </div>
+                                    </div>
+                                
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT SCHOOL:</label>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="SALAAMA SCHOOL">SALAAMA SCHOOL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT STAGE:</label>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="KG">KG</option>
+                                                <option value="PRIMARY">PRIMARY</option>
+                                                <option value="PREPARATORY">PREPARATORY</option>
+                                                <option value="SECONDARY">SECONDARY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT CLASS:</label>
+                                            <!-- <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
+                                            <select name="StudentClass" data-placeholder="Student Class" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Student Class</option>
+                                                    <option value="CLASS A">CLASS A</option>
+                                                    <option value="CLASS B">CLASS B</option>
+                                                    <option value="CLASS C">CLASS C</option>
+                                                    <option value="CLASS D">CLASS D</option>
+                                                    <option value="CLASS E">CLASS E</option>
+                                                    <option value="CLASS F">CLASS F</option>
+                                                    <option value="CLASS G">CLASS G</option>
+                                                    <option value="CLASS H">CLASS H</option>
+                                                    <option value="CLASS I">CLASS I</option>
+                                                    <option value="CLASS J">CLASS J</option>
+                                                    <option value="CLASS K">CLASS K</option>
+                                                    <option value="CLASS L">CLASS L</option>
+                                                    <option value="CLASS M">CLASS M</option>
+                                                    <option value="CLASS N">CLASS N</option>
+                                                    <option value="CLASS O">CLASS O</option>
+                                                    <option value="CLASS P">CLASS P</option>
+                                                    <option value="CLASS Q">CLASS Q</option>
+                                                    <option value="CLASS R">CLASS R</option>
+                                                    <option value="CLASS S">CLASS S</option>
+                                                    <option value="CLASS T">CLASS T</option>
+                                                    <option value="CLASS U">CLASS U</option>
+                                                    <option value="CLASS V">CLASS V</option>
+                                                    <option value="CLASS W">CLASS W</option>
+                                                    <option value="CLASS X">CLASS X</option>
+                                                    <option value="CLASS Y">CLASS Y</option>
+                                                    <option value="CLASS Z">CLASS Z</option>
+        
+                                        </select>
+        
+                                        </div>
+                                    </div>
+        
+                                
+                                </div>
+                                
+                                <div class="row">
+        
+                                
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>STUDENT REGION:</label>
+                                                <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Student Region</option>
+                                                </select>
+                                            
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>STUDENT CITY:</label>
+                                                <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Student City</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="form-group ">
+                                                <label>STUDENT DISTRICT:</label>
+                                                <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Student District</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>  
+        
+                                </div>
+        
+        
                                    
                               
                               

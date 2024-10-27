@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +10,10 @@
 <meta name="description" content="Mplify Bootstrap 4.1.1 Admin Template">
 <meta name="author" content="ThemeMakker, design by: ThemeMakker.com">
 
-<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/chosen/css/chosen.css">
+
+<link rel="stylesheet" href="../assets/vendor/sweetalert/sweetalert.css"/><!-- SweetAlert Plugin Js --> 
 <!-- VENDOR CSS -->
 <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../assets/vendor/animate-css/animate.min.css">
@@ -41,7 +45,7 @@
             <div class="navbar-brand">
                 <a href="index.html">
                     <img src="../assets/images/logo-icon.svg" alt="Mplify Logo" class="img-responsive logo">
-                    <span class="name">ACADEMY</span>
+                    <span class="name">SCHOOLS</span>
                 </a>
             </div>
             
@@ -63,10 +67,10 @@
                         <div id="navbar-menu">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#" class="mega_menu icon-menu" title="Mega Menu">CONTACT US</a>
+                                    <a href="#" class="mega_menu icon-menu" title="Mega Menu">EMAIL</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="create_new icon-menu" title="Create New">OUR NEWS</a>
+                                    <a href="#" class="create_new icon-menu" title="Create New">PLAN</a>
                                 </li>
                                 
                                 <!-- <li class="dropdown">
@@ -227,82 +231,211 @@
             </div>
         </div>
     </nav>
+
     <br>
     <div id="leftsidebar" class="sidebar">
         <div class="sidebar-scroll">
             <nav id="leftsidebar-nav" class="sidebar-nav">
                 <ul id="main-menu" class="metismenu">
-                    <!-- <li class="heading">MAIN</li>
-                    <li><a href="index.html"><i class="icon-home"></i><span>DASHBOARD</span></a></li> -->
-                    <li class="heading">DISPLAY</li>
+                    <li class="heading">SYSTEM</li>
+                    <li><a href="#"><i class="icon-home"></i><span> KG SCHOOL</span></a></li>
+                    <!-- <li class="heading">DEPARTMENTS</li>
                     <li><a href="#"><i class="icon-social-youtube"></i><span>STUDENTS LIST</span></a></li>
                     <li><a href="#"><i class="icon-social-youtube"></i><span>TEACHERS LIST</span></a></li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>EMPLOYEES LIST</span></a></li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>LABORERS LIST</span></a></li>
-                    <li><a href="#"><i class="icon-social-youtube"></i><span>DRIVERS LIST</span></a></li>
+                    <li><a href="#"><i class="icon-social-youtube"></i><span>EMPLOYEES LIST</span></a></li> -->
                     <li class="heading">SECTIONS</li>
                     <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-folder"></i><span>STUDENTS </span></a>
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>STUDENTS</span></a>
                         <ul>
-                            <li><a href="#">Register Students Data</a></li>
-                            <li><a href="#">Search Students Data</a></li>
-                            <li><a href="#">Edit Students Data</a></li>
-                            <li><a href="#">Delete Students Data</a></li>
-                            <li><a href="#">Register Students Marks</a></li>
-                            <li><a href="#">Search Students Marks</a></li>
-                            <li><a href="#">Edit Students Marks</a></li>
-                            <li><a href="#">Delete Students Marks</a></li>
+                            <li><a href="StudentsDataRegister.html">Register  Data</a></li>
+                            <li><a href="StudentsDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="StudentsDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="StudentsDataDeleteDisplay.html">Delete  Data</a></li>
+
+                            <li><a href="StudentsParentsRegister.html">Register  Parents</a></li>
+                            <li><a href="StudentsParentsRegisterDisplay.html">Search  Parents</a></li>
+                            <li><a href="StudentsParentsEditDisplay.html">Edit  Parents</a></li>
+                            <li><a href="StudentsParentsDeleteDisplay.html">Delete  Parents</a></li>
+
+                            <li><a href="StudentsMarksRegister.html">Register  Marks</a></li>
+                            <li><a href="StudentsMarksRegisterDisplay.html">Search  Marks</a></li>
+                            <li><a href="StudentsMarksEditDisplay.html">Edit  Marks</a></li>
+                            <li><a href="StudentsMarksDeleteDisplay.html">Delete  Marks</a></li>
+
+                            <li><a href="StudentsFeesRegister.html">Register  Fees</a></li>
+                            <li><a href="StudentsFeesRegisterDisplay.html">Search  Fees</a></li>
+                            <li><a href="StudentsFeesEditDisplay.html">Edit  Fees</a></li>
+                            <li><a href="StudentsFeesDeleteDisplay.html">Delete  Fees</a></li>
+
+                            <li><a href="StudentsAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="StudentsAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="StudentsAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="StudentsAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="StudentsVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="StudentsVacationsRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="StudentsVacationsEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="StudentsVacationsDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="StudentsPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="StudentsPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="StudentsPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="StudentsPaymentsDeleteDisplay.html">Delete  Payments</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>TEACHERS</span></a>
+                        <ul>
+                            <li><a href="TeachersDataRegister.html">Register  Data</a></li>
+                            <li><a href="TeachersDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="TeachersDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="TeachersDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="TeachersTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="TeachersTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="TeachersTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="TeachersTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="TeachersSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="TeachersSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="TeachersSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="TeachersSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="TeachersAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="TeachersVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="TeachersPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="TeachersPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="TeachersPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="TeachersPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
                     <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-folder"></i><span> PARENTS</span></a>
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>EMPLOYEES</span></a>
                         <ul>
-                            <li><a href="#">Register Parents Data</a></li>
-                            <li><a href="#">Search Parents Data</a></li>
-                            <li><a href="#">Edit Parents Data</a></li>
-                            <li><a href="#">Delete Parents Data</a></li>
+                            <li><a href="EmployeeDataRegister.html">Register  Data</a></li>
+                            <li><a href="EmployeeDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="EmployeeDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="EmployeeDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="EmployeeTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="EmployeeTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="EmployeeTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="EmployeeTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="EmployeeSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="EmployeeSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="EmployeeSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="EmployeeSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="EmployeeAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="EmployeeVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="EmployeePaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="EmployeePaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="EmployeePaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="EmployeePaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#forms" class="has-arrow"><i class="icon-folder"></i><span>TEACHERS </span></a>
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>LABORERS</span></a>
                         <ul>
-                            <li><a href="#">Register Teachers</a></li>
-                            <li><a href="#">Search Teachers</a></li>
-                            <li><a href="#">Edit Teachers</a></li>
-                            <li><a href="#">Delete Teachers</a></li>
+                            <li><a href="LaborerDataRegister.html">Register  Data</a></li>
+                            <li><a href="LaborerDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="LaborerDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="LaborerDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="LaborerTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="LaborerTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="LaborerTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="LaborerTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="LaborerSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="LaborerSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="LaborerSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="LaborerSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="LaborerAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="LaborerVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="LaborerPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="LaborerPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="LaborerPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="LaborerPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li > 
-                        <!-- class="active" -->
-                        <a href="#Tables" class="has-arrow"><i class="icon-folder"></i><span>EMPLOYEES </span></a>
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>DRIVERS</span></a>
                         <ul>
-                            <li><a href="#">Register Employees</a></li>
-                            <li><a href="#">Search Employees</a></li>
-                            <li><a href="#">Edit Employees</a></li>
-                            <li><a href="#">Delete Employees</a></li>
+                            <li><a href="DriverDataRegister.html">Register  Data</a></li>
+                            <li><a href="DriverDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="DriverDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="DriverDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="DriverTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="DriverTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="DriverTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="DriverTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="DriverSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="DriverSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="DriverSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="DriverSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="DriverAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="DriverVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="DriverPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="DriverPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="DriverPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="DriverPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#charts" class="has-arrow"><i class="icon-folder"></i><span>LABORERS </span></a>
+
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>PERIODS</span></a>
                         <ul>
-                            <li><a href="#">Register Laborers</a></li>
-                            <li><a href="#">Search Laborers</a></li>
-                            <li><a href="#">Edit Laborers</a></li>
-                            <li><a href="#">Delete Laborers</a></li>
+                            <li><a href="PeriodsRegister.html">Register  periods</a></li>
+                            <li><a href="PeriodsRegisterDisplay.html">Search  periods</a></li>
+                            <li><a href="PeriodsEditDisplay.html">Edit  periods</a></li>
+                            <li><a href="PeriodsDeleteDisplay.html">Delete  periods</a></li>
+ 
                         </ul>
                     </li>
-                    <li>
-                        <a href="#Widgets" class="has-arrow"><i class="icon-folder"></i><span>DRIVERS </span></a>
-                        <ul>                                    
-                            <li><a href="#">Register Drivers</a></li>
-                            <li><a href="#">Search Drivers</a></li>
-                            <li><a href="#">Edit Drivers</a></li>
-                            <li><a href="#">Delete Drivers</a></li>
-                        </ul>
-                    </li>
+
+                  
                    
-                    <li>
-                        <a href="#FileManager" class="has-arrow"><i class="icon-folder"></i><span>ATTENDANCE </span></a>
+                    <!-- <li>
+                        <a href="#FileManager" class="has-arrow"><i class="icon-user"></i><span>ATTENDANCE </span></a>
                         <ul>                                    
                             <li><a href="#">Register Attendance</a></li>
                             <li><a href="#">Search Attendance</a></li>
@@ -311,7 +444,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#Blog" class="has-arrow"><i class="icon-folder"></i><span>VACATIONS </span></a>
+                        <a href="#Blog" class="has-arrow"><i class="icon-user"></i><span>VACATIONS </span></a>
                         <ul>
                             <li><a href="#">Register Vacations</a></li>
                             <li><a href="#">Search Vacations</a></li>
@@ -336,17 +469,42 @@
                             <li><a href="#">Edit Salaries</a></li>
                             <li><a href="#">Delete Salaries</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <!-- <li class="heading">SECURITIES</li> -->
                     <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-folder"></i><span>USERS </span></a>
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>RESULTS </span></a>
                         <ul>
-                            <li><a href="#">Register Users</a></li>
-                            <li><a href="#">Search Users</a></li>
-                            <li><a href="#">Edit Users</a></li>
-                            <li><a href="#">Delete Users</a></li>
+                            <li><a href="UserDataRegister.html">Successfull Students</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Usuccessfull Students</a></li>
                         </ul>
-                    </li>                        
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>BUSES </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Register Buses</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Buses</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Buses</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Buses</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>USERS </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Register Users</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Users</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Users</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Users</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>SETTINGS </span></a>
+                        <ul>
+                            <li><a href="SystemSettingsRegister.html">Register Settings</a></li>
+                            <li><a href="SystemSettingsRegisterDisplay.html">Search Settings</a></li>
+                            <li><a href="SystemSettingsEditDisplay.html">Edit Settings</a></li>
+                            <li><a href="SystemSettingsDeleteDisplay.html">Delete Settings</a></li>
+                        </ul>
+                    </li>                            
                 </ul>
             </nav>
         </div>
@@ -739,65 +897,98 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>EMPLOYEE DATA:</h2>
+                        <h2>DELETE EMPLOYEES DATA:</h2>
                     </div>           
-                    <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
-                        <ul class="breadcrumb justify-content-end">
-                            <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>                            
-                            <li class="breadcrumb-item">Forms</li>
-                            <li class="breadcrumb-item active">STUDENT DATA</li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
              <div class="row clearfix">
                 <div class="col-md-12">
                     <div class="card">
-                      <!-- <div class="header">
-                            <h2>Basic Validation</h2>
-                        </div>  -->
                         <div class="body ">
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-                                   
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE ROLL:</label>
-                                            <input type="text" name="EmployeeRoll" placeholder="Employee Roll" value="" class="form-control" required>
+                                            <label>STUDENT NAME:</label>
+                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE NAME:</label>
-                                            <input type="text" name="EmployeeName" placeholder="Employee Name" value="" class="form-control" required>
+                                            <label>STUDENT REGISTRATION DATE:</label>
+                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE SCHOOL:</label>
-                                            <input type="text" name="EmployeeSchool" placeholder="Employee School" value="" class="form-control" required>
+                                            <label>STUDENT TYPE:</label>
+                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Type</option>
+                                                <option value="BOY">BOY</option>
+                                                <option value="GIRL">GIRL</option>
+                                            </select>
                                         </div>
                                     </div>
                                   </div>
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT SCHOOL:</label>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="SALAAMA SCHOOL">SALAAMA SCHOOL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT STAGE:</label>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="KG">KG</option>
+                                                <option value="PRIMARY">PRIMARY</option>
+                                                <option value="PREPARATORY">PREPARATORY</option>
+                                                <option value="SECONDARY">SECONDARY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT CLASS:</label>
+                                            <!-- <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
+                                            <select name="StudentClass" data-placeholder="Student Class" value=""  class="anyname form-control" required>
+                                                <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Student Class</option>
+                                                    <option value="CLASS A">CLASS A</option>
+                                                    <option value="CLASS B">CLASS B</option>
+                                                    <option value="CLASS C">CLASS C</option>
+                                                    <option value="CLASS D">CLASS D</option>
+                                                    <option value="CLASS E">CLASS E</option>
+                                                    <option value="CLASS F">CLASS F</option>
+                                                    <option value="CLASS G">CLASS G</option>
+                                                    <option value="CLASS H">CLASS H</option>
+                                                    <option value="CLASS I">CLASS I</option>
+                                                    <option value="CLASS J">CLASS J</option>
+                                                    <option value="CLASS K">CLASS K</option>
+                                                    <option value="CLASS L">CLASS L</option>
+                                                    <option value="CLASS M">CLASS M</option>
+                                                    <option value="CLASS N">CLASS N</option>
+                                                    <option value="CLASS O">CLASS O</option>
+                                                    <option value="CLASS P">CLASS P</option>
+                                                    <option value="CLASS Q">CLASS Q</option>
+                                                    <option value="CLASS R">CLASS R</option>
+                                                    <option value="CLASS S">CLASS S</option>
+                                                    <option value="CLASS T">CLASS T</option>
+                                                    <option value="CLASS U">CLASS U</option>
+                                                    <option value="CLASS V">CLASS V</option>
+                                                    <option value="CLASS W">CLASS W</option>
+                                                    <option value="CLASS X">CLASS X</option>
+                                                    <option value="CLASS Y">CLASS Y</option>
+                                                    <option value="CLASS Z">CLASS Z</option>
 
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE SEX:</label>
-                                            <input type="text" name="EmployeeSex" placeholder="Employee Sex" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE SECTION:</label>
-                                            <input type="text" name="EmployeeSection" placeholder="Employee Section" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE JOB:</label>
-                                            <input type="text" name="EmployeeJob" placeholder="Employee Job" value="" class="form-control" required>
+                                           </select>
+                  
                                         </div>
                                     </div>
                                    
@@ -805,253 +996,301 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE NATIONALITY:</label>
-                                            <input type="text" name="EmployeeNationality" placeholder="Employee Nationality" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE ADDRESS:</label>
-                                            <input type="text" name="EmployeeAddress" placeholder="Employee Address" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE EMAIL:</label>
-                                            <input type="text" name="EmployeeEmail" placeholder="Employee Email" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE PHONE:</label>
-                                            <input type="text" name="EmployeePhone" placeholder="Employee Phone" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE MOBILE:</label>
-                                            <input type="text" name="EmployeeMobile" placeholder="Employee Mobile" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE WHATSAPP:</label>
-                                            <input type="text" name="EmployeeWhatsApp" placeholder="Employee WhatsApp" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE REGION:</label>
-                                            <input type="text" name="EmployeeRegion" placeholder="Employee Region" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE CITY:</label>
-                                            <input type="text" name="EmployeeCity" placeholder="Employee City" value="" class="form-control" required>
-                                        </div> 
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee DISTRICT:</label>
-                                            <input type="text" name="EmployeeDistrict" placeholder="Employee District" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
+                                            <label>STUDENT NATIONALITY:</label>
+                                            <select name="StudentNationality" data-placeholder="Student Nationality" value=""  class="anyname form-control" required>
+                                                 <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Student Nationality</option>
+                                                    <option value="AFGHANISTAN">AFGHANISTAN</option>
+                                                    <option value="ALBANIA">ALBANIA</option>
+                                                    <option value="ALGERIA">ALGERIA</option>
+                                                    <option value="ANDORRA">ANDORRA</option>
+                                                    <option value="ANGOLA">ANGOLA</option>
+                                                    <option value="ANGUILLA">ANGUILLA</option>
+                                                    <option value="ANTIGUA AND BARBUDA">ANTIGUA AND BARBUDA</option>
+                                                    <option value="ARGENTINA">ARGENTINA</option>
+                                                    <option value="ARMENIA">ARMENIA</option>
+                                                    <option value="ARUBA">ARUBA</option>
+                                                    <option value="AUSTRALIA">AUSTRALIA</option>
+                                                    <option value="AUSTRIA">AUSTRIA</option>
+                                                    <option value="AZERBAIJAN">AZERBAIJAN</option>
+                                                    <option value="BAHAMAS">BAHAMAS</option>
+                                                    <option value="BAHRAIN">BAHRAIN</option>
+                                                    <option value="BANGLADESH">BANGLADESH</option>
+                                                    <option value="BARBADOS">BARBADOS</option>
+                                                    <option value="BELARUS">BELARUS</option>
+                                                    <option value="BELGIUM">BELGIUM</option>
+                                                    <option value="BELIZE">BELIZE</option>
+                                                    <option value="BENIN">BENIN</option>
+                                                    <option value="BERMUDA">BERMUDA</option>
+                                                    <option value="BHUTAN">BHUTAN</option>
+                                                    <option value="BOLIVIA">BOLIVIA</option>
+                                                    <option value="BOSNIA-HERZEGOVINA">BOSNIA-HERZEGOVINA</option>
+                                                    <option value="BOTSWANA">BOTSWANA</option>
+                                                    <option value="BRAZIL">BRAZIL</option>
+                                                    <option value="BRITISH VIRGIN ISLANDS">BRITISH VIRGIN ISLANDS</option>
+                                                    <option value="BRUNEI">BRUNEI</option>
+                                                    <option value="BULGARIA">BULGARIA</option>
+                                                    <option value="BURKINA FASO">BURKINA FASO</option>
+                                                    <option value="BURMA (MYANMAR)">BURMA (MYANMAR)</option>
+                                                    <option value="BURUNDI">BURUNDI</option>
+                                                    <option value="BYELORUSSIA (BELARUS)">BYELORUSSIA (BELARUS)</option>
+                                                    <option value="CAMBODIA">CAMBODIA</option>
+                                                    <option value="CAMEROON">CAMEROON</option>
+                                                    <option value="CANADA">CANADA</option>
+                                                    <option value="CAPE VERDE">CAPE VERDE</option>
+                                                    <option value="CAYMAN ISLANDS">CAYMAN ISLANDS</option>
+                                                    <option value="CENTRAL AFRICAN REPUBLIC">CENTRAL AFRICAN REPUBLIC</option>
+                                                    <option value="CHAD">CHAD</option>
+                                                    <option value="CHILE">CHILE</option>
+                                                    <option value="CHINA">CHINA</option>
+                                                    <option value="COCOS ISLAND">COCOS ISLAND</option>
+                                                    <option value="COLOMBIA">COLOMBIA</option>
+                                                    <option value="COMOROS">COMOROS</option>
+                                                    <option value="COSTA RICA">COSTA RICA</option>
+                                                    <option value="CROATIA">CROATIA</option>
+                                                    <option value="CUBA">CUBA</option>
+                                                    <option value="CYPRUS">CYPRUS</option>
+                                                    <option value="CZECH REPUBLIC">CZECH REPUBLIC</option>
+                                                    <option value="CZECHOSLOVAKIA">CZECHOSLOVAKIA</option>
+                                                    <option value="DEMOCRATIC REPUBLIC OF CONGO">DEMOCRATIC REPUBLIC OF CONGO</option>
+                                                    <option value="DENMARK">DENMARK</option>
+                                                    <option value="DJIBOUTI">DJIBOUTI</option>
+                                                    <option value="DOMINICA">DOMINICA</option>
+                                                    <option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option>
+                                                    <option value="EAST GERMANY">EAST GERMANY</option>
+                                                    <option value="ECUADOR">ECUADOR</option>
+                                                    <option value="EGYPT">EGYPT</option>
+                                                    <option value="EL SALVADOR">EL SALVADOR</option>
+                                                    <option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option>
+                                                    <option value="ERITREA">ERITREA</option>
+                                                    <option value="ESTONIA">ESTONIA</option>
+                                                    <option value="ETHIOPIA">ETHIOPIA</option>
+                                                    <option value="FEDERATED STATES OF MICRONESA">FEDERATED STATES OF MICRONESA</option>
+                                                    <option value="FIJI">FIJI</option>
+                                                    <option value="FINLAND">FINLAND</option>
+                                                    <option value="FRANCE">FRANCE</option>
+                                                    <option value="FRENCH GUIANA">FRENCH GUIANA</option>
+                                                    <option value="GABON">GABON</option>
+                                                    <option value="GAMBIA">GAMBIA</option>
+                                                    <option value="GAZA STRIP">GAZA STRIP</option>
+                                                    <option value="GEORGIA">GEORGIA</option>
+                                                    <option value="GERMANY">GERMANY</option>
+                                                    <option value="GHANA">GHANA</option>
+                                                    <option value="GIBRALTAR">GIBRALTAR</option>
+                                                    <option value="GREECE">GREECE</option>
+                                                    <option value="GRENADA">GRENADA</option>
+                                                    <option value="GUADELOUPE">GUADELOUPE</option>
+                                                    <option value="GUATEMALA">GUATEMALA</option>
+                                                    <option value="GUINEA">GUINEA</option>
+                                                    <option value="GUINEA BISSAU">GUINEA BISSAU</option>
+                                                    <option value="GUYANA">GUYANA</option>
+                                                    <option value="HAITI">HAITI</option>
+                                                    <option value="HEARD AND MCDONALD ISLANDS">HEARD AND MCDONALD ISLANDS</option>
+                                                    <option value="HOLLAND">HOLLAND</option>
+                                                    <option value="HONDURAS">HONDURAS</option>
+                                                    <option value="HONG KONG">HONG KONG</option>
+                                                    <option value="HUNGARY">HUNGARY</option>
+                                                    <option value="ICELAND">ICELAND</option>
+                                                    <option value="INDIA">INDIA</option>
+                                                    <option value="INDONESIA">INDONESIA</option>
+                                                    <option value="IRAN">IRAN</option>
+                                                    <option value="IRAQ">IRAQ</option>
+                                                    <option value="IRELAND">IRELAND</option>
+                                                    <option value="ISRAEL">ISRAEL</option>
+                                                    <option value="ITALY">ITALY</option>
+                                                    <option value="IVORY COAST (COTE D'IVOIRE)">IVORY COAST (COTE D'IVOIRE)</option>
+                                                    <option value="JAMAICA">JAMAICA</option>
+                                                    <option value="JAPAN">JAPAN</option>
+                                                    <option value="JORDAN">JORDAN</option>
+                                                    <option value="KAMPUCHEA">KAMPUCHEA</option>
+                                                    <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+                                                    <option value="KENYA">KENYA</option>
+                                                    <option value="KIRGHIZIA (KYRGYZSTAN)">KIRGHIZIA (KYRGYZSTAN)</option>
+                                                    <option value="KIRIBATI">KIRIBATI</option>
+                                                    <option value="KOSOVO">KOSOVO</option>
+                                                    <option value="KUWAIT">KUWAIT</option>
+                                                    <option value="LAOS">LAOS</option>
+                                                    <option value="LATVIA">LATVIA</option>
+                                                    <option value="LEBANON">LEBANON</option>
+                                                    <option value="LESOTHO">LESOTHO</option>
+                                                    <option value="LIBERIA">LIBERIA</option>
+                                                    <option value="LIBYA">LIBYA</option>
+                                                    <option value="LITHUANIA">LITHUANIA</option>
+                                                    <option value="MACAU">MACAU</option>
+                                                    <option value="MACEDONIA">MACEDONIA</option>
+                                                    <option value="MADAGASCAR">MADAGASCAR</option>
+                                                    <option value="MALAWI">MALAWI</option>
+                                                    <option value="MALAYSIA">MALAYSIA</option>
+                                                    <option value="MALDIVES">MALDIVES</option>
+                                                    <option value="MALI">MALI</option>
+                                                    <option value="MALTA">MALTA</option>
+                                                    <option value="MARTINIQUE">MARTINIQUE</option>
+                                                    <option value="MAURITANIA">MAURITANIA</option>
+                                                    <option value="MAURITIUS">MAURITIUS</option>
+                                                    <option value="MEXICO">MEXICO</option>
+                                                    <option value="MIDWAY ISLANDS">MIDWAY ISLANDS</option>
+                                                    <option value="MOLDAVIA (MOLDOVA)">MOLDAVIA (MOLDOVA)</option>
+                                                    <option value="MONACO">MONACO</option>
+                                                    <option value="MONGOLIA">MONGOLIA</option>
+                                                    <option value="MONTSERRAT">MONTSERRAT</option>
+                                                    <option value="MOROCCO">MOROCCO</option>
+                                                    <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                                                    <option value="NAMIBIA">NAMIBIA</option>
+                                                    <option value="NAURU">NAURU</option>
+                                                    <option value="NEPAL">NEPAL</option>
+                                                    <option value="NETHERLANDS">NETHERLANDS</option>
+                                                    <option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option>
+                                                    <option value="NEW CALEDONIA">NEW CALEDONIA</option>
+                                                    <option value="NEW ZEALAND">NEW ZEALAND</option>
+                                                    <option value="NICARAGUA">NICARAGUA</option>
+                                                    <option value="NIGER">NIGER</option>
+                                                    <option value="NIGERIA">NIGERIA</option>
+                                                    <option value="NIUE">NIUE</option>
+                                                    <option value="NO NATIONALITY">NO NATIONALITY</option>
+                                                    <option value="NORTH KOREA">NORTH KOREA</option>
+                                                    <option value="NORWAY">NORWAY</option>
+                                                    <option value="NOT DESIGNATED BY IJ">NOT DESIGNATED BY IJ</option>
+                                                    <option value="OMAN">OMAN</option>
+                                                    <option value="PAKISTAN">PAKISTAN</option>
+                                                    <option value="PANAMA">PANAMA</option>
+                                                    <option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option>
+                                                    <option value="PARAGUAY">PARAGUAY</option>
+                                                    <option value="PEOPLE'S REPUBLIC OF BENIN">PEOPLE'S REPUBLIC OF BENIN</option>
+                                                    <option value="PEOPLE'S REPUBLIC OF THE CONGO">PEOPLE'S REPUBLIC OF THE CONGO</option>
+                                                    <option value="PERU">PERU</option>
+                                                    <option value="PHILIPPINES">PHILIPPINES</option>
+                                                    <option value="POLAND">POLAND</option>
+                                                    <option value="PORTUGAL">PORTUGAL</option>
+                                                    <option value="QATAR">QATAR</option>
+                                                    <option value="REPUBLIC OF THE MARSHALL ISLANDS">REPUBLIC OF THE MARSHALL ISLANDS</option>
+                                                    <option value="ROMANIA">ROMANIA</option>
+                                                    <option value="RUSSIA">RUSSIA</option>
+                                                    <option value="RWANDA">RWANDA</option>
+                                                    <option value="SAN MARINO">SAN MARINO</option>
+                                                    <option value="SAO TOME AND PRINCIPE">SAO TOME AND PRINCIPE</option>
+                                                    <option value="SAUDI ARABIA">SAUDI ARABIA</option>
+                                                    <option value="SENEGAL">SENEGAL</option>
+                                                    <option value="SERBIA MONTENEGRO">SERBIA MONTENEGRO</option>
+                                                    <option value="SEYCHELLES">SEYCHELLES</option>
+                                                    <option value="SIERRA LEONE">SIERRA LEONE</option>
+                                                    <option value="SINGAPORE">SINGAPORE</option>
+                                                    <option value="SLOVAK REPUBLIC">SLOVAK REPUBLIC</option>
+                                                    <option value="SLOVENIA">SLOVENIA</option>
+                                                    <option value="SOLOMON ISLANDS">SOLOMON ISLANDS</option>
+                                                    <option value="SOMALIA">SOMALIA</option>
+                                                    <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+                                                    <option value="SOUTH KOREA">SOUTH KOREA</option>
+                                                    <option value="SOVIET UNION">SOVIET UNION</option>
+                                                    <option value="SPAIN">SPAIN</option>
+                                                    <option value="SRI LANKA">SRI LANKA</option>
+                                                    <option value="ST. KITTS, WEST INDIES">ST. KITTS, WEST INDIES</option>
+                                                    <option value="ST. KITTS AND NEVIS">ST. KITTS AND NEVIS</option>
+                                                    <option value="ST. LUCIA">ST. LUCIA</option>
+                                                    <option value="ST. VINCENT AND THE GRENADINES">ST. VINCENT AND THE GRENADINES</option>
+                                                    <option value="STATELESS - ALIEN UNABLE TO NAME A COUNTRY">STATELESS - ALIEN UNABLE TO NAME A COUNTRY</option>
+                                                    <option value="SUDAN">SUDAN</option>
+                                                    <option value="SURINAME">SURINAME</option>
+                                                    <option value="SWAZILAND">SWAZILAND</option>
+                                                    <option value="SWEDEN">SWEDEN</option>
+                                                    <option value="SWITZERLAND">SWITZERLAND</option>
+                                                    <option value="SYRIA">SYRIA</option>
+                                                    <option value="TAIWAN">TAIWAN</option>
+                                                    <option value="TAJIKISTAN (TADZHIK)">TAJIKISTAN (TADZHIK)</option>
+                                                    <option value="TANZANIA">TANZANIA</option>
+                                                    <option value="THAILAND">THAILAND</option>
+                                                    <option value="THE REPUBLIC OF PALAU">THE REPUBLIC OF PALAU</option>
+                                                    <option value="TOGO">TOGO</option>
+                                                    <option value="TONGA">TONGA</option>
+                                                    <option value="TRINIDAD AND TOBAGO">TRINIDAD AND TOBAGO</option>
+                                                    <option value="TUNISIA">TUNISIA</option>
+                                                    <option value="TURKEY">TURKEY</option>
+                                                    <option value="TURKMENISTAN">TURKMENISTAN</option>
+                                                    <option value="TURKS AND CAICOS ISLANDS">TURKS AND CAICOS ISLANDS</option>
+                                                    <option value="UGANDA">UGANDA</option>
+                                                    <option value="UKRAINE">UKRAINE</option>
+                                                    <option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option>
+                                                    <option value="UNITED KINGDOM">UNITED KINGDOM</option>
+                                                    <option value="UNKNOWN NATIONALITY">UNKNOWN NATIONALITY</option>
+                                                    <option value="UPPER VOLTA">UPPER VOLTA</option>
+                                                    <option value="URUGUAY">URUGUAY</option>
+                                                    <option value="UZEBEKISTAN">UZEBEKISTAN</option>
+                                                    <option value="VENEZUELA">VENEZUELA</option>
+                                                    <option value="VIETNAM">VIETNAM</option>
+                                                    <option value="WESTERN SAHARA">WESTERN SAHARA</option>
+                                                    <option value="WESTERN SAMOA">WESTERN SAMOA</option>
+                                                    <option value="YEMEN">YEMEN</option>
+                                                    <option value="YUGOSLAVIA">YUGOSLAVIA</option>
+                                                    <option value="ZAIRE">ZAIRE</option>
+                                                    <option value="ZAMBIA">ZAMBIA</option>
+                                                    <option value="ZIMBABWE">ZIMBABWE</option>
 
-
-                                
-                                  <!-- </div>
-                                  <div class="row">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT NATIONALITY:</label>
+                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                        </div>
+                                    </div> -->
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                            <label>STUDENT PHONE:</label>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                            <label>STUDENT WHATSAPP:</label>
+                                            <input type="text" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                    
                                   </div>
+                                  
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                            <label>STUDENT REGION:</label>
+                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            </select>
+                                           
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                            <label>STUDENT CITY:</label>
+                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student City</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
+                                            <label>STUDENT DISTRICT:</label>
+                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student District</option>
+                                            </select>
+                                            
                                         </div>
                                     </div>
                                    
-                                  </div> -->
-
                                  
-                                
-                                <!-- <div class="form-group">
-                                    <label>Text Area</label>
-                                    <textarea class="form-control" rows="5" cols="30" required></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Checkbox</label>
-                                    <br/>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Option 1</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 2</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 3</span>
-                                    </label>
-                                    <p id="error-checkbox"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Radio Button</label>
-                                    <br />
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
-                                        <span><i></i>Male</span>
-                                    </label>
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="female">
-                                        <span><i></i>Female</span>
-                                    </label>
-                                    <p id="error-radio"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="food">Multiselect</label>
-                                    <br/>
-                                    <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
-                                        <option value="cheese">Cheese</option>
-                                        <option value="tomatoes">Tomatoes</option>
-                                        <option value="mozarella">Mozzarella</option>
-                                        <option value="mushrooms">Mushrooms</option>
-                                        <option value="pepperoni">Pepperoni</option>
-                                        <option value="onions">Onions</option>
-                                    </select>
-                                    <p id="error-multiselect"></p>
-                                </div> -->
-                                <!-- <div class="card">
-                                    <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
-                                        <thead>
-                                            <tr>
-                                                <th>ISLAMIC:</th>
-                                                <th>ARABIC:</th>
-                                                <th>SOMALI:</th>
-                                                <th>ENGLISH:</th>
-                                                <th>MATHS:</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="IslamicEducation" placeholder="Islamic Education" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ArabicLanguage" placeholder="Arabic Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SomaliLanguage" placeholder="Somali Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="EnglishLanguage" placeholder="English Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="MathsScience" placeholder="Maths Science" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-                                            <thead>
-                                                <tr>
-                                                    <th>CHEMISTRY:</th>
-                                                    <th>PHYSICS:</th>
-                                                    <th>BIOLOGY:</th>
-                                                    <th>COMPUTER:</th>
-                                                    <th>SPORTS:</th>
-                                                </tr>
-                                            </thead>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="ChemistryScience" placeholder="Chemistry Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="PhysicsScience" placeholder="Physics Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="BiologyScience" placeholder="Biology Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ComputerScience" placeholder="Computer Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SportEducation" placeholder="Sport Education" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-
-                                        
-                                        </tbody>
-                                    
-                                    </table>
-                               </div> -->
-
-                                <br>
-                                <button type="submit" class="btn btn-danger">DELETE EMPLOYEE DATA</button>
+                                  </div>
+                            
+                                   
+                              
+                                  <!-- <button type="submit" class="btn btn-primary js-sweetalert" data-type="success">CLICK ME</button> -->
+                                  <button type="submit" class="btn btn-danger">DELETE</button>
+                                  <button type="reset" class="btn btn-danger"> CANCEL</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-12">
-                    <div class="card">
+               
+                    <!-- <div class="card">
                         <div class="header">
                             <h2>Advanced Validation</h2>
                         </div>
@@ -1111,8 +1350,8 @@
                                 <button type="submit" class="btn btn-primary">Validate</button>
                             </form>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </div> 
 
             
@@ -1132,6 +1371,15 @@
     
 <script src="assets/bundles/mainscripts.bundle.js"></script>
 <script src="assets/bundles/morrisscripts.bundle.js"></script>
+
+<script src="/chosen/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="/chosen/js/chosen.jquery.js" type="text/javascript"></script>
+
+
+
+<script src="../assets/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js --> 
+<script src="assets/js/pages/ui/dialogs.js"></script><!-- SweetAlert Plugin Js --> 
+
 <script>
     $(function() {
         // validation needs name of the element
@@ -1140,7 +1388,65 @@
         // initialize after multiselect
         $('#basic-form').parsley();
     });
+
+    // GOBOLADA
+
+    var subjectObject = {
+    "AWDAL": {
+      "BORAMA": ["SH.AXMED SALAAN", "SH.CUSMAN", "SH.CALI JAWHAR", "SH.MAKAAHIIL"] //4
+      },
+    "MAROODIJEEX": {
+      "HARGAYSA": ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE","MAXAMED MOOGE"] //8
+    },
+    "SAAXIL": {
+      "BARBARA": ["BARBARA", "GODAWAYN", "GODAYAR", "SHEEKH"] //4
+      },
+  
+    "SANAAG": {
+      "CEERIGAABO": ["BADHAN","CEELAFWAYN","CEERIGAABO", "GAR ADAG", "LAASQORAY", "NAHAR"] //6
+      },
+    "SOOL": {
+      "LAASCAANOOD": ["CAYNABO", "LAASCAANOOD", "TALEEX", "XUDUN"] //4
+    },
+    "TOGDHEER": {
+      "BURCO": ["FAARAX OMAAR", "MAXAMED CALI", "MAXAMAD SALEEBAAN", "SH.BASHIIR"] //4
+    }
+  }
+  window.onload = function() {
+    var subjectSel = document.getElementById("subject");
+    var topicSel = document.getElementById("topic");
+    var chapterSel = document.getElementById("chapter");
+    for (var x in subjectObject) {
+      subjectSel.options[subjectSel.options.length] = new Option(x, x);
+    }
+    subjectSel.onchange = function() {
+      //empty Chapters- and Topics- dropdowns
+      chapterSel.length = 1;
+      topicSel.length = 1;
+      //display correct values
+      for (var y in subjectObject[this.value]) {
+        topicSel.options[topicSel.options.length] = new Option(y, y);
+      }
+    }
+    topicSel.onchange = function() {
+      //empty Chapters dropdown
+      chapterSel.length = 1;
+      //display correct values
+      var z = subjectObject[subjectSel.value][this.value];
+      for (var i = 0; i < z.length; i++) {
+        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+      }
+    }
+  }
+  // GOBOLADA
+
     </script>
+
+<script>
+    $(".anyname").chosen();
+</script>
+
+
 </body>
 </html>
 

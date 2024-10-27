@@ -12,8 +12,8 @@
 
 <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 
-<!-- 
-<link rel="stylesheet" href="../assets/vendor/sweetalert/sweetalert.css"/>SweetAlert Plugin Js  -->
+
+<link rel="stylesheet" href="../assets/vendor/sweetalert/sweetalert.css"/> <!--SweetAlert Plugin Js  -->
 
 <!-- VENDOR CSS -->
 <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -1090,7 +1090,7 @@
                                    
                               
                               
-                                  <button type="submit" id="btn" class="btn btn-success">ENROLL</button>
+                                  <button type="submit" onclick="Success()" class="btn btn-success">ENROLL</button>
                                   <button type="reset" class="btn btn-success"> CANCEL</button>
                             </form>
                         </div>
@@ -1243,6 +1243,18 @@
   }
   // GOBOLADA
 
+    </script>
+
+    <script>
+        function Success() {
+        // code to be executed
+        Swal.fire({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success"
+                });
+        
+         }
     </script>
             
        

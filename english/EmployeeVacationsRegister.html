@@ -913,16 +913,16 @@
                                 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS NAME:</label>
-                                            <input type="text" name="TeacherName"  maxlength="28" placeholder="Teacher Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>EMPLOYEE NAME:</label>
+                                            <input type="text" name="EmpoyeeName"  maxlength="28" placeholder="Empoyee Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS TYPE:</label>
-                                            <select name="TeacherType" placeholder="Teacher Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher Type</option>
+                                            <label>EMPLOYEE TYPE:</label>
+                                            <select name="EmpoyeeType" placeholder="Empoyee Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Type</option>
                                                 <option value="MAN">MAN</option>
                                                 <option value="WOMAN">WOMAN</option>
                                             </select>
@@ -931,8 +931,8 @@
         
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION DURATION:</label>
-                                            <input type="number" name="TeacherVacationDuration" placeholder="Teacher Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>EMPLOYEE VACATION DURATION:</label>
+                                            <input type="number" name="EmpoyeeVacationDuration" placeholder="Empoyee Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
         
@@ -942,23 +942,23 @@
         
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION START DATE:</label>
-                                            <input  type="text"  name="TeacherVacationStartDate" placeholder="Teacher Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>EMPLOYEE VACATION START DATE:</label>
+                                            <input  type="text"  name="EmpoyeeVacationStartDate" placeholder="Empoyee Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION END DATE:</label>
-                                            <input  type="text"  name="TeacherVacationEndDate" placeholder="Teacher Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>EMPLOYEE VACATION END DATE:</label>
+                                            <input  type="text"  name="EmpoyeeVacationEndDate" placeholder="Empoyee Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS VACATION REMARK:</label>
-                                            <select name="TeacherVacationRemark" placeholder="Teacher Vacation Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher Vacation Remark</option>
+                                            <label>EMPLOYEE VACATION REMARK:</label>
+                                            <select name="EmpoyeeVacationRemark" placeholder="Empoyee Vacation Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Vacation Remark</option>
                                                 <option value="NORMAL">NORMAL</option>
                                                 <option value="EMERGENCY">EMERGENCY</option>
                                             </select>
@@ -972,9 +972,9 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>TEACHERS SCHOOL:</label>
-                                            <select name="TeacherSchool" placeholder="Teacher School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Teacher School</option>
+                                            <label>EMPLOYEE SCHOOL:</label>
+                                            <select name="EmpoyeeSchool" placeholder="Empoyee School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee School</option>
                                                 <option value="SALAAMA SCHOOL">SALAAMA SCHOOL</option>
                                             </select>
                                         </div>
@@ -1012,9 +1012,9 @@
                                 
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>TEACHERS REGION:</label>
-                                                <select name="TeacherRegion" id="subject" placeholder="Teacher Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher Region</option>
+                                                <label>EMPLOYEE REGION:</label>
+                                                <select name="EmpoyeeRegion" id="subject" placeholder="Empoyee Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Empoyee Region</option>
                                                 </select>
                                             
                                             </div>
@@ -1022,9 +1022,9 @@
         
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>TEACHERS CITY:</label>
-                                                <select name="TeacherCity" id="topic" placeholder="Teacher Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher City</option>
+                                                <label>EMPLOYEE CITY:</label>
+                                                <select name="EmpoyeeCity" id="topic" placeholder="Empoyee Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Empoyee City</option>
                                                 </select>
                                                 
                                             </div>
@@ -1032,9 +1032,9 @@
         
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>TEACHERS DISTRICT:</label>
-                                                <select name="TeacherDistrict" id="chapter" placeholder="Teacher chapter" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Teacher District</option>
+                                                <label>EMPLOYEE DISTRICT:</label>
+                                                <select name="EmpoyeeDistrict" id="chapter" placeholder="Empoyee chapter" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Empoyee District</option>
                                                 </select>
                                                 
                                             </div>

@@ -1,9 +1,12 @@
 
+
+
+
 <!doctype html>
 <html lang="en">
 
 <head>
-<title>EDIT EMPLOYEES VACATIONS</title>
+<title>UPDATE EMPLOYEES VACATIONS</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -44,7 +47,7 @@
             <div class="navbar-brand">
                 <a href="index.html">
                     <img src="../assets/images/logo-icon.svg" alt="Mplify Logo" class="img-responsive logo">
-                    <span class="name">ACADEMY</span>
+                    <span class="name">SCHOOLS</span>
                 </a>
             </div>
             
@@ -56,20 +59,20 @@
                         </div>                        
                         <a href="javascript:void(0);" class="btn-toggle-fullwidth btn-toggle-hide"><i class="fa fa-bars"></i></a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <form id="navbar-search" class="navbar-form search-form">
-                            <input value="" class="form-control" placeholder="Search here..." type="text">
-                            <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                            <input id="Mysearch" onkeyup="myFunction()" value="" class="form-control" placeholder="CLASSES HERE..." type="text">
+                            <button type="reset" class="btn btn-default"><i class="icon-magnifier"></i></button>
                         </form>
-                    </li> -->
+                    </li>
                     <li>
                         <div id="navbar-menu">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#" class="mega_menu icon-menu" title="Mega Menu">CONTACT US</a>
+                                    <a href="#" class="mega_menu icon-menu" title="Mega Menu">EMAIL</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="create_new icon-menu" title="Create New">OUR NEWS</a>
+                                    <a href="#" class="create_new icon-menu" title="Create New">PLAN</a>
                                 </li>
                                 <!-- <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
@@ -230,155 +233,279 @@
         </div>
     </nav>
 
+    <br>
     <div id="leftsidebar" class="sidebar">
         <div class="sidebar-scroll">
             <nav id="leftsidebar-nav" class="sidebar-nav">
                 <ul id="main-menu" class="metismenu">
-                    <li class="heading">Main</li>
-                    <li><a href="index.html"><i class="icon-home"></i><span>Dashboard</span></a></li>
-                    <li class="heading">App</li>
-                    <li><a href="app-inbox.html"><i class="icon-envelope"></i><span>Inbox</span></a></li>
-                    <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>Chat</span></a></li>
-                    <li><a href="app-calendar.html"><i class="icon-calendar"></i><span>Calendar</span></a></li>
-                    <li><a href="app-taskboard.html"><i class="icon-notebook"></i><span>Taskboard</span></a></li>
-                    <li class="heading">UI Elements</li>
+                    <li class="heading">SYSTEM</li>
+                    <li><a href="#"><i class="icon-home"></i><span> KG SCHOOL</span></a></li>
+                    <!-- <li class="heading">DEPARTMENTS</li>
+                    <li><a href="#"><i class="icon-social-youtube"></i><span>STUDENTS LIST</span></a></li>
+                    <li><a href="#"><i class="icon-social-youtube"></i><span>TEACHERS LIST</span></a></li>
+                    <li><a href="#"><i class="icon-social-youtube"></i><span>EMPLOYEES LIST</span></a></li> -->
+                    <li class="heading">SECTIONS</li>
                     <li class="middle">
-                        <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i><span>Component</span></a>
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>STUDENTS</span></a>
                         <ul>
-                            <li><a href="ui-card.html">Card Layout</a></li>
-                            <li><a href="ui-typography.html">Typography</a></li>
-                            <li><a href="ui-tabs.html">Tabs</a></li>
-                            <li><a href="ui-buttons.html">Buttons</a></li>
-                            <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-                            <li><a href="ui-icons.html">Icons</a></li>
-                            <li><a href="ui-notifications.html">Notifications</a></li>
-                            <li><a href="ui-colors.html">Colors</a></li>
-                            <li><a href="ui-dialogs.html">Dialogs</a></li>
-                            <li><a href="ui-list-group.html">List Group</a></li>
-                            <li><a href="ui-media-object.html">Media Object</a></li>
-                            <li><a href="ui-modals.html">Modals</a></li>
-                            <li><a href="ui-nestable.html">Nestable</a></li>
-                            <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                            <li><a href="ui-range-sliders.html">Range Sliders</a></li>
-                            <li><a href="ui-treeview.html">Treeview</a></li>
+                            <li><a href="StudentsDataRegister.html">Register  Data</a></li>
+                            <li><a href="StudentsDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="StudentsDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="StudentsDataDeleteDisplay.html">Delete  Data</a></li>
+
+                            <li><a href="StudentsParentsRegister.html">Register  Parents</a></li>
+                            <li><a href="StudentsParentsRegisterDisplay.html">Search  Parents</a></li>
+                            <li><a href="StudentsParentsEditDisplay.html">Edit  Parents</a></li>
+                            <li><a href="StudentsParentsDeleteDisplay.html">Delete  Parents</a></li>
+
+                            <li><a href="StudentsMarksRegister.html">Register  Marks</a></li>
+                            <li><a href="StudentsMarksRegisterDisplay.html">Search  Marks</a></li>
+                            <li><a href="StudentsMarksEditDisplay.html">Edit  Marks</a></li>
+                            <li><a href="StudentsMarksDeleteDisplay.html">Delete  Marks</a></li>
+
+                            <li><a href="StudentsFeesRegister.html">Register  Fees</a></li>
+                            <li><a href="StudentsFeesRegisterDisplay.html">Search  Fees</a></li>
+                            <li><a href="StudentsFeesEditDisplay.html">Edit  Fees</a></li>
+                            <li><a href="StudentsFeesDeleteDisplay.html">Delete  Fees</a></li>
+
+                            <li><a href="StudentsAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="StudentsAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="StudentsAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="StudentsAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="StudentsVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="StudentsVacationsRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="StudentsVacationsEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="StudentsVacationsDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="StudentsPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="StudentsPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="StudentsPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="StudentsPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#forms" class="has-arrow"><i class="icon-pencil"></i><span>Forms</span></a>
+                    
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>TEACHERS</span></a>
                         <ul>
-                            <li><a href="forms-validation.html">Form Validation</a></li>
-                            <li><a href="forms-advanced.html">Advanced Elements</a></li>
-                            <li><a href="forms-basic.html">Basic Elements</a></li>
-                            <li><a href="forms-wizard.html">Form Wizard</a></li>
-                            <li><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
-                            <li><a href="forms-cropping.html">Image Cropping</a></li>
-                            <li><a href="forms-summernote.html">Summernote</a></li>
-                            <li><a href="forms-editors.html">CKEditor</a></li>
-                            <li><a href="forms-markdown.html">Markdown</a></li>
+                            <li><a href="TeachersDataRegister.html">Register  Data</a></li>
+                            <li><a href="TeachersDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="TeachersDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="TeachersDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="TeachersTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="TeachersTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="TeachersTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="TeachersTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="TeachersSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="TeachersSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="TeachersSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="TeachersSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="TeachersAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="TeachersVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="TeachersAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="TeachersAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="TeachersAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="TeachersPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="TeachersPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="TeachersPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="TeachersPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li >
-                        <!-- class="active" -->
-                        <a href="#Tables" class="has-arrow"><i class="icon-tag"></i><span>Tables</span></a>
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>EMPLOYEES</span></a>
                         <ul>
-                            <li class="active"><a href="table-basic.html">Tables Example</a></li>
-                            <li><a href="table-normal.html">Normal Tables</a></li>
-                            <li><a href="table-jquery-datatable.html">Jquery Datatables</a></li>
-                            <li><a href="table-editable.html">Editable Tables</a></li>
-                            <li><a href="table-color.html">Tables Color</a></li>
-                            <li><a href="table-filter.html">Table Filter</a></li>
-                            <li><a href="table-dragger.html">Table dragger</a></li>
+                            <li><a href="EmployeeDataRegister.html">Register  Data</a></li>
+                            <li><a href="EmployeeDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="EmployeeDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="EmployeeDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="EmployeeTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="EmployeeTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="EmployeeTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="EmployeeTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="EmployeeSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="EmployeeSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="EmployeeSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="EmployeeSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="EmployeeAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="EmployeeVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="EmployeeAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="EmployeePaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="EmployeePaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="EmployeePaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="EmployeePaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#charts" class="has-arrow"><i class="icon-bar-chart"></i><span>Charts</span></a>
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>LABORERS</span></a>
                         <ul>
-                            <li><a href="chart-e.html">E Chart</a> </li>
-                            <li><a href="chart-morris.html">Morris</a> </li>
-                            <li><a href="chart-flot.html">Flot</a> </li>
-                            <li><a href="chart-chartjs.html">ChartJS</a> </li>
-                            <li><a href="chart-jquery-knob.html">Jquery Knob</a> </li>
-                            <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
-                            <li><a href="chart-peity.html">Peity</a></li>
-                            <li><a href="chart-c3.html">C3 Charts</a></li>
-                            <li><a href="chart-gauges.html">Gauges</a></li>
+                            <li><a href="LaborerDataRegister.html">Register  Data</a></li>
+                            <li><a href="LaborerDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="LaborerDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="LaborerDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="LaborerTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="LaborerTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="LaborerTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="LaborerTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="LaborerSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="LaborerSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="LaborerSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="LaborerSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="LaborerAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="LaborerVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="LaborerAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="LaborerAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="LaborerAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="LaborerPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="LaborerPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="LaborerPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="LaborerPaymentsDeleteDisplay.html">Delete  Payments</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#Widgets" class="has-arrow"><i class="icon-puzzle"></i><span>Widgets</span></a>
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>DRIVERS</span></a>
+                        <ul>
+                            <li><a href="DriverDataRegister.html">Register  Data</a></li>
+                            <li><a href="DriverDataRegisterDisplay.html">Search  Data</a></li>
+                            <li><a href="DriverDataEditDisplay.html">Edit  Data</a></li>
+                            <li><a href="DriverDataDeleteDisplay.html">Delete  Data</a></li>
+ 
+                            <li><a href="DriverTasksRegister.html">Register  Tasks</a></li>
+                            <li><a href="DriverTasksRegisterDisplay.html">Search  Tasks</a></li>
+                            <li><a href="DriverTasksEditDisplay.html">Edit  Tasks</a></li>
+                            <li><a href="DriverTasksDeleteDisplay.html">Delete  Tasks</a></li>
+
+                            <li><a href="DriverSalariesRegister.html">Register  Salaries</a></li>
+                            <li><a href="DriverSalariesRegisterDisplay.html">Search  Salaries</a></li>
+                            <li><a href="DriverSalariesEditDisplay.html">Edit  Salaries</a></li>
+                            <li><a href="DriverSalariesDeleteDisplay.html">Delete  Salaries</a></li>
+
+                            <li><a href="DriverAttendanceRegister.html">Register  Attendance</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Attendance</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Attendance</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Attendance</a></li>
+
+                            <li><a href="DriverVacationsRegister.html">Register  Vacations</a></li>
+                            <li><a href="DriverAttendanceRegisterDisplay.html">Search  Vacations</a></li>
+                            <li><a href="DriverAttendanceEditDisplay.html">Edit  Vacations</a></li>
+                            <li><a href="DriverAttendanceDeleteDisplay.html">Delete  Vacations</a></li>
+
+                            <li><a href="DriverPaymentsRegister.html">Register  Payments</a></li>
+                            <li><a href="DriverPaymentsRegisterDisplay.html">Search  Payments</a></li>
+                            <li><a href="DriverPaymentsEditDisplay.html">Edit  Payments</a></li>
+                            <li><a href="DriverPaymentsDeleteDisplay.html">Delete  Payments</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="middle">
+                        <a href="#uiElements" class="has-arrow"><i class="icon-home"></i><span>PERIODS</span></a>
+                        <ul>
+                            <li><a href="PeriodsRegister.html">Register  periods</a></li>
+                            <li><a href="PeriodsRegisterDisplay.html">Search  periods</a></li>
+                            <li><a href="PeriodsEditDisplay.html">Edit  periods</a></li>
+                            <li><a href="PeriodsDeleteDisplay.html">Delete  periods</a></li>
+ 
+                        </ul>
+                    </li>
+
+                  
+                   
+                    <!-- <li>
+                        <a href="#FileManager" class="has-arrow"><i class="icon-user"></i><span>ATTENDANCE </span></a>
                         <ul>                                    
-                            <li><a href="widgets-statistics.html">Statistics</a></li>
-                            <li><a href="widgets-data.html">Data</a></li>
-                            <li><a href="widgets-chart.html">Chart</a></li>
-                            <li><a href="widgets-weather.html">Weather</a></li>
-                            <li><a href="widgets-social.html">Social</a></li>
-                            <li><a href="widgets-blog.html">Blog</a></li>
-                            <li><a href="widgets-ecommerce.html">eCommerce</a></li>
-                        </ul>
-                    </li>
-                    <li class="heading">User</li>
-                    <li>
-                        <a href="#FileManager" class="has-arrow"><i class="icon-folder"></i><span>File Manager</span></a>
-                        <ul>                                    
-                            <li><a href="file-dashboard.html">Dashboard</a></li>
-                            <li><a href="file-documents.html">Documents</a></li>
-                            <li><a href="file-media.html">Media</a></li>
-                            <li><a href="file-images.html">Images</a></li>
+                            <li><a href="#">Register Attendance</a></li>
+                            <li><a href="#">Search Attendance</a></li>
+                            <li><a href="#">Edit Attendance</a></li>
+                            <li><a href="#">Delete Attendance</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#Blog" class="has-arrow"><i class="icon-globe"></i><span>Blog</span></a>
+                        <a href="#Blog" class="has-arrow"><i class="icon-user"></i><span>VACATIONS </span></a>
                         <ul>
-                            <li><a href="blog-dashboard.html">Dashboard</a></li>
-                            <li><a href="blog-post.html">New Post</a></li>
-                            <li><a href="blog-list.html">Blog List</a></li>
-                            <li><a href="blog-details.html">Blog Detail</a></li>
-                        </ul>
-                    </li>
-                    <li class="heading">Extra</li>
-                    <li class="top">
-                        <a href="#Authentication" class="has-arrow"><i class="icon-lock"></i><span>Authentication</span></a>
-                        <ul>
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a href="page-lockscreen.html">Lockscreen</a></li>
-                            <li><a href="page-forgot-password.html">Forgot Password</a></li>
-                            <li><a href="page-404.html">Page 404</a></li>
-                            <li><a href="page-403.html">Page 403</a></li>
-                            <li><a href="page-500.html">Page 500</a></li>
-                            <li><a href="page-503.html">Page 503</a></li>
+                            <li><a href="#">Register Vacations</a></li>
+                            <li><a href="#">Search Vacations</a></li>
+                            <li><a href="#">Edit Vacations</a></li>
+                            <li><a href="#">Delete Vacations</a></li>
                         </ul>
                     </li>
                     <li class="top">
-                        <a href="#Pages" class="has-arrow"><i class="icon-docs"></i><span>Pages</span></a>
+                        <a href="#Authentication" class="has-arrow"><i class="icon-folder"></i><span>FEES </span></a>
                         <ul>
-                            <li><a href="page-blank.html">Blank Page</a></li>
-                            <li><a href="app-contact.html">Contact list</a></li>
-                            <li><a href="app-contact-grid.html">Contact Card</a></li>
-                            <li><a href="page-profile.html">Profile</a></li>
-                            <li><a href="page-gallery.html">Image Gallery</a></li>
-                            <li><a href="page-gallery2.html">Image Gallery</a></li>
-                            <li><a href="page-timeline.html">Timeline</a></li>
-                            <li><a href="page-timeline-h.html">Horizontal Timeline</a></li>
-                            <li><a href="page-pricing.html">Pricing</a></li>
-                            <li><a href="page-invoices.html">Invoices</a></li>
-                            <li><a href="page-search-results.html">Search Results</a></li>
-                            <li><a href="page-helper-class.html">Helper Classes</a></li>
-                            <li><a href="page-teams-board.html">Teams Board</a></li>
-                            <li><a href="page-projects-list.html">Projects List</a></li>
-                            <li><a href="page-maintenance.html">Maintenance</a></li>
-                            <li><a href="page-testimonials.html">Testimonials</a></li>
-                            <li><a href="page-faq.html">FAQ</a></li>
-                        </ul>
-                    </li>                        
-                    <li class="top">
-                        <a href="#Maps" class="has-arrow"><i class="icon-map"></i> <span>Maps</span></a>
-                        <ul>
-                            <li><a href="map-google.html">Google Map</a></li>
-                            <li><a href="map-yandex.html">Yandex Map</a></li>
-                            <li><a href="map-jvectormap.html">jVector Map</a></li>
+                            <li><a href="#">Register Fees</a></li>
+                            <li><a href="#">Search Fees</a></li>
+                            <li><a href="#">Edit Fees</a></li>
+                            <li><a href="#">Delete Fees</a></li>
                         </ul>
                     </li>
+                    <li class="top">
+                        <a href="#Maps" class="has-arrow"><i class="icon-folder"></i> <span>SALARIES </span></a>
+                        <ul>
+                            <li><a href="#">Register Salaries</a></li>
+                            <li><a href="#">Search Salaries</a></li>
+                            <li><a href="#">Edit Salaries</a></li>
+                            <li><a href="#">Delete Salaries</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="heading">SECURITIES</li> -->
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>RESULTS </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Successfull Students</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Usuccessfull Students</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>BUSES </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Register Buses</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Buses</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Buses</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Buses</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>USERS </span></a>
+                        <ul>
+                            <li><a href="UserDataRegister.html">Register Users</a></li>
+                            <li><a href="UserDataRegisterDisplay.html">Search Users</a></li>
+                            <li><a href="UserDataEditDisplay.html">Edit Users</a></li>
+                            <li><a href="UserDataDeleteDisplay.html">Delete Users</a></li>
+                        </ul>
+                    </li> 
+                    <li class="top">
+                        <a href="#Pages" class="has-arrow"><i class="icon-home"></i><span>SETTINGS </span></a>
+                        <ul>
+                            <li><a href="SystemSettingsRegister.html">Register Settings</a></li>
+                            <li><a href="SystemSettingsRegisterDisplay.html">Search Settings</a></li>
+                            <li><a href="SystemSettingsEditDisplay.html">Edit Settings</a></li>
+                            <li><a href="SystemSettingsDeleteDisplay.html">Delete Settings</a></li>
+                        </ul>
+                    </li>                            
                 </ul>
             </nav>
         </div>
@@ -771,7 +898,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>Table Example</h2>
+                        <h2>UPDATE EMPLOYEES VACATIONS:</h2>
                     </div>            
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -889,7 +1016,7 @@
                                                 <address><i class="fa fa-map-marker"></i>123 6th St. Melbourne, FL 32904</address>
                                             </td>
                                             <td>                                            
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
@@ -911,7 +1038,7 @@
                                                 <address><i class="fa fa-map-marker"></i>44 Shirley Ave. West Chicago, IL 60185</address>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
@@ -933,7 +1060,7 @@
                                                 <address><i class="fa fa-map-marker"></i>123 6th St. Melbourne, FL 32904</address>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
@@ -955,7 +1082,7 @@
                                                 <address><i class="fa fa-map-marker"></i>70 Bowman St. South Windsor, CT 06074</address>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
@@ -975,17 +1102,17 @@
                             <h2>Basic Table <small>Basic example without any additional modification classes</small> </h2>                            
                         </div> -->
                         <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                            <div style="overflow-x: auto;">  <!--class="table-responsive"-->
+                                <table id="Mytable" class="table table-bordered table-hover js-basic-example dataTable table-custom">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                            <th>Action</th>
+                                            <th> NAME</th>
+                                            <th> TYPE</th>
+                                            <th> DURATION</th>
+                                            <th> START DATE</th>
+                                            <th> END DATE</th>
+                                            <th> REMARK</th>
+                                            <th>ACTION</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -997,7 +1124,7 @@
                                             <td>2011/04/25</td>
                                             <td>$320,800</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1009,7 +1136,7 @@
                                             <td>2011/07/25</td>
                                             <td>$170,750</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1021,7 +1148,7 @@
                                             <td>2009/01/12</td>
                                             <td>$86,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1033,7 +1160,7 @@
                                             <td>2012/03/29</td>
                                             <td>$433,060</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1045,7 +1172,7 @@
                                             <td>2008/11/28</td>
                                             <td>$162,700</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1057,7 +1184,7 @@
                                             <td>2012/12/02</td>
                                             <td>$372,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1069,7 +1196,7 @@
                                             <td>2012/08/06</td>
                                             <td>$137,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1081,7 +1208,7 @@
                                             <td>2010/10/14</td>
                                             <td>$327,900</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1093,7 +1220,7 @@
                                             <td>2009/09/15</td>
                                             <td>$205,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1105,7 +1232,7 @@
                                             <td>2008/12/13</td>
                                             <td>$103,600</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1117,7 +1244,7 @@
                                             <td>2008/12/19</td>
                                             <td>$90,560</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1129,7 +1256,7 @@
                                             <td>2013/03/03</td>
                                             <td>$342,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1141,7 +1268,7 @@
                                             <td>2008/10/16</td>
                                             <td>$470,600</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1153,7 +1280,7 @@
                                             <td>2012/12/18</td>
                                             <td>$313,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1165,7 +1292,7 @@
                                             <td>2010/03/17</td>
                                             <td>$385,750</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1177,7 +1304,7 @@
                                             <td>2012/11/27</td>
                                             <td>$198,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1189,7 +1316,7 @@
                                             <td>2010/06/09</td>
                                             <td>$725,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1201,7 +1328,7 @@
                                             <td>2009/04/10</td>
                                             <td>$237,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1213,7 +1340,7 @@
                                             <td>2012/10/13</td>
                                             <td>$132,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1225,7 +1352,7 @@
                                             <td>2012/09/26</td>
                                             <td>$217,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1237,7 +1364,7 @@
                                             <td>2011/09/03</td>
                                             <td>$345,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1249,7 +1376,7 @@
                                             <td>2009/06/25</td>
                                             <td>$675,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1261,7 +1388,7 @@
                                             <td>2011/12/12</td>
                                             <td>$106,450</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1273,7 +1400,7 @@
                                             <td>2010/09/20</td>
                                             <td>$85,600</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1285,7 +1412,7 @@
                                             <td>2009/10/09</td>
                                             <td>$1,200,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1297,7 +1424,7 @@
                                             <td>2010/12/22</td>
                                             <td>$92,575</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1309,7 +1436,7 @@
                                             <td>2010/11/14</td>
                                             <td>$357,650</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1321,7 +1448,7 @@
                                             <td>2011/06/07</td>
                                             <td>$206,850</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1333,7 +1460,7 @@
                                             <td>2010/03/11</td>
                                             <td>$850,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1345,7 +1472,7 @@
                                             <td>2011/08/14</td>
                                             <td>$163,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1357,7 +1484,7 @@
                                             <td>2011/06/02</td>
                                             <td>$95,400</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1369,7 +1496,7 @@
                                             <td>2009/10/22</td>
                                             <td>$114,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1381,7 +1508,7 @@
                                             <td>2011/05/07</td>
                                             <td>$145,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1393,7 +1520,7 @@
                                             <td>2008/10/26</td>
                                             <td>$235,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1405,7 +1532,7 @@
                                             <td>2011/03/09</td>
                                             <td>$324,050</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1417,7 +1544,7 @@
                                             <td>2009/12/09</td>
                                             <td>$85,675</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1429,7 +1556,7 @@
                                             <td>2008/12/16</td>
                                             <td>$164,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1441,7 +1568,7 @@
                                             <td>2010/02/12</td>
                                             <td>$109,850</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1453,7 +1580,7 @@
                                             <td>2009/02/14</td>
                                             <td>$452,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1465,7 +1592,7 @@
                                             <td>2008/12/11</td>
                                             <td>$136,200</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1477,7 +1604,7 @@
                                             <td>2008/09/26</td>
                                             <td>$645,750</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1489,7 +1616,7 @@
                                             <td>2011/02/03</td>
                                             <td>$234,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1501,7 +1628,7 @@
                                             <td>2011/05/03</td>
                                             <td>$163,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1513,7 +1640,7 @@
                                             <td>2009/08/19</td>
                                             <td>$139,575</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1525,7 +1652,7 @@
                                             <td>2013/08/11</td>
                                             <td>$98,540</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1537,7 +1664,7 @@
                                             <td>2009/07/07</td>
                                             <td>$87,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1549,7 +1676,7 @@
                                             <td>2012/04/09</td>
                                             <td>$138,575</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1561,7 +1688,7 @@
                                             <td>2010/01/04</td>
                                             <td>$125,250</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1573,7 +1700,7 @@
                                             <td>2012/06/01</td>
                                             <td>$115,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1585,7 +1712,7 @@
                                             <td>2013/02/01</td>
                                             <td>$75,650</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1597,7 +1724,7 @@
                                             <td>2011/12/06</td>
                                             <td>$145,600</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1609,7 +1736,7 @@
                                             <td>2011/03/21</td>
                                             <td>$356,250</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1621,7 +1748,7 @@
                                             <td>2009/02/27</td>
                                             <td>$103,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1633,7 +1760,7 @@
                                             <td>2010/07/14</td>
                                             <td>$86,500</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1645,7 +1772,7 @@
                                             <td>2008/11/13</td>
                                             <td>$183,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1657,7 +1784,7 @@
                                             <td>2011/06/27</td>
                                             <td>$183,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -1669,7 +1796,7 @@
                                             <td>2011/01/25</td>
                                             <td>$112,000</td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
+                                                <button type="button" class="btn btn-info"><i>UPDATE</i></button>
                                                 <!-- <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button> -->
                                             </td>
                                         </tr>
@@ -2252,5 +2379,26 @@
 <script>
     $('.sparkbar').sparkline('html', { type: 'bar' });
 </script>
+
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("Mysearch");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("Mytable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
 </body>
 </html>

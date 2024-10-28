@@ -740,7 +740,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>EMPLOYEE SALARIES:</h2>
+                        <h2>DELETE EMPLOYEES SALARIES:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -761,292 +761,364 @@
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-                                   
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE ROLL:</label>
-                                            <input type="text" name="EmployeeRoll" placeholder="Employee Roll" value="" class="form-control" required>
-                                        </div>
-                                    </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>EMPLOYEE NAME:</label>
-                                            <input type="text" name="EmployeeName" placeholder="Employee Name" value="" class="form-control" required>
+                                            <input type="text" name="EmpoyeeName"  maxlength="28" placeholder="Empoyee Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE SCHOOL:</label>
-                                            <input type="text" name="EmployeeSchool" placeholder="Employee School" value="" class="form-control" required>
+                                            <label>EMPLOYEE TYPE:</label>
+                                            <select name="EmpoyeeType" placeholder="Empoyee Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Type</option>
+                                                <option value="MAN">MAN</option>
+                                                <option value="WOMAN">WOMAN</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>METHOD PAYMENT:</label>
+                                            <select name="MethodPayment" placeholder="Method Payment" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Method Payment</option>
+                                                <option value="E-DAHAB">E-DAHAB</option>
+                                                <option value="ZAAD">ZAAD</option>
+                                            </select>
+                                                               
                                         </div>
                                     </div>
                                   </div>
 
                                   <div class="row">
+
+                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>EMPLOYEE SEX:</label>
-                                            <input type="text" name="EmployeeSex" placeholder="Employee Sex" value="" class="form-control" required>
+                                            <label>EMPLOYEE SALARY DATE:</label>
+                                            <input  type="text"  name="EmpoyeeFeeDate" placeholder="Empoyee Fee Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE SALARY AMOUT:</label>
+                                            <input type="text" name="EmpoyeeFeeAmount" placeholder="Empoyee Fee Amount" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                           
+                                        </div> 
+                                    </div>
+                                    
+
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE VOUCHER NUMBER:</label>
+                                            <input type="text" name="EmpoyeeVoucherNumber" placeholder="Empoyee Voucher Number" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                                
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE NATIONALITY:</label>
+                                            <select name="EmpoyeeNationality" data-placeholder="Empoyee Nationality" value=""  class="anyname form-control" required>
+                                                 <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Empoyee Nationality</option>
+                                                    <option value="AFGHANISTAN">AFGHANISTAN</option>
+                                                    <option value="ALBANIA">ALBANIA</option>
+                                                    <option value="ALGERIA">ALGERIA</option>
+                                                    <option value="ANDORRA">ANDORRA</option>
+                                                    <option value="ANGOLA">ANGOLA</option>
+                                                    <option value="ANGUILLA">ANGUILLA</option>
+                                                    <option value="ANTIGUA AND BARBUDA">ANTIGUA AND BARBUDA</option>
+                                                    <option value="ARGENTINA">ARGENTINA</option>
+                                                    <option value="ARMENIA">ARMENIA</option>
+                                                    <option value="ARUBA">ARUBA</option>
+                                                    <option value="AUSTRALIA">AUSTRALIA</option>
+                                                    <option value="AUSTRIA">AUSTRIA</option>
+                                                    <option value="AZERBAIJAN">AZERBAIJAN</option>
+                                                    <option value="BAHAMAS">BAHAMAS</option>
+                                                    <option value="BAHRAIN">BAHRAIN</option>
+                                                    <option value="BANGLADESH">BANGLADESH</option>
+                                                    <option value="BARBADOS">BARBADOS</option>
+                                                    <option value="BELARUS">BELARUS</option>
+                                                    <option value="BELGIUM">BELGIUM</option>
+                                                    <option value="BELIZE">BELIZE</option>
+                                                    <option value="BENIN">BENIN</option>
+                                                    <option value="BERMUDA">BERMUDA</option>
+                                                    <option value="BHUTAN">BHUTAN</option>
+                                                    <option value="BOLIVIA">BOLIVIA</option>
+                                                    <option value="BOSNIA-HERZEGOVINA">BOSNIA-HERZEGOVINA</option>
+                                                    <option value="BOTSWANA">BOTSWANA</option>
+                                                    <option value="BRAZIL">BRAZIL</option>
+                                                    <option value="BRITISH VIRGIN ISLANDS">BRITISH VIRGIN ISLANDS</option>
+                                                    <option value="BRUNEI">BRUNEI</option>
+                                                    <option value="BULGARIA">BULGARIA</option>
+                                                    <option value="BURKINA FASO">BURKINA FASO</option>
+                                                    <option value="BURMA (MYANMAR)">BURMA (MYANMAR)</option>
+                                                    <option value="BURUNDI">BURUNDI</option>
+                                                    <option value="BYELORUSSIA (BELARUS)">BYELORUSSIA (BELARUS)</option>
+                                                    <option value="CAMBODIA">CAMBODIA</option>
+                                                    <option value="CAMEROON">CAMEROON</option>
+                                                    <option value="CANADA">CANADA</option>
+                                                    <option value="CAPE VERDE">CAPE VERDE</option>
+                                                    <option value="CAYMAN ISLANDS">CAYMAN ISLANDS</option>
+                                                    <option value="CENTRAL AFRICAN REPUBLIC">CENTRAL AFRICAN REPUBLIC</option>
+                                                    <option value="CHAD">CHAD</option>
+                                                    <option value="CHILE">CHILE</option>
+                                                    <option value="CHINA">CHINA</option>
+                                                    <option value="COCOS ISLAND">COCOS ISLAND</option>
+                                                    <option value="COLOMBIA">COLOMBIA</option>
+                                                    <option value="COMOROS">COMOROS</option>
+                                                    <option value="COSTA RICA">COSTA RICA</option>
+                                                    <option value="CROATIA">CROATIA</option>
+                                                    <option value="CUBA">CUBA</option>
+                                                    <option value="CYPRUS">CYPRUS</option>
+                                                    <option value="CZECH REPUBLIC">CZECH REPUBLIC</option>
+                                                    <option value="CZECHOSLOVAKIA">CZECHOSLOVAKIA</option>
+                                                    <option value="DEMOCRATIC REPUBLIC OF CONGO">DEMOCRATIC REPUBLIC OF CONGO</option>
+                                                    <option value="DENMARK">DENMARK</option>
+                                                    <option value="DJIBOUTI">DJIBOUTI</option>
+                                                    <option value="DOMINICA">DOMINICA</option>
+                                                    <option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option>
+                                                    <option value="EAST GERMANY">EAST GERMANY</option>
+                                                    <option value="ECUADOR">ECUADOR</option>
+                                                    <option value="EGYPT">EGYPT</option>
+                                                    <option value="EL SALVADOR">EL SALVADOR</option>
+                                                    <option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option>
+                                                    <option value="ERITREA">ERITREA</option>
+                                                    <option value="ESTONIA">ESTONIA</option>
+                                                    <option value="ETHIOPIA">ETHIOPIA</option>
+                                                    <option value="FEDERATED STATES OF MICRONESA">FEDERATED STATES OF MICRONESA</option>
+                                                    <option value="FIJI">FIJI</option>
+                                                    <option value="FINLAND">FINLAND</option>
+                                                    <option value="FRANCE">FRANCE</option>
+                                                    <option value="FRENCH GUIANA">FRENCH GUIANA</option>
+                                                    <option value="GABON">GABON</option>
+                                                    <option value="GAMBIA">GAMBIA</option>
+                                                    <option value="GAZA STRIP">GAZA STRIP</option>
+                                                    <option value="GEORGIA">GEORGIA</option>
+                                                    <option value="GERMANY">GERMANY</option>
+                                                    <option value="GHANA">GHANA</option>
+                                                    <option value="GIBRALTAR">GIBRALTAR</option>
+                                                    <option value="GREECE">GREECE</option>
+                                                    <option value="GRENADA">GRENADA</option>
+                                                    <option value="GUADELOUPE">GUADELOUPE</option>
+                                                    <option value="GUATEMALA">GUATEMALA</option>
+                                                    <option value="GUINEA">GUINEA</option>
+                                                    <option value="GUINEA BISSAU">GUINEA BISSAU</option>
+                                                    <option value="GUYANA">GUYANA</option>
+                                                    <option value="HAITI">HAITI</option>
+                                                    <option value="HEARD AND MCDONALD ISLANDS">HEARD AND MCDONALD ISLANDS</option>
+                                                    <option value="HOLLAND">HOLLAND</option>
+                                                    <option value="HONDURAS">HONDURAS</option>
+                                                    <option value="HONG KONG">HONG KONG</option>
+                                                    <option value="HUNGARY">HUNGARY</option>
+                                                    <option value="ICELAND">ICELAND</option>
+                                                    <option value="INDIA">INDIA</option>
+                                                    <option value="INDONESIA">INDONESIA</option>
+                                                    <option value="IRAN">IRAN</option>
+                                                    <option value="IRAQ">IRAQ</option>
+                                                    <option value="IRELAND">IRELAND</option>
+                                                    <option value="ISRAEL">ISRAEL</option>
+                                                    <option value="ITALY">ITALY</option>
+                                                    <option value="IVORY COAST (COTE D'IVOIRE)">IVORY COAST (COTE D'IVOIRE)</option>
+                                                    <option value="JAMAICA">JAMAICA</option>
+                                                    <option value="JAPAN">JAPAN</option>
+                                                    <option value="JORDAN">JORDAN</option>
+                                                    <option value="KAMPUCHEA">KAMPUCHEA</option>
+                                                    <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+                                                    <option value="KENYA">KENYA</option>
+                                                    <option value="KIRGHIZIA (KYRGYZSTAN)">KIRGHIZIA (KYRGYZSTAN)</option>
+                                                    <option value="KIRIBATI">KIRIBATI</option>
+                                                    <option value="KOSOVO">KOSOVO</option>
+                                                    <option value="KUWAIT">KUWAIT</option>
+                                                    <option value="LAOS">LAOS</option>
+                                                    <option value="LATVIA">LATVIA</option>
+                                                    <option value="LEBANON">LEBANON</option>
+                                                    <option value="LESOTHO">LESOTHO</option>
+                                                    <option value="LIBERIA">LIBERIA</option>
+                                                    <option value="LIBYA">LIBYA</option>
+                                                    <option value="LITHUANIA">LITHUANIA</option>
+                                                    <option value="MACAU">MACAU</option>
+                                                    <option value="MACEDONIA">MACEDONIA</option>
+                                                    <option value="MADAGASCAR">MADAGASCAR</option>
+                                                    <option value="MALAWI">MALAWI</option>
+                                                    <option value="MALAYSIA">MALAYSIA</option>
+                                                    <option value="MALDIVES">MALDIVES</option>
+                                                    <option value="MALI">MALI</option>
+                                                    <option value="MALTA">MALTA</option>
+                                                    <option value="MARTINIQUE">MARTINIQUE</option>
+                                                    <option value="MAURITANIA">MAURITANIA</option>
+                                                    <option value="MAURITIUS">MAURITIUS</option>
+                                                    <option value="MEXICO">MEXICO</option>
+                                                    <option value="MIDWAY ISLANDS">MIDWAY ISLANDS</option>
+                                                    <option value="MOLDAVIA (MOLDOVA)">MOLDAVIA (MOLDOVA)</option>
+                                                    <option value="MONACO">MONACO</option>
+                                                    <option value="MONGOLIA">MONGOLIA</option>
+                                                    <option value="MONTSERRAT">MONTSERRAT</option>
+                                                    <option value="MOROCCO">MOROCCO</option>
+                                                    <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                                                    <option value="NAMIBIA">NAMIBIA</option>
+                                                    <option value="NAURU">NAURU</option>
+                                                    <option value="NEPAL">NEPAL</option>
+                                                    <option value="NETHERLANDS">NETHERLANDS</option>
+                                                    <option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option>
+                                                    <option value="NEW CALEDONIA">NEW CALEDONIA</option>
+                                                    <option value="NEW ZEALAND">NEW ZEALAND</option>
+                                                    <option value="NICARAGUA">NICARAGUA</option>
+                                                    <option value="NIGER">NIGER</option>
+                                                    <option value="NIGERIA">NIGERIA</option>
+                                                    <option value="NIUE">NIUE</option>
+                                                    <option value="NO NATIONALITY">NO NATIONALITY</option>
+                                                    <option value="NORTH KOREA">NORTH KOREA</option>
+                                                    <option value="NORWAY">NORWAY</option>
+                                                    <option value="NOT DESIGNATED BY IJ">NOT DESIGNATED BY IJ</option>
+                                                    <option value="OMAN">OMAN</option>
+                                                    <option value="PAKISTAN">PAKISTAN</option>
+                                                    <option value="PANAMA">PANAMA</option>
+                                                    <option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option>
+                                                    <option value="PARAGUAY">PARAGUAY</option>
+                                                    <option value="PEOPLE'S REPUBLIC OF BENIN">PEOPLE'S REPUBLIC OF BENIN</option>
+                                                    <option value="PEOPLE'S REPUBLIC OF THE CONGO">PEOPLE'S REPUBLIC OF THE CONGO</option>
+                                                    <option value="PERU">PERU</option>
+                                                    <option value="PHILIPPINES">PHILIPPINES</option>
+                                                    <option value="POLAND">POLAND</option>
+                                                    <option value="PORTUGAL">PORTUGAL</option>
+                                                    <option value="QATAR">QATAR</option>
+                                                    <option value="REPUBLIC OF THE MARSHALL ISLANDS">REPUBLIC OF THE MARSHALL ISLANDS</option>
+                                                    <option value="ROMANIA">ROMANIA</option>
+                                                    <option value="RUSSIA">RUSSIA</option>
+                                                    <option value="RWANDA">RWANDA</option>
+                                                    <option value="SAN MARINO">SAN MARINO</option>
+                                                    <option value="SAO TOME AND PRINCIPE">SAO TOME AND PRINCIPE</option>
+                                                    <option value="SAUDI ARABIA">SAUDI ARABIA</option>
+                                                    <option value="SENEGAL">SENEGAL</option>
+                                                    <option value="SERBIA MONTENEGRO">SERBIA MONTENEGRO</option>
+                                                    <option value="SEYCHELLES">SEYCHELLES</option>
+                                                    <option value="SIERRA LEONE">SIERRA LEONE</option>
+                                                    <option value="SINGAPORE">SINGAPORE</option>
+                                                    <option value="SLOVAK REPUBLIC">SLOVAK REPUBLIC</option>
+                                                    <option value="SLOVENIA">SLOVENIA</option>
+                                                    <option value="SOLOMON ISLANDS">SOLOMON ISLANDS</option>
+                                                    <option value="SOMALIA">SOMALIA</option>
+                                                    <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+                                                    <option value="SOUTH KOREA">SOUTH KOREA</option>
+                                                    <option value="SOVIET UNION">SOVIET UNION</option>
+                                                    <option value="SPAIN">SPAIN</option>
+                                                    <option value="SRI LANKA">SRI LANKA</option>
+                                                    <option value="ST. KITTS, WEST INDIES">ST. KITTS, WEST INDIES</option>
+                                                    <option value="ST. KITTS AND NEVIS">ST. KITTS AND NEVIS</option>
+                                                    <option value="ST. LUCIA">ST. LUCIA</option>
+                                                    <option value="ST. VINCENT AND THE GRENADINES">ST. VINCENT AND THE GRENADINES</option>
+                                                    <option value="STATELESS - ALIEN UNABLE TO NAME A COUNTRY">STATELESS - ALIEN UNABLE TO NAME A COUNTRY</option>
+                                                    <option value="SUDAN">SUDAN</option>
+                                                    <option value="SURINAME">SURINAME</option>
+                                                    <option value="SWAZILAND">SWAZILAND</option>
+                                                    <option value="SWEDEN">SWEDEN</option>
+                                                    <option value="SWITZERLAND">SWITZERLAND</option>
+                                                    <option value="SYRIA">SYRIA</option>
+                                                    <option value="TAIWAN">TAIWAN</option>
+                                                    <option value="TAJIKISTAN (TADZHIK)">TAJIKISTAN (TADZHIK)</option>
+                                                    <option value="TANZANIA">TANZANIA</option>
+                                                    <option value="THAILAND">THAILAND</option>
+                                                    <option value="THE REPUBLIC OF PALAU">THE REPUBLIC OF PALAU</option>
+                                                    <option value="TOGO">TOGO</option>
+                                                    <option value="TONGA">TONGA</option>
+                                                    <option value="TRINIDAD AND TOBAGO">TRINIDAD AND TOBAGO</option>
+                                                    <option value="TUNISIA">TUNISIA</option>
+                                                    <option value="TURKEY">TURKEY</option>
+                                                    <option value="TURKMENISTAN">TURKMENISTAN</option>
+                                                    <option value="TURKS AND CAICOS ISLANDS">TURKS AND CAICOS ISLANDS</option>
+                                                    <option value="UGANDA">UGANDA</option>
+                                                    <option value="UKRAINE">UKRAINE</option>
+                                                    <option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option>
+                                                    <option value="UNITED KINGDOM">UNITED KINGDOM</option>
+                                                    <option value="UNKNOWN NATIONALITY">UNKNOWN NATIONALITY</option>
+                                                    <option value="UPPER VOLTA">UPPER VOLTA</option>
+                                                    <option value="URUGUAY">URUGUAY</option>
+                                                    <option value="UZEBEKISTAN">UZEBEKISTAN</option>
+                                                    <option value="VENEZUELA">VENEZUELA</option>
+                                                    <option value="VIETNAM">VIETNAM</option>
+                                                    <option value="WESTERN SAHARA">WESTERN SAHARA</option>
+                                                    <option value="WESTERN SAMOA">WESTERN SAMOA</option>
+                                                    <option value="YEMEN">YEMEN</option>
+                                                    <option value="YUGOSLAVIA">YUGOSLAVIA</option>
+                                                    <option value="ZAIRE">ZAIRE</option>
+                                                    <option value="ZAMBIA">ZAMBIA</option>
+                                                    <option value="ZIMBABWE">ZIMBABWE</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                  
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE PHONE:</label>
+                                            <input type="text" name="EmpoyeePhone" placeholder="Empoyee Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE FEE REMARK:</label>
+                                            <select name="EmpoyeeFeeRemark" placeholder="Empoyee Fee Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Fee Remark</option>
+                                                <option value="FULL PAYMENT">FULL PAYMENT</option>
+                                                <option value="PARTIALLY PAYMENT">PARTIALLY PAYMENT</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>EMPLOYEE SCHOOL:</label>
+                                            <select name="EmpoyeeSchool" placeholder="Empoyee School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee School</option>
+                                                <option value="SALAAMA SCHOOL">SALAAMA SCHOOL</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>EMPLOYEE SECTION:</label>
-                                            <input type="text" name="EmployeeSection" placeholder="Employee Section" value="" class="form-control" required>
+                                            <select name="EmpoyeeSection" placeholder="Empoyee Section" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Section</option>
+                                                <option value="MANEGMENT">MANEGMENT</option>
+                                                <option value="FINANCE">FINANCE</option>
+                                                <option value="IT">IT</option>
+                                                <option value="TEACHING">TEACHING</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>EMPLOYEE JOB:</label>
-                                            <input type="text" name="EmployeeJob" placeholder="Employee Job" value="" class="form-control" required>
+                                            <select name="EmpoyeeJob" placeholder="Empoyee Job" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Empoyee Job</option>
+                                                <option value="MANAGER">MANAGER</option>
+                                                <option value="ACCOUNTANT">ACCOUNTANT</option>
+                                                <option value="ASSISTANT">ASSISTANT</option>
+                                                <option value="WATCHMAN">WATCHMAN</option>
+                                            </select>
                                         </div>
                                     </div>
+                                   
                                    
                                   </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE NATIONALITY:</label>
-                                            <input type="text" name="EmployeeNationality" placeholder="Employee Nationality" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE ADDRESS:</label>
-                                            <input type="text" name="EmployeeAddress" placeholder="Employee Address" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE EMAIL:</label>
-                                            <input type="text" name="EmployeeEmail" placeholder="Employee Email" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE PHONE:</label>
-                                            <input type="text" name="EmployeePhone" placeholder="Employee Phone" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE MOBILE:</label>
-                                            <input type="text" name="EmployeeMobile" placeholder="Employee Mobile" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE WHATSAPP:</label>
-                                            <input type="text" name="EmployeeWhatsApp" placeholder="Employee WhatsApp" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE SALARIES DATE:</label>
-                                            <input type="text" name="EmployeeSalaryDate" placeholder="Employee Salary Date" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>EMPLOYEE SALARIES AMOUNT:</label>
-                                            <input type="text" name="EmployeeSalaryAmount" placeholder="Employee Salary Amount" value="" class="form-control" required>
-                                        </div> 
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee SALARIES REMARK:</label>
-                                            <input type="text" name="EmployeeSalaryRemark" placeholder="Employee Salary Remark" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-
-
-                                
-                                  <!-- </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ID</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee ROLL</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>Employee NAME</label>
-                                            <input type="text" name="" placeholder="" value="" class="form-control" required>
-                                        </div>
-                                    </div>
-                                   
-                                  </div> -->
-
+                                  
                                  
+
                                 
-                                <!-- <div class="form-group">
-                                    <label>Text Area</label>
-                                    <textarea class="form-control" rows="5" cols="30" required></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Checkbox</label>
-                                    <br/>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Option 1</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 2</span>
-                                    </label>
-                                    <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <span>Option 3</span>
-                                    </label>
-                                    <p id="error-checkbox"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Radio Button</label>
-                                    <br />
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
-                                        <span><i></i>Male</span>
-                                    </label>
-                                    <label class="fancy-radio">
-                                        <input type="radio" name="gender" value="female">
-                                        <span><i></i>Female</span>
-                                    </label>
-                                    <p id="error-radio"></p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="food">Multiselect</label>
-                                    <br/>
-                                    <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
-                                        <option value="cheese">Cheese</option>
-                                        <option value="tomatoes">Tomatoes</option>
-                                        <option value="mozarella">Mozzarella</option>
-                                        <option value="mushrooms">Mushrooms</option>
-                                        <option value="pepperoni">Pepperoni</option>
-                                        <option value="onions">Onions</option>
-                                    </select>
-                                    <p id="error-multiselect"></p>
-                                </div> -->
-                                <!-- <div class="card">
-                                    <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
-                                        <thead>
-                                            <tr>
-                                                <th>ISLAMIC:</th>
-                                                <th>ARABIC:</th>
-                                                <th>SOMALI:</th>
-                                                <th>ENGLISH:</th>
-                                                <th>MATHS:</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="IslamicEducation" placeholder="Islamic Education" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ArabicLanguage" placeholder="Arabic Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SomaliLanguage" placeholder="Somali Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="EnglishLanguage" placeholder="English Language" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="MathsScience" placeholder="Maths Science" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-                                            <thead>
-                                                <tr>
-                                                    <th>CHEMISTRY:</th>
-                                                    <th>PHYSICS:</th>
-                                                    <th>BIOLOGY:</th>
-                                                    <th>COMPUTER:</th>
-                                                    <th>SPORTS:</th>
-                                                </tr>
-                                            </thead>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="ChemistryScience" placeholder="Chemistry Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="PhysicsScience" placeholder="Physics Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="BiologyScience" placeholder="Biology Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="ComputerScience" placeholder="Computer Science" value="" class="form-control" required>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="SportEducation" placeholder="Sport Education" value="" class="form-control" required>
-                                                </td>
-                                            </tr>
-
-                                        
-                                        </tbody>
-                                    
-                                    </table>
-                               </div> -->
-
-                                <br>
-                                <button type="submit" class="btn btn-danger">DELETE EMPLOYEE SALARIES</button>
+                                  <button type="submit" class="btn btn-success">ENROLL</button>
+                                  <button type="reset" class="btn btn-success"> CANCEL</button>
                             </form>
                         </div>
                     </div>
